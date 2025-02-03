@@ -69,8 +69,8 @@ data:extend(
         order = "zz[trash]-b[destabilized-recycling]",
         enabled = false,
         auto_recycle = false,
-        energy_required = 3,
-        ingredients = {{type = "item", name = "destabilized-cube-matter", amount = 1}},
+        energy_required = 1,
+        ingredients = {{type = "item", name = "destabilized-cube-matter", amount = 2}},
         results =
         {
           {type = "item", name = "carbon",                amount = 1, probability = 0.2, show_details_in_recipe_tooltip = false},
@@ -93,8 +93,8 @@ data:extend(
           },
           {
             icon ="__base__/graphics/icons/fluid/steam.png",
-            scale = 0.7,
-            shift = util.by_pixel(2, 5),
+            scale = 0.6,
+            shift = util.by_pixel(64, 64),
           }
         },
         category = "chemistry",
@@ -119,8 +119,8 @@ data:extend(
           },
           {
             icon = "__base__/graphics/icons/solid-fuel.png",
-            scale = 0.7,
-            shift = util.by_pixel(2, 5),
+            scale = 0.6,
+            shift = util.by_pixel(64, 64),
           }
         },
         category = "chemistry",
@@ -185,8 +185,8 @@ data:extend(
             },
             {
               icon = "__cubium__/graphics/icons/cube-jelly.png",
-              scale = 0.7,
-              shift = util.by_pixel(2, 5),
+              scale = 0.6,
+              shift = util.by_pixel(64, 64),
             }
         },
         category = "advanced-crafting",
@@ -217,8 +217,8 @@ data:extend(
             },
             {
               icon = "__space-age__/graphics/icons/carbon.png",
-              scale = 0.7,
-              shift = util.by_pixel(2, 5),
+              scale = 0.6,
+              shift = util.by_pixel(64, 64),
             }
         },
         category = "advanced-crafting",
@@ -250,8 +250,8 @@ data:extend(
             },
             {
               icon = "__cubium__/graphics/icons/matter-cube-dormant.png",
-              scale = 0.7,
-              shift = util.by_pixel(2, 5),
+              scale = 0.6,
+              shift = util.by_pixel(64, 64),
             }
           },
         category = "advanced-crafting",
@@ -282,8 +282,8 @@ data:extend(
           },
           {
             icon = "__cubium__/graphics/icons/matter-cube-dormant.png",
-            scale = 0.7,
-            shift = util.by_pixel(2, 5),
+            scale = 0.6,
+            shift = util.by_pixel(64, 64),
           }
       },
       category = "advanced-crafting",
@@ -304,6 +304,105 @@ data:extend(
         {type = "item", name = "plastic-bar", amount = 75}
       }
     },
+
+    {
+      type = "recipe",
+      name = "cube-jelly-ore-basic",
+      icons = 
+      {
+          {
+            icon = "__cubium__/graphics/icons/cube-jelly.png",
+            scale = 1
+          },
+          {
+            icon = "__base__/graphics/icons/iron-ore.png",
+            scale = 0.6,
+            shift = util.by_pixel(64, 64),
+          }
+      },
+      category = "advanced-crafting",
+
+      enabled = false,
+      auto_recycle = false,
+      energy_required = 5,
+      allow_productivity = true,
+      ingredients = 
+      {
+          {type = "item", name = "cube-jelly", amount = 10},
+      },
+      results =
+      {
+        {type = "item", name = "iron-ore", amount = 4, probability = 0.60},
+        {type = "item", name = "copper-ore", amount = 4,probability = 0.40},
+      }
+    },
+
+    {
+      type = "recipe",
+      name = "cube-jelly-ore-advanced-iron",
+      icons = 
+      {
+          {
+            icon = "__cubium__/graphics/icons/cube-jelly.png",
+            scale = 1
+          },
+          {
+            icon = "__base__/graphics/icons/iron-plate.png",
+            scale = 0.6,
+            shift = util.by_pixel(64, 64),
+          }
+      },
+      category = "advanced-crafting",
+
+      enabled = false,
+      auto_recycle = false,
+      energy_required = 17,
+      allow_productivity = true,
+      ingredients = 
+      {
+          {type = "item", name = "cube-jelly", amount = 50},
+          {type = "item", name = "energized-microcube", amount = 1},
+      },
+      results =
+      {
+        {type = "item", name = "iron-ore", amount = 28},
+        {type = "item", name = "dormant-microcube",amount = 1,ignored_by_productivity = 9999, percent_spoiled = 0},
+      }
+    },
+    {
+      type = "recipe",
+      name = "cube-jelly-ore-advanced-copper",
+      icons = 
+      {
+          {
+            icon = "__cubium__/graphics/icons/cube-jelly.png",
+            scale = 1
+          },
+          {
+            icon = "__base__/graphics/icons/copper-plate.png",
+            scale = 0.6,
+            shift = util.by_pixel(64, 64),
+          }
+      },
+      category = "advanced-crafting",
+
+      enabled = false,
+      auto_recycle = false,
+      energy_required = 16,
+      allow_productivity = true,
+      ingredients = 
+      {
+          {type = "item", name = "cube-jelly", amount = 50},
+          {type = "item", name = "energized-microcube", amount = 1},
+      },
+      results =
+      {
+        {type = "item", name = "copper-ore", amount = 28},
+        {type = "item", name = "dormant-microcube",amount = 1,ignored_by_productivity = 9999, percent_spoiled = 0},
+      }
+    },
+
+
     --Cubic recipes. TODO, add building that can do cubic recipes. for now they will be under advanced processing
     {
         type = "recipe",
@@ -316,8 +415,8 @@ data:extend(
             },
             {
               icon = "__cubium__/graphics/icons/broken-cube.png",
-              scale = 0.7,
-              shift = util.by_pixel(2, 5),
+              scale = 0.6,
+              shift = util.by_pixel(64, 64),
             }
         },
         category = "advanced-crafting",
@@ -397,8 +496,8 @@ data:extend(
           },
           {
             icon = "__cubium__/graphics/icons/matter-cube.png",
-            scale = 0.7,
-            shift = util.by_pixel(2, 5),
+            scale = 0.6,
+            shift = util.by_pixel(64, 64),
           }
       },
       category = "advanced-crafting",
@@ -429,8 +528,8 @@ data:extend(
           },
           {
             icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
-            scale = 0.7,
-            shift = util.by_pixel(2, 5),
+            scale = 0.6,
+            shift = util.by_pixel(64, 64),
           }
       },
       category = "chemistry-or-cryogenics",
@@ -470,8 +569,8 @@ data:extend(
           },
           {
             icon = "__base__/graphics/icons/fluid/sulfuric-acid.png",
-            scale = 0.7,
-            shift = util.by_pixel(2, 5),
+            scale = 0.6,
+            shift = util.by_pixel(64, 64),
           }
       },
       category = "chemistry-or-cryogenics",
@@ -513,8 +612,8 @@ data:extend(
           },
           {
             icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
-            scale = 0.7,
-            shift = util.by_pixel(2, 5),
+            scale = 0.6,
+            shift = util.by_pixel(64, 64),
           }
       },
       category = "chemistry-or-cryogenics",
@@ -554,8 +653,8 @@ data:extend(
           },
           {
             icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
-            scale = 0.7,
-            shift = util.by_pixel(2, 5),
+            scale = 0.6,
+            shift = util.by_pixel(64, 64),
           }
       },
       category = "advanced-crafting",
@@ -587,8 +686,8 @@ data:extend(
           },
           {
             icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
-            scale = 0.7,
-            shift = util.by_pixel(2, 5),
+            scale = 0.6,
+            shift = util.by_pixel(64, 64),
           }
       },
       category = "chemistry-or-cryogenics",
@@ -843,8 +942,8 @@ data:extend(
           },
           {
             icon ="__base__/graphics/icons/fluid/steam.png",
-            scale = 0.7,
-            shift = util.by_pixel(2, 5),
+            scale = 0.6,
+            shift = util.by_pixel(64, 64),
           }
       },
       enabled = false,
@@ -880,8 +979,8 @@ data:extend(
           },
           {
             icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
-            scale = 0.7,
-            shift = util.by_pixel(2, 5),
+            scale = 0.6,
+            shift = util.by_pixel(64, 64),
           }
       },
       category = "advanced-crafting",
@@ -913,8 +1012,8 @@ data:extend(
           },
           {
             icon = "__cubium__/graphics/icons/dream.png",
-            scale = 0.7,
-            shift = util.by_pixel(2, 5),
+            scale = 0.6,
+            shift = util.by_pixel(64, 64),
           }
       },
       category = "advanced-crafting",
@@ -947,8 +1046,8 @@ data:extend(
           },
           {
             icon = "__cubium__/graphics/icons/dream.png",
-            scale = 0.7,
-            shift = util.by_pixel(2, 5),
+            scale = 0.6,
+            shift = util.by_pixel(64, 64),
           }
       },
       category = "advanced-crafting",
@@ -981,8 +1080,8 @@ data:extend(
           },
           {
             icon = "__cubium__/graphics/icons/dream.png",
-            scale = 0.7,
-            shift = util.by_pixel(2, 5),
+            scale = 0.6,
+            shift = util.by_pixel(64, 64),
           }
       },
       category = "electronics",
@@ -1017,8 +1116,8 @@ data:extend(
           },
           {
             icon = "__cubium__/graphics/icons/dream.png",
-            scale = 0.7,
-            shift = util.by_pixel(2, 5),
+            scale = 0.6,
+            shift = util.by_pixel(64, 64),
           }
       },
       category = "electronics",

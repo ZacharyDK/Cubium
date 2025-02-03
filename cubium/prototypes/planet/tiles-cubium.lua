@@ -74,11 +74,11 @@ local lava_stone_transitions =
   {
     to_tiles = lava_tile_type_names,
     transition_group = lava_transition_group_id,
-    spritesheet = "__space-age__/graphics/terrain/water-transitions/lava-stone.png",
-    lightmap_layout = { spritesheet = "__space-age__/graphics/terrain/water-transitions/lava-stone-lightmap.png" },
+    spritesheet = "__cubium__/graphics/terrain/water-transitions/lava-stone.png",
+    lightmap_layout = { spritesheet = "__cubium__/graphics/terrain/water-transitions/lava-stone-lightmap.png" },
      -- this added the lightmap spritesheet
     layout = tile_spritesheet_layout.transition_16_16_16_4_4,
-    lightmap_layout = { spritesheet = "__space-age__/graphics/terrain/water-transitions/lava-stone-lightmap.png" },
+    lightmap_layout = { spritesheet = "__cubium__/graphics/terrain/water-transitions/lava-stone-lightmap.png" },
      -- this added the lightmap spritesheet
     effect_map_layout =
     {
@@ -141,7 +141,7 @@ local lava_stone_transitions_between_transitions =
     transition_group1 = default_transition_group_id,
     transition_group2 = lava_transition_group_id,
 
-    spritesheet = "__space-age__/graphics/terrain/water-transitions/lava-stone-transition.png",
+    spritesheet = "__cubium__/graphics/terrain/water-transitions/lava-stone-transition.png",
     layout = tile_spritesheet_layout.transition_3_3_3_1_0,
     effect_map_layout =
     {

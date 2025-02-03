@@ -58,6 +58,20 @@ data:extend({
             },
             {
               type = "unlock-recipe",
+              recipe = "cube-jelly-ore-basic"
+            },
+            {
+              type = "unlock-recipe",
+              recipe = "cube-jelly-ore-advanced-iron"
+            },
+            {
+              type = "unlock-recipe",
+              recipe = "cube-jelly-ore-advanced-copper"
+            },
+
+
+            {
+              type = "unlock-recipe",
               recipe = "cube-jelly-plastic"
             },
             {

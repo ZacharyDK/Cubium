@@ -8,7 +8,7 @@ require("__cubium__.prototypes.item")
 --require("__cubium__.prototypes.recipe-category")
 require("__cubium__.prototypes.recipe")
 --require("__cubium__.prototypes.entity.remnants")
---require("__cubium__.prototypes.technology")
+require("__cubium__.prototypes.technology")
 
 --require("__cubium__.prototypes.entity.resources")
 require("__cubium__.prototypes.autoplace-controls")

@@ -38,9 +38,9 @@ planet_map_gen.cubium = function()
         settings =
         {
           --nauvis tiles
-          ["volcanic-soil-dark"] = {},
-          ["volcanic-soil-light"] = {},
-          ["volcanic-ash-soil"] = {},
+          --["volcanic-soil-dark"] = {},
+          --["volcanic-soil-light"] = {},
+          --["volcanic-ash-soil"] = {},
           --end of nauvis tiles
           ["cubium-volcanic-ash-flats"] = {},
           ["cubium-volcanic-ash-light"] = {},
@@ -65,10 +65,10 @@ planet_map_gen.cubium = function()
         settings =
         {
           -- nauvis decoratives
-          ["v-brown-carpet-grass"] = {},
-          ["v-green-hairy-grass"] = {},
-          ["v-brown-hairy-grass"] = {},
-          ["v-red-pita"] = {},
+          --["v-brown-carpet-grass"] = {},
+          --["v-green-hairy-grass"] = {},
+          --["v-brown-hairy-grass"] = {},
+          --["v-red-pita"] = {},
           -- end of nauvis
           --["cubium-rock-decal-large"] = {}, --TODO define these decoratives
           --["cubium-crack-decal-large"] = {},

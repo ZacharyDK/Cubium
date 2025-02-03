@@ -3,7 +3,7 @@ data:extend{
   {
     type = "noise-expression",
     name = "cubium_ore_spacing",
-    expression = 128
+    expression = 72
   },
   {
     type = "noise-expression",
@@ -30,7 +30,7 @@ data:extend{
     --functions more like a cliffiness multiplier as all the mountain tiles have it offset.
     type = "noise-expression",
     name = "cubium_mountains_elevation_multiplier",
-    expression = 1.5
+    expression = 1.15
   },
 
   ---- HELPERS
@@ -819,7 +819,7 @@ data:extend{
     type = "noise-expression",
     name = "cubium_stone_richness",
     expression = "cubium_stone_region * random_penalty_between(0.9, 1, 1)\z
-                  * 24000 * cubium_starting_area_multiplier\z
+                  * 18000 * cubium_starting_area_multiplier\z
                   * control:stone:richness / cubium_stone_size"
   },
 
@@ -859,7 +859,7 @@ data:extend{
     type = "noise-expression",
     name = "cubium_sulfuric_acid_geyser_richness",
     expression = "(cubium_sulfuric_acid_region > 0) * random_penalty_between(0.5, 1, 1)\z
-                  * 10 * 40 * cubium_richness_multiplier * cubium_starting_area_multiplier\z
+                  * 5000 * 40 * cubium_richness_multiplier * cubium_starting_area_multiplier\z
                   * control:sulfuric_acid_geyser:richness / cubium_sulfuric_acid_geyser_size"
   },--80000 --> 10. Barely any. 
   {
@@ -894,6 +894,73 @@ data:extend{
     expression = "min(10 * (cubium_ashlands_biome - 0.9),\z
                       -1.5 + 1.5 * moisture + 0.5 * (moisture > 0.9) - 0.5 * aux + 0.5 * cubium_decorative_knockout)"
   },
+
+  --Secondary stone, imported from Gleba, renamed
+  --[[
+  {
+    type = "noise-expression",
+    name = "secondary_wobble_x", -- only add to input X or Y
+    expression = "multioctave_noise{x = x, y = y, persistence = 0.7, seed0 = map_seed, seed1 = 2000, octaves = 3, input_scale = 1/20}"
+  },
+  {
+    type = "noise-expression",
+    name = "secondary_wobble_y", -- only add to input X or Y
+    expression = "multioctave_noise{x = x, y = y, persistence = 0.7, seed0 = map_seed, seed1 = 3000, octaves = 3, input_scale = 1/20}"
+  },
+  {
+    type = "noise-expression",
+    name = "secondary_wobble_small_x", -- only add to input X or Y
+    expression = "multioctave_noise{x = x, y = y, persistence = 0.7, seed0 = map_seed, seed1 = 2000, octaves = 2, input_scale = 1/6}"
+  },
+  {
+    type = "noise-expression",
+    name = "secondary_wobble_small_y", -- only add to input X or Y
+    expression = "multioctave_noise{x = x, y = y, persistence = 0.7, seed0 = map_seed, seed1 = 3000, octaves = 2, input_scale = 1/6}"
+  },
+  {
+    type = "noise-function",
+    name = "secondary_simple_spot",
+    parameters = {"seed1", "radius", "spacing", "favorability"},
+    expression = "spot_noise{\z
+      x = x + secondary_wobble_small_x * 0.5 * radius,\z
+      y = y + secondary_wobble_small_y * 0.5 * radius,\z
+      seed0 = map_seed,\z
+      seed1 = seed1,\z
+      skip_span = 1,\z
+      skip_offset = 1,\z
+      region_size = spacing * 5,\z
+      density_expression = favorability,\z
+      spot_favorability_expression = favorability,\z
+      candidate_spot_count = 22,\z
+      suggested_minimum_candidate_point_spacing = spacing,\z
+      spot_quantity_expression = radius * radius,\z
+      spot_radius_expression = radius,\z
+      hard_region_target_quantity = 0,\z
+      basement_value = -1,\z
+      maximum_spot_basement_radius = radius * 2\z
+    }"
+  },
+
+
+
+
+  {
+    type = "noise-expression",
+    name = "secondary_stone_richness",
+    expression = "4000 * max(starting, secondary_simple_spot(1000, 6 * size ^ 0.5, 80 / frequency ^ 0.5, cubium_lowland_biome_noise) * max(cubium_lowland_biome_noise, cubium_aux)) * richness / size",
+    local_expressions =
+    {
+      richness = "control:gleba_stone:richness",
+      frequency = "control:gleba_stone:frequency",
+      size = "control:gleba_stone:size",
+      starting = "starting_spot_at_angle{ angle = cubium_starting_angle + 85 * cubium_starting_direction,\z
+                                          distance = 80 * cubium_starting_area_multiplier,\z
+                                          radius = 7 * size ^ 0.5,\z
+                                          x_distortion = secondary_wobble_x * 8,\z
+                                          y_distortion = secondary_wobble_x * 8}"
+    }
+  },
+  --]]
 
   -- Demolishers
   --[[

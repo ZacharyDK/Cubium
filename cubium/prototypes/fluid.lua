@@ -8,7 +8,7 @@ data:extend(
     default_temperature = 21,
     max_temperature = 200,
     heat_capacity = "4.184kJ",
-    base_color = {0.22, 0.1, 0.9},--TODO
+    base_color = {30/256,10/256,30/256},--TODO
     flow_color = {0.22, 0.4, 1.35},
     auto_barrel = true,
    },
@@ -20,8 +20,8 @@ data:extend(
     default_temperature = 21,
     max_temperature = 200,
     heat_capacity = "4.184kJ",
-    base_color = {0.22, 0.1, 0.9},--TODO
-    flow_color = {0.22, 0.4, 1.35},
+    base_color = {0, 0, 0},
+    flow_color = {0.5, 0.5, 0.5},
     auto_barrel = true,
    },
    {
@@ -32,8 +32,8 @@ data:extend(
     default_temperature = 21,
     max_temperature = 200,
     heat_capacity = "4.184kJ",
-    base_color = {0.22, 0.1, 0.9},--TODO
-    flow_color = {0.22, 0.4, 1.35},
+    base_color = {1, 0.13, 0},
+    flow_color = {1.4, 0.6, 0.3},
     auto_barrel = true,
    },
    {
@@ -45,8 +45,8 @@ data:extend(
     default_temperature = 1500,
     max_temperature = 2000,
     heat_capacity = "1kJ",
-    base_color = {1, 0.4, 0.1}, --TODO
-    flow_color = {0.3, 0.1, 0},
+    base_color = {0.1, 0.4, 1}, 
+    flow_color = {0, 0.1, 0.3},
     auto_barrel = false
    },
    {
@@ -57,8 +57,8 @@ data:extend(
     default_temperature = 21,
     max_temperature = 200,
     heat_capacity = "4.184kJ",
-    base_color = {0.22, 0.1, 0.9},--TODO
-    flow_color = {0.22, 0.4, 1.35},
+    base_color = {0.1, 0.4, 1}, 
+    flow_color = {0, 0.1, 0.3},
     auto_barrel = true,
    },
    {
@@ -69,8 +69,8 @@ data:extend(
     default_temperature = 21,
     max_temperature = 200,
     heat_capacity = "4.184kJ",
-    base_color = {0.22, 0.1, 0.9},--TODO
-    flow_color = {0.22, 0.4, 1.35},
+    base_color = {0.1, 1, 0.4}, 
+    flow_color = {0, 0.3, 0.1},
     auto_barrel = true,
    },
    {
@@ -81,8 +81,8 @@ data:extend(
     default_temperature = 21,
     max_temperature = 200,
     heat_capacity = "4.184kJ",
-    base_color = {0.22, 0.1, 0.9},--TODO
-    flow_color = {0.22, 0.4, 1.35},
+    base_color = {0.5, 0.13, 0},
+    flow_color = {0.7, 0.2, 0.2},
     auto_barrel = true,
    },
    {
@@ -93,8 +93,8 @@ data:extend(
     default_temperature = 21,
     max_temperature = 200,
     heat_capacity = "4.184kJ",
-    base_color = {0.22, 0.1, 0.9},--TODO
-    flow_color = {0.22, 0.4, 1.35},
+    base_color = {0.57, 0.33, 0},
+    flow_color = {1, 0.73, 0.07},
     auto_barrel = true,
    },
    {
@@ -105,8 +105,8 @@ data:extend(
     default_temperature = 21,
     max_temperature = 200,
     heat_capacity = "4.184kJ",
-    base_color = {0.22, 0.1, 0.9},--TODO
-    flow_color = {0.22, 0.4, 1.35},
+    base_color = {1, 0.4, 1}, 
+    flow_color = {0.3, 0.1, 0.3},
     auto_barrel = true,
    },
    {
@@ -117,8 +117,8 @@ data:extend(
       default_temperature = 21,
       max_temperature = 200,
       heat_capacity = "4.184kJ",
-      base_color = {0.22, 0.1, 0.9},--TODO
-      flow_color = {0.22, 0.4, 1.35},
+      base_color = {0.5, 0.13, 0},
+      flow_color = {0.85, 0.6, 0.3},
       auto_barrel = true,
    },
 
