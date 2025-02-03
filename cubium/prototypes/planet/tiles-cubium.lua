@@ -511,7 +511,7 @@ data:extend
         [4] = { probability = 0.1, weights = {0.018, 0.020, 0.015, 0.025, 0.015, 0.020, 0.025, 0.015, 0.025, 0.025, 0.010, 0.025, 0.020, 0.025, 0.025, 0.010 }, },
       }
     ),
-    allowed_neighbors={"lava-hot"},
+    allowed_neighbors={"cubium-lava-hot"},
     transitions = {lava_to_out_of_map_transition},
     transitions_between_transitions = data.raw.tile["water"].transitions_between_transitions,
     walking_sound = data.raw.tile["water"].walking_sound,
@@ -572,7 +572,7 @@ data:extend
         },
       empty_transitions=true,
     },
-    allowed_neighbors={"lava"},
+    allowed_neighbors={"cubium-lava"},
     transitions = {lava_to_out_of_map_transition},
     transitions_between_transitions = data.raw.tile["water"].transitions_between_transitions,
     walking_sound = data.raw.tile["water"].walking_sound,
