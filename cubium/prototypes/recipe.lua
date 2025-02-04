@@ -26,6 +26,7 @@ data:extend(
         allow_quality = true,
         auto_recycle = false,
         main_product ="ultradense-substrate",
+        maximum_productivity = 5,
     },
     {
         type ="recipe",
@@ -47,6 +48,8 @@ data:extend(
         allow_productivity = true,
         allow_quality = true,
         main_product ="energized-microcube",
+        result_is_always_fresh = true,
+        maximum_productivity = 5,
     },
     {
         type = "recipe",
@@ -80,7 +83,10 @@ data:extend(
           {type = "item", name = "copper-ore",            amount = 1, probability = 0.20, show_details_in_recipe_tooltip = false},
 
 
-        }
+        },
+        result_is_always_fresh = true,
+        main_product = "ice",
+        maximum_productivity = 5,
     },
     {
         type = "recipe",
@@ -89,12 +95,12 @@ data:extend(
         {
           {
             icon = "__cubium__/graphics/icons/cube-jelly.png",
-            scale = 1
+            scale = 0.9
           },
           {
             icon ="__base__/graphics/icons/fluid/steam.png",
             scale = 0.6,
-            shift = util.by_pixel(64, 64),
+            shift = util.by_pixel(140, 140),
           }
         },
         category = "chemistry",
@@ -106,7 +112,10 @@ data:extend(
         results =
         {
           {type = "fluid", name = "steam",                amount = 1, temperature = 500},
-        }
+        },
+        result_is_always_fresh = true,
+        main_product = "steam",
+        maximum_productivity = 5,
     },
     {
         type = "recipe",
@@ -115,12 +124,12 @@ data:extend(
         {
           {
             icon = "__cubium__/graphics/icons/cube-jelly.png",
-            scale = 1
+            scale = 0.9
           },
           {
             icon = "__base__/graphics/icons/solid-fuel.png",
             scale = 0.6,
-            shift = util.by_pixel(64, 64),
+            shift = util.by_pixel(140, 140),
           }
         },
         category = "chemistry",
@@ -139,7 +148,10 @@ data:extend(
           secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000}, -- #c4c4c4ff
           tertiary = {r = 109/256, g = 117/256, b =210/256, a = 1.000}, --rgb(109, 117, 210)
           quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}, -- #000000ff
-        }
+        },
+        result_is_always_fresh = true,
+        main_product = "solid-fuel",
+        maximum_productivity = 5,
     },
     {
         type = "recipe",
@@ -155,7 +167,10 @@ data:extend(
         {
           {type = "item", name = "cube-jelly",                amount = 1,  percent_spoiled = 0, show_details_in_recipe_tooltip = false},
           {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
-        }
+        },
+        result_is_always_fresh = true,
+        main_product = "cube-jelly",
+        maximum_productivity = 5,
     },
     {
         type = "recipe",
@@ -172,7 +187,10 @@ data:extend(
           {type = "item", name = "cube-jelly",                amount = 1, percent_spoiled = 0},
           {type = "item", name = "energized-microcube", probability = 0.6,               amount = 1,ignored_by_productivity = 9999},
           {type = "item", name = "dormant-microcube", probability = 0.4,               amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0},
-        }
+        },
+        result_is_always_fresh = true,
+        main_product = "cube-jelly",
+        maximum_productivity = 5,
     },
     {
         type = "recipe",
@@ -181,19 +199,19 @@ data:extend(
         {
             {
               icon = "__cubium__/graphics/icons/cube-jelly.png",
-              scale = 1
+              scale = 0.9
             },
             {
               icon = "__cubium__/graphics/icons/cube-jelly.png",
               scale = 0.6,
-              shift = util.by_pixel(64, 64),
+              shift = util.by_pixel(140, 140),
             }
         },
         category = "advanced-crafting",
 
         enabled = false,
         auto_recycle = false,
-        energy_required = 4,
+        energy_required = 3,
         ingredients = 
         {
             {type = "item", name = "energized-microcube", amount = 1},
@@ -201,10 +219,13 @@ data:extend(
         },
         results =
         {
-          {type = "item", name = "cube-jelly",                amount = 15,  percent_spoiled = 0, ignored_by_productivity = 10, ignored_by_stats = 10},
+          {type = "item", name = "cube-jelly",                amount = 17,  percent_spoiled = 0, ignored_by_productivity = 10, ignored_by_stats = 10},
           {type = "item", name = "energized-microcube", probability = 0.7,               amount = 1,ignored_by_productivity = 9999},
           {type = "item", name = "dormant-microcube", probability = 0.3,               amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0},
-        }
+        },
+        result_is_always_fresh = true,
+        main_product = "cube-jelly",
+        maximum_productivity = 5,
     },
     {
         type = "recipe",
@@ -213,19 +234,19 @@ data:extend(
         {
             {
               icon = "__cubium__/graphics/icons/cube-jelly.png",
-              scale = 1
+              scale = 0.9
             },
             {
               icon = "__space-age__/graphics/icons/carbon.png",
               scale = 0.6,
-              shift = util.by_pixel(64, 64),
+              shift = util.by_pixel(140, 140),
             }
         },
         category = "advanced-crafting",
 
         enabled = false,
         auto_recycle = false,
-        energy_required = 20,
+        energy_required = 10,
         ingredients = 
         {
             {type = "item", name = "energized-microcube", amount = 1},
@@ -234,10 +255,13 @@ data:extend(
         },
         results =
         {
-          {type = "item", name = "cube-jelly",                amount = 70,  percent_spoiled = 0, ignored_by_productivity = 20, ignored_by_stats = 20},
+          {type = "item", name = "cube-jelly",                amount = 75,  percent_spoiled = 0, ignored_by_productivity = 20, ignored_by_stats = 20},
           {type = "item", name = "energized-microcube", probability = 0.75,               amount = 1,ignored_by_productivity = 9999},
           {type = "item", name = "dormant-microcube", probability = 0.25,               amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0},
-        }
+        },
+        result_is_always_fresh = true,
+        main_product = "cube-jelly",
+        maximum_productivity = 5,
     },
     {
         type = "recipe",
@@ -246,12 +270,12 @@ data:extend(
         {
             {
               icon = "__cubium__/graphics/icons/matter-cube.png",
-              scale = 1
+              scale = 0.9
             },
             {
               icon = "__cubium__/graphics/icons/matter-cube-dormant.png",
               scale = 0.6,
-              shift = util.by_pixel(64, 64),
+              shift = util.by_pixel(140, 140),
             }
           },
         category = "advanced-crafting",
@@ -269,7 +293,10 @@ data:extend(
         results =
         {
           {type = "item", name = "energized-microcube",amount = 1,ignored_by_productivity = 9999, percent_spoiled = 0},
-        }
+        },
+        result_is_always_fresh = true,
+        main_product = "energized-microcube",
+        maximum_productivity = 5,
     },
     {
       type = "recipe",
@@ -278,12 +305,12 @@ data:extend(
       {
           {
             icon = "__base__/graphics/icons/plastic-bar.png",
-            scale = 1
+            scale = 0.9
           },
           {
             icon = "__cubium__/graphics/icons/matter-cube-dormant.png",
             scale = 0.6,
-            shift = util.by_pixel(64, 64),
+            shift = util.by_pixel(140, 140),
           }
       },
       category = "advanced-crafting",
@@ -302,7 +329,10 @@ data:extend(
       {
         {type = "item", name = "dormant-microcube",amount = 1,ignored_by_productivity = 9999, percent_spoiled = 0},
         {type = "item", name = "plastic-bar", amount = 75}
-      }
+      },
+      result_is_always_fresh = true,
+      main_product = "plastic-bar",
+      maximum_productivity = 5,
     },
 
     {
@@ -312,12 +342,12 @@ data:extend(
       {
           {
             icon = "__cubium__/graphics/icons/cube-jelly.png",
-            scale = 1
+            scale = 0.9
           },
           {
             icon = "__base__/graphics/icons/iron-ore.png",
             scale = 0.6,
-            shift = util.by_pixel(64, 64),
+            shift = util.by_pixel(140, 140),
           }
       },
       category = "advanced-crafting",
@@ -334,7 +364,10 @@ data:extend(
       {
         {type = "item", name = "iron-ore", amount = 4, probability = 0.60},
         {type = "item", name = "copper-ore", amount = 4,probability = 0.40},
-      }
+      },
+      result_is_always_fresh = true,
+      main_product = "iron-ore",
+      maximum_productivity = 5,
     },
 
     {
@@ -344,19 +377,19 @@ data:extend(
       {
           {
             icon = "__cubium__/graphics/icons/cube-jelly.png",
-            scale = 1
+            scale = 0.9
           },
           {
             icon = "__base__/graphics/icons/iron-plate.png",
             scale = 0.6,
-            shift = util.by_pixel(64, 64),
+            shift = util.by_pixel(140, 140),
           }
       },
       category = "advanced-crafting",
 
       enabled = false,
       auto_recycle = false,
-      energy_required = 17,
+      energy_required = 10,
       allow_productivity = true,
       ingredients = 
       {
@@ -365,9 +398,12 @@ data:extend(
       },
       results =
       {
-        {type = "item", name = "iron-ore", amount = 28},
+        {type = "item", name = "iron-ore", amount = 37},
         {type = "item", name = "dormant-microcube",amount = 1,ignored_by_productivity = 9999, percent_spoiled = 0},
-      }
+      },
+      result_is_always_fresh = true,
+      main_product = "iron-ore",
+      maximum_productivity = 5,
     },
     {
       type = "recipe",
@@ -376,19 +412,19 @@ data:extend(
       {
           {
             icon = "__cubium__/graphics/icons/cube-jelly.png",
-            scale = 1
+            scale = 0.9
           },
           {
             icon = "__base__/graphics/icons/copper-plate.png",
             scale = 0.6,
-            shift = util.by_pixel(64, 64),
+            shift = util.by_pixel(140, 140),
           }
       },
       category = "advanced-crafting",
 
       enabled = false,
       auto_recycle = false,
-      energy_required = 16,
+      energy_required = 9,
       allow_productivity = true,
       ingredients = 
       {
@@ -397,9 +433,12 @@ data:extend(
       },
       results =
       {
-        {type = "item", name = "copper-ore", amount = 28},
+        {type = "item", name = "copper-ore", amount = 37},
         {type = "item", name = "dormant-microcube",amount = 1,ignored_by_productivity = 9999, percent_spoiled = 0},
-      }
+      },
+      result_is_always_fresh = true,
+      main_product = "copper-ore",
+      maximum_productivity = 5,
     },
 
 
@@ -411,12 +450,12 @@ data:extend(
         {
             {
               icon = "__cubium__/graphics/icons/matter-cube.png",
-              scale = 1
+              scale = 0.9
             },
             {
               icon = "__cubium__/graphics/icons/broken-cube.png",
               scale = 0.6,
-              shift = util.by_pixel(64, 64),
+              shift = util.by_pixel(140, 140),
             }
         },
         category = "advanced-crafting",
@@ -432,7 +471,10 @@ data:extend(
         results =
         {
           {type = "item", name = "energized-microcube", amount = 1,ignored_by_productivity = 9999, percent_spoiled = 0},
-        }
+        },
+        result_is_always_fresh = true,
+        main_product = "energized-microcube",
+        maximum_productivity = 5,
     },
     {
       type = "recipe",
@@ -441,7 +483,7 @@ data:extend(
       {
           {
             icon = "__cubium__/graphics/icons/broken-cube-yellow.png",
-            scale = 1
+            scale = 0.9
           },
       },
       category = "advanced-crafting",
@@ -458,7 +500,9 @@ data:extend(
       {
         {type = "item", name = "energized-shards", amount_min = 100, amount_max = 200},
         {type = "item", name = "inverted-shards", probability = 0.2, amount_min = 15, amount_max = 23},
-      }
+      },
+      main_product = "inverted-shards",
+      maximum_productivity = 5,
     },
     {
       type = "recipe",
@@ -467,7 +511,7 @@ data:extend(
       {
           {
             icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
-            scale = 1
+            scale = 0.9
           },
       },
       category = "advanced-crafting",
@@ -483,7 +527,10 @@ data:extend(
       results =
       {
         {type = "item", name = "inverted-microcube", amount = 1,ignored_by_productivity = 9999},
-      }
+      },
+      result_is_always_fresh = true,
+      main_product = "inverted-microcube",
+      maximum_productivity = 5,
     },
     {
       type = "recipe",
@@ -492,19 +539,19 @@ data:extend(
       {
           {
             icon = "__cubium__/graphics/icons/matter-cube.png",
-            scale = 1
+            scale = 0.9
           },
           {
-            icon = "__cubium__/graphics/icons/matter-cube.png",
+            icon = "__cubium__/graphics/icons/matter-cube-dormant.png",
             scale = 0.6,
-            shift = util.by_pixel(64, 64),
+            shift = util.by_pixel(140, 140),
           }
       },
       category = "advanced-crafting",
 
       enabled = false,
       auto_recycle = false,
-      energy_required = 120,
+      energy_required = 80,
       allow_productivity = false,
       ingredients = 
       {
@@ -514,7 +561,10 @@ data:extend(
       {
         {type = "item", name = "dormant-microcube", amount = 49,ignored_by_productivity = 9999, percent_spoiled = 0},
         {type = "item", name = "energized-microcube", amount = 1,ignored_by_productivity = 9999, percent_spoiled = 0},
-      }
+      },
+      result_is_always_fresh = true,
+      main_product = "energized-microcube",
+      maximum_productivity = 5,
     },
     --Cube inversion recipes start here.
     {
@@ -524,12 +574,12 @@ data:extend(
       {
           {
             icon = "__space-age__/graphics/icons/calcite.png",
-            scale = 1
+            scale = 0.9
           },
           {
             icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
             scale = 0.6,
-            shift = util.by_pixel(64, 64),
+            shift = util.by_pixel(140, 140),
           }
       },
       category = "chemistry-or-cryogenics",
@@ -557,6 +607,9 @@ data:extend(
         tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, -- #b9d070ff
         quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, -- #efc230ff
       },
+      result_is_always_fresh = true,
+      main_product = "calcite",
+      maximum_productivity = 5,
     },
     {
       type = "recipe",
@@ -565,12 +618,12 @@ data:extend(
       {
           {
             icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
-            scale = 1
+            scale = 0.9
           },
           {
             icon = "__base__/graphics/icons/fluid/sulfuric-acid.png",
             scale = 0.6,
-            shift = util.by_pixel(64, 64),
+            shift = util.by_pixel(140, 140),
           }
       },
       category = "chemistry-or-cryogenics",
@@ -599,6 +652,9 @@ data:extend(
         tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, -- #b9d070ff
         quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, -- #efc230ff
       },
+      result_is_always_fresh = true,
+      main_product = "inverted-microcube",
+      maximum_productivity = 5,
     },
 
     {
@@ -608,12 +664,12 @@ data:extend(
       {
           {
             icon = "__base__/graphics/icons/fluid/petroleum-gas.png",
-            scale = 1
+            scale = 0.9
           },
           {
             icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
             scale = 0.6,
-            shift = util.by_pixel(64, 64),
+            shift = util.by_pixel(140, 140),
           }
       },
       category = "chemistry-or-cryogenics",
@@ -640,7 +696,10 @@ data:extend(
         secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000}, -- #c4c4c4ff
         tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000}, -- #c3a9c2ff
         quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}, -- #000000ff
-      }
+      },
+      result_is_always_fresh = true,
+      main_product = "petroleum-gas",
+      maximum_productivity = 5,
     },
     {
       type = "recipe",
@@ -649,12 +708,12 @@ data:extend(
       {
           {
             icon = "__base__/graphics/icons/engine-unit.png",
-            scale = 1
+            scale = 0.9
           },
           {
             icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
             scale = 0.6,
-            shift = util.by_pixel(64, 64),
+            shift = util.by_pixel(140, 140),
           }
       },
       category = "advanced-crafting",
@@ -673,7 +732,10 @@ data:extend(
       {
         {type = "item", name = "inverted-dormant-microcube", amount = 1,ignored_by_productivity = 9999},
         {type = "item", name = "engine-unit", amount = 60},
-      }
+      },
+      result_is_always_fresh = true,
+      main_product = "engine-unit",
+      maximum_productivity = 5,
     },
     {
       type = "recipe",
@@ -682,12 +744,12 @@ data:extend(
       {
           {
             icon = "__base__/graphics/icons/fluid/light-oil.png",
-            scale = 1
+            scale = 0.9
           },
           {
             icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
             scale = 0.6,
-            shift = util.by_pixel(64, 64),
+            shift = util.by_pixel(140, 140),
           }
       },
       category = "chemistry-or-cryogenics",
@@ -713,7 +775,10 @@ data:extend(
         secondary = {r = 0.762, g = 0.551, b = 0.844, a = 1.000}, -- #c28cd7ff
         tertiary = {r = 0.895, g = 0.773, b = 0.596, a = 1.000}, -- #e4c597ff
         quaternary = {r = 1.000, g = 0.734, b = 0.290, a = 1.000}, -- #ffbb49ff
-      }
+      },
+      result_is_always_fresh = true,
+      main_product = "light-oil",
+      maximum_productivity = 5,
     },
 
     --Emotional refining, dream recipes
@@ -739,6 +804,7 @@ data:extend(
       allow_decomposition = false,
       auto_recycle = false,
       main_product ="small-electric-pole",
+      maximum_productivity = 5,
     },
     {
       type ="recipe",
@@ -762,6 +828,8 @@ data:extend(
       allow_quality = false,
       allow_decomposition = false,
       auto_recycle = false,
+      main_product = "liquid-dream",
+      maximum_productivity = 5,
     },
     {
       type ="recipe",
@@ -784,6 +852,8 @@ data:extend(
       allow_quality = false,
       allow_decomposition = false,
       auto_recycle = false,
+      main_product = "dream-concentrate",
+      maximum_productivity = 5,
     },
     {
       type ="recipe",
@@ -807,6 +877,8 @@ data:extend(
       allow_quality = false,
       allow_decomposition = false,
       auto_recycle = false,
+      main_product = "emotional-tar",
+      maximum_productivity = 5,
     },
     {
       type ="recipe",
@@ -832,6 +904,8 @@ data:extend(
       allow_quality = false,
       allow_decomposition = false,
       auto_recycle = false,
+      main_product = "liquid-hope",
+      maximum_productivity = 5,
     },
     {
       type ="recipe",
@@ -856,6 +930,8 @@ data:extend(
       allow_quality = false,
       allow_decomposition = false,
       auto_recycle = false,
+      main_product = "liquid-fear",
+      maximum_productivity = 5,
     },
     {
       type ="recipe",
@@ -881,6 +957,9 @@ data:extend(
       allow_quality = false,
       allow_decomposition = false,
       auto_recycle = false,
+      result_is_always_fresh = true,
+      main_product = "liquid-anger",
+      maximum_productivity = 5,
     },
     {
       type ="recipe",
@@ -905,6 +984,9 @@ data:extend(
       allow_quality = false,
       allow_decomposition = false,
       auto_recycle = false,
+      result_is_always_fresh = true,
+      main_product = "liquid-courage",
+      maximum_productivity = 5,
     },
     {
       type ="recipe",
@@ -929,6 +1011,8 @@ data:extend(
       allow_quality = false,
       allow_decomposition = false,
       auto_recycle = false,
+      main_product = "steam",
+      maximum_productivity = 5,
     },
     {
       type ="recipe",
@@ -938,12 +1022,12 @@ data:extend(
       {
           {
             icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
-            scale = 1
+            scale = 0.9
           },
           {
             icon ="__base__/graphics/icons/fluid/steam.png",
             scale = 0.6,
-            shift = util.by_pixel(64, 64),
+            shift = util.by_pixel(140, 140),
           }
       },
       enabled = false,
@@ -966,6 +1050,9 @@ data:extend(
       allow_quality = false,
       allow_decomposition = false,
       auto_recycle = false,
+      result_is_always_fresh = true,
+      main_product = "inverted-microcube",
+      maximum_productivity = 5,
     },
     --Rocket silo recipes. LDS, Concrete, blue circuits, electric-engine-unit.
     {
@@ -975,12 +1062,12 @@ data:extend(
       {
           {
             icon = "__base__/graphics/icons/electric-engine-unit.png",
-            scale = 1
+            scale = 0.9
           },
           {
             icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
             scale = 0.6,
-            shift = util.by_pixel(64, 64),
+            shift = util.by_pixel(140, 140),
           }
       },
       category = "advanced-crafting",
@@ -998,8 +1085,11 @@ data:extend(
       results =
       {
         {type = "item", name = "inverted-dormant-microcube", amount = 1,ignored_by_productivity = 9999},
-        {type = "item", name = "engine-unit", amount = 100},
-      }
+        {type = "item", name = "electric-engine-unit", amount = 100},
+      },
+      result_is_always_fresh = true,
+      main_product = "electric-engine-unit",
+      maximum_productivity = 5,
     },
     {
       type = "recipe",
@@ -1008,12 +1098,12 @@ data:extend(
       {
           {
             icon = "__base__/graphics/icons/concrete.png",
-            scale = 1
+            scale = 0.9
           },
           {
             icon = "__cubium__/graphics/icons/dream.png",
             scale = 0.6,
-            shift = util.by_pixel(64, 64),
+            shift = util.by_pixel(140, 140),
           }
       },
       category = "advanced-crafting",
@@ -1033,7 +1123,9 @@ data:extend(
       {
         {type = "item", name = "inverted-dormant-microcube", amount = 1,ignored_by_productivity = 9999},
         {type = "item", name = "concrete", amount = 400},
-      }
+      },
+      main_product = "concrete",
+      maximum_productivity = 5,
     },
     {
       type = "recipe",
@@ -1042,12 +1134,12 @@ data:extend(
       {
           {
             icon = "__base__/graphics/icons/refined-concrete.png",
-            scale = 1
+            scale = 0.9
           },
           {
             icon = "__cubium__/graphics/icons/dream.png",
             scale = 0.6,
-            shift = util.by_pixel(64, 64),
+            shift = util.by_pixel(140, 140),
           }
       },
       category = "advanced-crafting",
@@ -1067,7 +1159,10 @@ data:extend(
       {
         {type = "item", name = "inverted-dormant-microcube", amount = 1,ignored_by_productivity = 9999},
         {type = "item", name = "refined-concrete", amount = 250},
-      }
+      },
+      result_is_always_fresh = true,
+      main_product = "refined-concrete",
+      maximum_productivity = 5,
     },
     {
       type = "recipe",
@@ -1076,12 +1171,12 @@ data:extend(
       {
           {
             icon = "__base__/graphics/icons/processing-unit.png",
-            scale = 1
+            scale = 0.9
           },
           {
             icon = "__cubium__/graphics/icons/dream.png",
             scale = 0.6,
-            shift = util.by_pixel(64, 64),
+            shift = util.by_pixel(140, 140),
           }
       },
       category = "electronics",
@@ -1103,7 +1198,10 @@ data:extend(
       {
         {type = "item", name = "inverted-dormant-microcube", amount = 1,ignored_by_productivity = 9999},
         {type = "item", name = "processing-unit", amount = 100},
-      }
+      },
+      result_is_always_fresh = true,
+      main_product = "processing-unit",
+      maximum_productivity = 5,
     },
     {
       type = "recipe",
@@ -1112,12 +1210,12 @@ data:extend(
       {
           {
             icon = "__base__/graphics/icons/advanced-circuit.png",
-            scale = 1
+            scale = 0.9
           },
           {
             icon = "__cubium__/graphics/icons/dream.png",
             scale = 0.6,
-            shift = util.by_pixel(64, 64),
+            shift = util.by_pixel(140, 140),
           }
       },
       category = "electronics",
@@ -1138,7 +1236,10 @@ data:extend(
       {
         {type = "item", name = "inverted-dormant-microcube", amount = 1,ignored_by_productivity = 9999},
         {type = "item", name = "advanced-circuit", amount = 50},
-      }
+      },
+      result_is_always_fresh = true,
+      main_product = "advanced-circuit",
+      maximum_productivity = 5,
     },
     --inverted Cube jelly
     {
@@ -1176,7 +1277,10 @@ data:extend(
         {type = "item", name = "destabilized-cube-matter",            amount = 3, probability = 0.10, show_details_in_recipe_tooltip = false},
 
 
-      }
+      },
+      result_is_always_fresh = true,
+      main_product = "sulfur",
+      maximum_productivity = 5,
     },
     {
       type = "recipe",
@@ -1185,7 +1289,7 @@ data:extend(
       {
           {
             icon = "__cubium__/graphics/icons/cube-jelly-yellow.png",
-            scale = 1
+            scale = 0.9
           },
       },
       category = "advanced-crafting",
@@ -1200,10 +1304,13 @@ data:extend(
       },
       results =
       {
-        {type = "item", name = "cube-jelly",                amount = 10,  percent_spoiled = 0},
+        {type = "item", name = "inverted-cube-jelly",                amount = 10,  percent_spoiled = 0},
 
         {type = "item", name = "inverted-dormant-microcube",            amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0},
-      }
+      },
+      result_is_always_fresh = true,
+      main_product = "inverted-cube-jelly",
+      maximum_productivity = 5,
     },
     --Anger refining
 

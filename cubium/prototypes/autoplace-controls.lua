@@ -1,6 +1,13 @@
 data:extend(
 {
-
+  {
+    type = "autoplace-control",
+    name = "cubium_coal",
+    localised_name = {"", "[entity=coal] ", {"entity-name.coal"}},
+    richness = true,
+    order = "b-c",
+    category = "resource"
+  },
   {
     type = "autoplace-control",
     name = "cubium_stone",

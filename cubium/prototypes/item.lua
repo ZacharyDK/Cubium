@@ -25,7 +25,7 @@ data:extend(
         stack_size = 10,
         default_import_location = "cubium",
         weight = 10*kg,
-        spoil_ticks = 15 * minute,
+        spoil_ticks = 30 * minute,
         spoil_result = "dormant-microcube",
     },
     {

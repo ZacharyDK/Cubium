@@ -60,7 +60,7 @@ data:extend{
                                     seed1 = seed1 + 12243,\z
                                     octaves = octaves,\z
                                     persistence = 0.6,\z
-                                    input_scale = 1 / 50 / scale,\z
+                                    input_scale = 0.9 / 50 / scale,\z
                                     output_scale = magnitude}"
   },
   {
@@ -71,13 +71,13 @@ data:extend{
                                   y = y,\z
                                   seed0 = map_seed,\z
                                   seed1 = 26435,\z
-                                  input_scale = 1 / 50 / scale,\z
+                                  input_scale = 0.9 / 50 / scale,\z
                                   output_scale = magnitude1}\z
                       - basis_noise{x = x,\z
                                     y = y,\z
                                     seed0 = map_seed,\z
                                     seed1 = 34231 + seed,\z
-                                    input_scale = 1 / 50 / scale2,\z
+                                    input_scale = 0.9 / 50 / scale2,\z
                                     output_scale = magnitude2})"
   },
   {
@@ -397,22 +397,22 @@ data:extend{
   {
     type = "noise-expression",
     name = "cubium_wobble_x",
-    expression = "cubium_detail_noise{seed1 = 10, scale = 1/8, octaves = 2, magnitude = 4}"
+    expression = "cubium_detail_noise{seed1 = 10, scale = 0.9/8, octaves = 2, magnitude = 4}"
   },
   {
     type = "noise-expression",
     name = "cubium_wobble_y",
-    expression = "cubium_detail_noise{seed1 = 1010, scale = 1/8, octaves = 2, magnitude = 4}"
+    expression = "cubium_detail_noise{seed1 = 1010, scale = 0.9/8, octaves = 2, magnitude = 4}"
   },
   {
     type = "noise-expression",
     name = "cubium_wobble_large_x",
-    expression = "cubium_detail_noise{seed1 = 20, scale = 1/2, octaves = 2, magnitude = 50}"
+    expression = "cubium_detail_noise{seed1 = 20, scale = 0.9/2, octaves = 2, magnitude = 50}"
   },
   {
     type = "noise-expression",
     name = "cubium_wobble_large_y",
-    expression = "cubium_detail_noise{seed1 = 1020, scale = 1/2, octaves = 2, magnitude = 50}"
+    expression = "cubium_detail_noise{seed1 = 1020, scale = 0.9/2, octaves = 2, magnitude = 50}"
   },
   {
     type = "noise-expression",
@@ -432,7 +432,7 @@ data:extend{
                               y = y,\z
                               seed0 = map_seed,\z
                               seed1 = 13423,\z
-                              input_scale = 1 / 500,\z
+                              input_scale = 0.9 / 500,\z
                               output_scale = 250}"
   },
   {
@@ -476,13 +476,13 @@ data:extend{
                                                 seed0 = map_seed,\z
                                                 seed1 = 12643,\z
                                                 input_scale = cubium_scale_multiplier / 50 / scale,\z
-                                                output_scale = 150},\z
+                                                output_scale = 0.950},\z
                                     basis_noise{x = x,\z
                                                 y = y,\z
                                                 seed0 = map_seed,\z
                                                 seed1 = 12643,\z
                                                 input_scale = cubium_scale_multiplier / 50 / scale,\z
-                                                output_scale = 150})",
+                                                output_scale = 0.950})",
     local_expressions = {scale = 3}
   },
   {
@@ -587,7 +587,7 @@ data:extend{
                                           y_distortion = 0.5 * cubium_resource_wobble_y}"
   },
   --]]
-  --[[
+
   {
     type = "noise-expression",
     name = "cubium_starting_coal",
@@ -597,7 +597,7 @@ data:extend{
                                           x_distortion = 0.5 * cubium_resource_wobble_x,\z
                                           y_distortion = 0.5 * cubium_resource_wobble_y}"
   },
-  --]]
+
   {
     type = "noise-expression",
     name = "cubium_starting_stone",
@@ -764,7 +764,7 @@ data:extend{
                   * control:tungsten_ore:richness / cubium_tungsten_ore_size"
   },
   --]]
-  --[[
+  
   {
     type = "noise-expression",
     name = "cubium_coal_size",
@@ -793,7 +793,7 @@ data:extend{
                   * 18000 * cubium_starting_area_multiplier\z
                   * control:cubium_coal:richness / cubium_coal_size"
   },
-  --]]
+
   {
     type = "noise-expression",
     name = "cubium_stone_size",
@@ -843,7 +843,7 @@ data:extend{
     type = "noise-expression",
     name = "cubium_sulfuric_acid_patches",
     -- small wavelength noise (5 tiles-ish) to make geyser placement patchy but consistent between resources and decoratives
-    expression = "0.8 * abs(multioctave_noise{x = x, y = y, persistence = 0.7, seed0 = map_seed, seed1 = 21000, octaves = 2, input_scale = 1/3})"
+    expression = "0.8 * abs(multioctave_noise{x = x, y = y, persistence = 0.7, seed0 = map_seed, seed1 = 21000, octaves = 2, input_scale = 0.9/3})"
   },
   {
     type = "noise-expression",
@@ -859,9 +859,9 @@ data:extend{
     type = "noise-expression",
     name = "cubium_sulfuric_acid_geyser_richness",
     expression = "(cubium_sulfuric_acid_region > 0) * random_penalty_between(0.5, 1, 1)\z
-                  * 5000 * 40 * cubium_richness_multiplier * cubium_starting_area_multiplier\z
+                  * 25000 * 40 * cubium_richness_multiplier * cubium_starting_area_multiplier\z
                   * control:sulfuric_acid_geyser:richness / cubium_sulfuric_acid_geyser_size"
-  },--80000 --> 10. Barely any. 
+  },
   {
     type = "noise-expression",
     name = "cubium_ore_dist",
@@ -872,7 +872,7 @@ data:extend{
   {
     type = "noise-expression",
     name = "cubium_decorative_knockout", -- small wavelength noise (5 tiles-ish) to make decoratives patchy
-    expression = "multioctave_noise{x = x, y = y, persistence = 0.7, seed0 = map_seed, seed1 = 1300000, octaves = 2, input_scale = 1/3}"
+    expression = "multioctave_noise{x = x, y = y, persistence = 0.7, seed0 = map_seed, seed1 = 1300000, octaves = 2, input_scale = 0.9/3}"
   },
   {
     type = "noise-expression",
@@ -900,22 +900,22 @@ data:extend{
   {
     type = "noise-expression",
     name = "secondary_wobble_x", -- only add to input X or Y
-    expression = "multioctave_noise{x = x, y = y, persistence = 0.7, seed0 = map_seed, seed1 = 2000, octaves = 3, input_scale = 1/20}"
+    expression = "multioctave_noise{x = x, y = y, persistence = 0.7, seed0 = map_seed, seed1 = 2000, octaves = 3, input_scale = 0.9/20}"
   },
   {
     type = "noise-expression",
     name = "secondary_wobble_y", -- only add to input X or Y
-    expression = "multioctave_noise{x = x, y = y, persistence = 0.7, seed0 = map_seed, seed1 = 3000, octaves = 3, input_scale = 1/20}"
+    expression = "multioctave_noise{x = x, y = y, persistence = 0.7, seed0 = map_seed, seed1 = 3000, octaves = 3, input_scale = 0.9/20}"
   },
   {
     type = "noise-expression",
     name = "secondary_wobble_small_x", -- only add to input X or Y
-    expression = "multioctave_noise{x = x, y = y, persistence = 0.7, seed0 = map_seed, seed1 = 2000, octaves = 2, input_scale = 1/6}"
+    expression = "multioctave_noise{x = x, y = y, persistence = 0.7, seed0 = map_seed, seed1 = 2000, octaves = 2, input_scale = 0.9/6}"
   },
   {
     type = "noise-expression",
     name = "secondary_wobble_small_y", -- only add to input X or Y
-    expression = "multioctave_noise{x = x, y = y, persistence = 0.7, seed0 = map_seed, seed1 = 3000, octaves = 2, input_scale = 1/6}"
+    expression = "multioctave_noise{x = x, y = y, persistence = 0.7, seed0 = map_seed, seed1 = 3000, octaves = 2, input_scale = 0.9/6}"
   },
   {
     type = "noise-function",

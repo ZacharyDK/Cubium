@@ -16,12 +16,14 @@ planet_map_gen.cubium = function()
       ["entity:stone:richness"] = "cubium_stone_richness",
       ["entity:sulfuric-acid-geyser:probability"] = "cubium_sulfuric_acid_geyser_probability",
       ["entity:sulfuric-acid-geyser:richness"] = "cubium_sulfuric_acid_geyser_richness",
+      ["entity:coal:probability"] = "cubium_coal_probability",
+      ["entity:coal:richness"] = "cubium_coal_richness",
     },
     cliff_settings =
     {
       name = "cliff-cubium",
       cliff_elevation_interval = 120,
-      cliff_elevation_0 = 70
+      cliff_elevation_0 = 70,
     },
 
     autoplace_controls =
@@ -31,7 +33,7 @@ planet_map_gen.cubium = function()
       ["cubium_volcanism"] = {},
 
     },
-    autoplace_settings = --need to make tile.lua for cubium
+    autoplace_settings = 
     {
       ["tile"] = --TODO, make lowland tile prototype....
       {
@@ -98,6 +100,7 @@ planet_map_gen.cubium = function()
         settings =
         {
           ["stone"] = {},
+          ["coal"] = {},
           ["sulfuric-acid-geyser"] = {},
           --["huge-volcanic-rock"] = {}, --todo define my own
           --["big-volcanic-rock"] = {},
