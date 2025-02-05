@@ -223,6 +223,23 @@ data:extend(
         default_import_location = "cubium",
         weight = 0.1 * kg,
     },
+    {
+      type = "item",
+      name = "dream-fuel",
+      icon = "__cubium__/graphics/icons/dream-fuel.png",
+      fuel_category = "chemical",
+      fuel_value = "12MJ",
+      fuel_acceleration_multiplier = 1.3,
+      fuel_top_speed_multiplier = 4.5,
+      subgroup = "raw-material",
+      order = "b[chemistry]-a[dream-fuel]",
+      inventory_move_sound = item_sounds.solid_fuel_inventory_move,
+      pick_sound = item_sounds.solid_fuel_inventory_pickup,
+      drop_sound = item_sounds.solid_fuel_inventory_move,
+      stack_size = 50,
+      weight = 1 * kg,
+      random_tint_color = item_tints.yellowing_coal
+    },
     --TODO, dream fuel.
     --TODO building icon.
 })

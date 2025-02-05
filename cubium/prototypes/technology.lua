@@ -178,6 +178,10 @@ data:extend({
             type = "unlock-recipe",
             recipe = "light-oil-by-inversion"
           },
+          {
+            type = "unlock-recipe",
+            recipe = "ice-dreams",
+          },
 
 
 
@@ -282,7 +286,27 @@ data:extend({
         {
           type = "unlock-recipe",
           recipe = "jelly-inversion"
-        }, 
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "rocket-fuel-dreams",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "biter-egg-refresh",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "biter-egg-breeding",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "angry-rockets",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "space-cube-recovery",
+        },             
       },
       prerequisites = {"cube-mastery-3"},
       research_trigger =
