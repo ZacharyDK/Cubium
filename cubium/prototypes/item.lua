@@ -238,8 +238,22 @@ data:extend(
       drop_sound = item_sounds.solid_fuel_inventory_move,
       stack_size = 50,
       weight = 1 * kg,
-      random_tint_color = item_tints.yellowing_coal
+      random_tint_color = item_tints.yellowing_coal,
+      default_import_location = "cubium",
     },
-    --TODO, dream fuel.
-    --TODO building icon.
+    {
+      type = "item",
+      name = "cube-smasher",
+      icon = "__cubium__/graphics/entity/quantum-stabilizer/quantum-stabilizer-icon.png",
+      icon_size = 64,
+      subgroup = "production-machine",
+      order = "f[cube-smasher]",
+      inventory_move_sound = item_sounds.fluid_inventory_move,
+      pick_sound = item_sounds.fluid_inventory_pickup,
+      drop_sound = item_sounds.fluid_inventory_move,
+      place_result = "cube-smasher",
+      stack_size = 10,
+      default_import_location = "cubium",
+      weight = 200 * kg
+    },
 })

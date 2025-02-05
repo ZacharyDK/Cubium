@@ -29,6 +29,36 @@ data:extend(
         maximum_productivity = 5,
     },
     {
+      type ="recipe",
+      name ="cube-smasher",
+      category ="advanced-crafting",
+      icon = "__cubium__/graphics/entity/quantum-stabilizer/quantum-stabilizer-icon.png",
+      icon_size = 64,
+      enabled = false,
+      ingredients =
+      {
+        {type ="item", name ="ultradense-substrate", amount = 2},
+        {type ="item", name ="electric-furnace", amount = 1},
+        {type ="item", name ="advanced-circuit", amount = 5},
+        {type ="item", name ="copper-plate", amount = 20},
+        {type ="item", name ="steel-plate", amount = 100},
+        {type ="item", name ="fast-inserter", amount = 2},
+      },
+
+      energy_required = 15,
+      results =
+      {
+        {type ="item", name ="cube-smasher", amount = 1}
+      },
+      allow_productivity = false,
+      allow_quality = true,
+      auto_recycle = true,
+      main_product ="cube-smasher",
+      maximum_productivity = 5,
+    },
+
+
+    {
         type ="recipe",
         name ="energized-microcube",
         category ="crafting",
@@ -487,7 +517,7 @@ data:extend(
             scale = 0.9
           },
       },
-      category = "advanced-crafting",
+      category = "cubic",
 
       enabled = false,
       auto_recycle = false,

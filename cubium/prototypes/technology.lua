@@ -126,6 +126,10 @@ data:extend({
             type = "unlock-recipe",
             recipe = "recharge-inverted-cube"
           },
+          {
+            type = "unlock-recipe",
+            recipe = "cube-smasher"
+          },
           
 
       },

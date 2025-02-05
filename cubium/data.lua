@@ -1,11 +1,11 @@
---require("__cubium__.prototypes.entity.entities")
+require("__cubium__.prototypes.entity")
 --require("__cubium__.prototypes.factoriopedia-simulations")
 require("__cubium__.prototypes.fluid")
 require("__cubium__.prototypes.item")
 --require("__cubium__.prototypes.particles")
 --require("__cubium__.prototypes.particle-animations")
 
---require("__cubium__.prototypes.recipe-category")
+require("__cubium__.prototypes.recipe-categories")
 require("__cubium__.prototypes.recipe")
 --require("__cubium__.prototypes.entity.remnants")
 require("__cubium__.prototypes.technology")
@@ -22,6 +22,5 @@ require("__cubium__.prototypes.fuel-category")
 
 
 
---require("__cubium__.prototypes.frozeta-decoratives")
 --require("__cubium__.prototypes.ambient-sounds")
 --require("__cubium__.prototypes.achievements")

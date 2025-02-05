@@ -1,7 +1,7 @@
 data:extend({
     {
       type = "recipe-category",
-      name = "cube-inversion",
+      name = "cubic",
       order = "0",
     },
 })
