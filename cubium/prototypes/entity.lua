@@ -88,10 +88,10 @@ data:extend(
         icon_draw_specification = {shift = {0, -0.3}},
         --circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
         --circuit_connector = circuit_connector_definitions["chemical-plant"],
-        collision_box = {{-3.2, -3.2}, {3.2, 2.9}},
+        collision_box = {{-2.7, -2.7}, {2.7, 2.7}},
         selection_box = {{-3.5, -3.5}, {3.2, 3.2}},
         damaged_trigger_effect = hit_effects.entity(),
-        drawing_box_vertical_extension = 0.1,
+        drawing_box_vertical_extension = 0.0,
         module_slots = 5,
         allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
         
@@ -175,7 +175,7 @@ data:extend(
           fade_in_ticks = 4,
           fade_out_ticks = 20
         },
-        crafting_speed = 1,
+        crafting_speed = 1.3,
         energy_source =
         {
             type = "electric",

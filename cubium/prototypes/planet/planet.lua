@@ -15,15 +15,15 @@ data:extend(
         starmap_icon = "__cubium__/graphics/icons/starmap-cubium.png",
         starmap_icon_size = 512,
         gravity_pull = 10,
-        distance = 25,
-        orientation = 0.13,
+        distance = 15,
+        orientation = 0.1,
         magnitude = 1.2,
         label_orientation = 0.15,
         order = "k[cubium]",
         subgroup = "planets",
         map_gen_settings = planet_map_gen.cubium(), 
         pollutant_type = nil,
-        solar_power_in_space = 300,
+        solar_power_in_space = 400,
         platform_procession_set =
         {
           arrival = {"planet-to-platform-b"},
@@ -38,10 +38,10 @@ data:extend(
 
         surface_properties =
         {
-          ["day-night-cycle"] = 20 * minute,
+          ["day-night-cycle"] = 10 * minute,
           ["magnetic-field"] = 25,
-          ["solar-power"] = 190,
-          pressure = 2000,
+          ["solar-power"] = 200,
+          pressure = 1500,
           gravity = 40
         },
         asteroid_spawn_influence = 1,
@@ -108,29 +108,30 @@ data:extend(
             zoom_factor = 3,
             zoom_intensity = 0.6
           }
-        },  
+        },
+        auto_save_on_first_trip = true,  
     },
-      -------------------------------------------------------------------------- PLANET CONNECTIONS
-      {
-        type = "space-connection",
-        name = "vulcanus-cubium",
-        subgroup = "planet-connections",
-        from = "vulcanus",
-        to = "cubium",
-        order = "f2",
-        length = 30000,
-        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.vulcanus_gleba)
-      },
-      {
-        type = "space-connection",
-        name = "vulcanus-cubium",
-        subgroup = "planet-connections",
-        from = "gleba",
-        to = "cubium",
-        order = "f2",
-        length = 30000,
-        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.vulcanus_gleba)
-      },
+    -------------------------------------------------------------------------- PLANET CONNECTIONS
+    {
+      type = "space-connection",
+      name = "vulcanus-cubium",
+      subgroup = "planet-connections",
+      from = "vulcanus",
+      to = "cubium",
+      order = "f2",
+      length = 30000,
+      asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.vulcanus_gleba)
+    },
+    {
+      type = "space-connection",
+      name = "gleba-cubium",
+      subgroup = "planet-connections",
+      from = "gleba",
+      to = "cubium",
+      order = "f2",
+      length = 30000,
+      asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.vulcanus_gleba)
+    },
 
       
       

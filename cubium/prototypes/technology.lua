@@ -26,7 +26,7 @@ data:extend({
             },
           
         },
-        prerequisites = {"space-platform-thruster","tungsten-carbide"},
+        prerequisites = {"space-platform-thruster"},
         unit =
         {
           count = 1000,
@@ -79,6 +79,14 @@ data:extend({
             type = "unlock-recipe",
             recipe = "cubic-latent-recovery"
           },
+          {
+            type = "unlock-recipe",
+            recipe = "cube-smasher"
+          },
+          {
+            type = "unlock-recipe",
+            recipe = "cube-smasher-cubic"
+          },
 
       },
       prerequisites = {"planet-discovery-cubium"},
@@ -128,7 +136,7 @@ data:extend({
           },
           {
             type = "unlock-recipe",
-            recipe = "cube-smasher"
+            recipe = "cubic-recovery"
           },
           
 
