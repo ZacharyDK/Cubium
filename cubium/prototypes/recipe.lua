@@ -1697,7 +1697,7 @@ data:extend(
       results =
       {
         {type = "item", name = "energized-microcube", amount = 1, probability = 0.93,ignored_by_productivity = 9999},
-        {type = "item", name = "energized-shards", amount = 100,probability = 0.7,ignored_by_productivity = 9999 },
+        {type = "item", name = "energized-shards", amount = 100,probability = 0.07,ignored_by_productivity = 9999 },
       },
       allow_productivity = false,
       allow_quality = false,
