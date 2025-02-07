@@ -24,6 +24,14 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "energized-microcube"
             },
+            {
+              type = "unlock-recipe",
+              recipe = "cube-jelly-basic"
+            },
+            {
+              type = "unlock-recipe",
+              recipe = "cube-jelly"
+            },
           
         },
         prerequisites = {"space-platform-thruster"},
@@ -63,14 +71,7 @@ data:extend({
               type = "unlock-recipe",
               recipe = "cube-jelly-to-solid-fuel"
           },
-          {
-            type = "unlock-recipe",
-            recipe = "cube-jelly-basic"
-          },
-          {
-            type = "unlock-recipe",
-            recipe = "cube-jelly"
-          },
+
           {
             type = "unlock-recipe",
             recipe = "matter-amplification"
@@ -138,8 +139,6 @@ data:extend({
             type = "unlock-recipe",
             recipe = "cubic-recovery"
           },
-          
-
       },
       prerequisites = {"cube-jelly"},
       research_trigger =
