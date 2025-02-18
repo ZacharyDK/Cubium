@@ -304,6 +304,9 @@ data:extend({
         },
         {
           type = "unlock-recipe",
+          recipe = "dream-fuel",
+        },{
+          type = "unlock-recipe",
           recipe = "biter-egg-refresh",
         },
         {
