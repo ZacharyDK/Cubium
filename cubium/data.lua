@@ -21,6 +21,6 @@ require("__cubium__.prototypes.fuel-category")
 --require("__cubium__.prototypes.explosions")
 
 
-
+require("__cubium__.prototypes.item-groups")
 require("__cubium__.prototypes.ambient-sounds")
 --require("__cubium__.prototypes.achievements")

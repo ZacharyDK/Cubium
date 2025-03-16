@@ -32,6 +32,10 @@ data:extend({
               type = "unlock-recipe",
               recipe = "cube-jelly"
             },
+            {
+              type = "unlock-recipe",
+              recipe = "carbon",
+            },
           
         },
         prerequisites = {"space-platform-thruster"},
@@ -88,6 +92,10 @@ data:extend({
             type = "unlock-recipe",
             recipe = "cube-smasher-cubic"
           },
+          {
+            type = "unlock-recipe",
+            recipe = "cube-jelly-awaken"
+          },
 
       },
       prerequisites = {"planet-discovery-cubium"},
@@ -113,10 +121,6 @@ data:extend({
           },
           {
             type = "unlock-recipe",
-            recipe = "metallic-aggravation"
-          },
-          {
-            type = "unlock-recipe",
             recipe = "cube-jelly-ore-basic"
           },
           {
@@ -139,6 +143,14 @@ data:extend({
             type = "unlock-recipe",
             recipe = "cubic-recovery"
           },
+          {
+            type = "unlock-recipe",
+            recipe = "dormant-cube-smashing"
+          },
+          {
+            type = "unlock-recipe",
+            recipe = "cube-jelly-plastic"
+          },
       },
       prerequisites = {"cube-jelly"},
       research_trigger =
@@ -148,6 +160,32 @@ data:extend({
         count = 30
       }
     },
+    {
+      type = "technology",
+      name = "metallic-aggravation",
+      icon = "__cubium__/graphics/technology/ultradense-technology.png",
+      icon_size = 256,
+      essential = true,
+      effects = 
+      {
+
+
+          {
+            type = "unlock-recipe",
+            recipe = "metallic-aggravation"
+          },
+
+      },
+      prerequisites = {"cube-jelly"},
+      research_trigger =
+      {
+        type = "craft-item",
+        item = "cube-jelly",
+        count = 10
+      }
+    },
+
+
     {
       type = "technology",
       name = "cube-mastery-2",
@@ -164,12 +202,6 @@ data:extend({
             type = "unlock-recipe",
             recipe = "cube-jelly-ore-advanced-copper"
           },
-
-          {
-            type = "unlock-recipe",
-            recipe = "cube-jelly-plastic"
-          },
-
 
 
           {
@@ -193,8 +225,6 @@ data:extend({
             type = "unlock-recipe",
             recipe = "ice-dreams",
           },
-
-
 
       },
       prerequisites = {"cube-mastery-1"},
@@ -305,7 +335,8 @@ data:extend({
         {
           type = "unlock-recipe",
           recipe = "dream-fuel",
-        },{
+        },
+        {
           type = "unlock-recipe",
           recipe = "biter-egg-refresh",
         },
@@ -320,7 +351,59 @@ data:extend({
         {
           type = "unlock-recipe",
           recipe = "space-cube-recovery",
-        },             
+        },  
+        {
+          type = "unlock-recipe",
+          recipe = "biter-egg-to-dream",
+        },
+        --Adding the science recipes here.
+        {
+          type = "unlock-recipe",
+          recipe = "automation-science-pack-cubic",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "logistic-science-pack-cubic",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "chemical-science-pack-cubic",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "military-science-pack-cubic",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "production-science-pack-cubic",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "utility-science-pack-cubic",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "metallurgic-science-pack-cubic",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "agricultural-science-pack-cubic",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "electromagnetic-science-pack-cubic",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "cryogenic-science-pack-cubic",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "promethium-science-pack-cubic",
+        },
+        
+
+
       },
       prerequisites = {"cube-mastery-3"},
       research_trigger =

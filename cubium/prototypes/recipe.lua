@@ -10,6 +10,7 @@ data:extend(
         category ="crafting-with-fluid-or-metallurgy",
         icon ="__cubium__/graphics/icons/ultradense-substrate.png",
         enabled = false,
+        subgroup = "cubic",
         ingredients =
         {
   
@@ -31,6 +32,7 @@ data:extend(
     {
       type ="recipe",
       name ="cube-smasher",
+      subgroup = "cubic",
       category ="advanced-crafting",
       icon = "__cubium__/graphics/entity/quantum-stabilizer/quantum-stabilizer-icon.png",
       icon_size = 64,
@@ -59,6 +61,7 @@ data:extend(
     {
       type ="recipe",
       name ="cube-smasher-cubic",
+      subgroup = "cubic",
       category ="cubic",
       icon = "__cubium__/graphics/entity/quantum-stabilizer/quantum-stabilizer-icon.png",
       icon_size = 64,
@@ -89,6 +92,7 @@ data:extend(
     {
         type ="recipe",
         name ="energized-microcube",
+        subgroup = "cubic",
         category ="crafting",
         icon ="__cubium__/graphics/icons/matter-cube.png",
         enabled = false,
@@ -109,10 +113,12 @@ data:extend(
         main_product ="energized-microcube",
         result_is_always_fresh = true,
         maximum_productivity = 5,
+        auto_recycle = false,
     },
     {
         type = "recipe",
         name = "destabilized-cube-matter-recycling",
+        subgroup = "cubic",
         icons = 
         {
           {
@@ -137,8 +143,8 @@ data:extend(
         {
           {type = "item", name = "carbon",                amount = 1, probability = 0.2, show_details_in_recipe_tooltip = false},
           {type = "item", name = "sulfur",                amount = 1, probability = 0.05, show_details_in_recipe_tooltip = false},
-          {type = "item", name = "ice",                   amount = 1, probability = 0.3, show_details_in_recipe_tooltip = false},
-          {type = "item", name = "iron-ore",              amount = 1, probability = 0.25, show_details_in_recipe_tooltip = false},
+          {type = "item", name = "ice",                   amount = 5, probability = 0.3, show_details_in_recipe_tooltip = false},
+          {type = "item", name = "iron-ore",              amount = 2, probability = 0.25, show_details_in_recipe_tooltip = false},
           {type = "item", name = "copper-ore",            amount = 1, probability = 0.20, show_details_in_recipe_tooltip = false},
 
 
@@ -150,6 +156,7 @@ data:extend(
     {
         type = "recipe",
         name = "cube-jelly-to-steam",
+        subgroup = "cubic",
         icons = 
         {
           {
@@ -167,10 +174,15 @@ data:extend(
         enabled = false,
         auto_recycle = false,
         energy_required = 1,
-        ingredients = {{type = "item", name = "cube-jelly", amount = 4}},
+        ingredients = 
+        {
+          {type = "item", name = "cube-jelly", amount = 7},
+          {type = "item", name = "energized-microcube", amount = 1}
+        },
         results =
         {
-          {type = "fluid", name = "steam",                amount = 1, temperature = 500},
+          {type = "fluid", name = "steam",                amount = 25, temperature = 500},
+          {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
         },
         result_is_always_fresh = true,
         main_product = "steam",
@@ -179,6 +191,7 @@ data:extend(
     {
         type = "recipe",
         name = "cube-jelly-to-solid-fuel",
+        subgroup = "cubic",
         icons = 
         {
           {
@@ -199,7 +212,7 @@ data:extend(
         ingredients = {{type = "item", name = "cube-jelly", amount = 50}},
         results =
         {
-          {type = "item", name = "solid-fuel",                amount = 1},
+          {type = "item", name = "solid-fuel",                amount = 2},
         },
         crafting_machine_tint =
         {
@@ -211,12 +224,14 @@ data:extend(
         result_is_always_fresh = true,
         main_product = "solid-fuel",
         maximum_productivity = 5,
+        allow_productivity = true,
     },
     {
         type = "recipe",
         name = "cube-jelly-basic",
+        subgroup = "cubic",
         icon = "__cubium__/graphics/icons/cube-jelly-basic.png",
-        category = "recycling-or-hand-crafting",
+        category = "basic-crafting",
 
         enabled = false,
         auto_recycle = false,
@@ -224,7 +239,7 @@ data:extend(
         ingredients = {{type = "item", name = "energized-microcube", amount = 1}},
         results =
         {
-          {type = "item", name = "cube-jelly",                amount = 1,  percent_spoiled = 0, show_details_in_recipe_tooltip = false},
+          {type = "item", name = "cube-jelly",                amount = 2,  percent_spoiled = 0, show_details_in_recipe_tooltip = false},
           {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
         },
         result_is_always_fresh = true,
@@ -234,6 +249,7 @@ data:extend(
     {
         type = "recipe",
         name = "cube-jelly",
+        subgroup = "cubic",
         icon = "__cubium__/graphics/icons/cube-jelly.png",
         category = "advanced-crafting",
 
@@ -243,17 +259,19 @@ data:extend(
         ingredients = {{type = "item", name = "energized-microcube", amount = 1}},
         results =
         {
-          {type = "item", name = "cube-jelly",                amount = 1, percent_spoiled = 0},
+          {type = "item", name = "cube-jelly",                amount = 2, percent_spoiled = 0},
           {type = "item", name = "energized-microcube", probability = 0.6,               amount = 1,ignored_by_productivity = 9999},
           {type = "item", name = "dormant-microcube", probability = 0.4,               amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0},
         },
         result_is_always_fresh = true,
         main_product = "cube-jelly",
         maximum_productivity = 5,
+        allow_productivity = true,
     },
     {
         type = "recipe",
         name = "matter-amplification",
+        subgroup = "cubic",
         icons = 
         {
             {
@@ -285,10 +303,12 @@ data:extend(
         result_is_always_fresh = true,
         main_product = "cube-jelly",
         maximum_productivity = 5,
+        allow_productivity = true,
     },
     {
         type = "recipe",
         name = "carbonic-scaffolding",
+        subgroup = "cubic",
         icons = 
         {
             {
@@ -309,8 +329,8 @@ data:extend(
         ingredients = 
         {
             {type = "item", name = "energized-microcube", amount = 1},
-            {type = "item", name = "cube-jelly", amount = 20},
-            {type = "item", name = "carbon", amount = 30},
+            {type = "item", name = "cube-jelly", amount = 12},
+            {type = "item", name = "carbon", amount = 15},
         },
         results =
         {
@@ -321,10 +341,50 @@ data:extend(
         result_is_always_fresh = true,
         main_product = "cube-jelly",
         maximum_productivity = 5,
+        allow_productivity = true,
     },
+    {
+      type = "recipe",
+      name = "cube-jelly-awaken",
+      subgroup = "cubic",
+      icons = 
+      {
+          {
+            icon = "__cubium__/graphics/icons/cube-jelly.png",
+            scale = 0.9
+          },
+          {
+            icon = "__cubium__/graphics/icons/matter-cube.png",
+            scale = 0.6,
+            shift = util.by_pixel(140, 140),
+          }
+      },
+      category = "advanced-crafting",
+
+      enabled = false,
+      auto_recycle = false,
+      energy_required = 40,
+      ingredients = 
+      {
+          {type = "item", name = "dormant-microcube", amount = 1},
+          {type = "item", name = "cube-jelly", amount = 15},
+      },
+      results =
+      {
+        {type = "item", name = "energized-microcube", amount = 1,ignored_by_productivity = 9999},
+        {type = "fluid", name = "water", amount = 100},
+      },
+      result_is_always_fresh = true,
+      main_product = "energized-microcube",
+      maximum_productivity = 1,
+    },
+
+
+
     {
         type = "recipe",
         name = "metallic-aggravation",
+        subgroup = "cubic",
         icons = 
         {
             {
@@ -346,7 +406,6 @@ data:extend(
         ingredients = 
         {
             {type = "item", name = "dormant-microcube", amount = 1},
-            {type = "item", name = "iron-plate", amount = 2},
             {type = "item", name = "copper-plate", amount = 2},
         },
         results =
@@ -360,6 +419,7 @@ data:extend(
     {
       type = "recipe",
       name = "cube-jelly-plastic",
+      subgroup = "cubic",
       icons = 
       {
           {
@@ -381,8 +441,8 @@ data:extend(
       ingredients = 
       {
           {type = "item", name = "energized-microcube", amount = 1},
-          {type = "item", name = "cube-jelly", amount = 100},
-          {type = "item", name = "carbon", amount = 50},
+          {type = "item", name = "cube-jelly", amount = 50},
+          {type = "item", name = "carbon", amount = 20},
       },
       results =
       {
@@ -397,6 +457,7 @@ data:extend(
     {
       type = "recipe",
       name = "cube-jelly-ore-basic",
+      subgroup = "cubic",
       icons = 
       {
           {
@@ -432,6 +493,7 @@ data:extend(
     {
       type = "recipe",
       name = "cube-jelly-ore-advanced-iron",
+      subgroup = "cubic",
       icons = 
       {
           {
@@ -467,6 +529,7 @@ data:extend(
     {
       type = "recipe",
       name = "cube-jelly-ore-advanced-copper",
+      subgroup = "cubic",
       icons = 
       {
           {
@@ -500,11 +563,11 @@ data:extend(
       maximum_productivity = 5,
     },
 
-
     --Cubic recipes. TODO, add building that can do cubic recipes. for now they will be under advanced processing
     {
         type = "recipe",
         name = "cubic-recovery",
+        subgroup = "cubic",
         icons = 
         {
             {
@@ -533,11 +596,48 @@ data:extend(
         },
         result_is_always_fresh = true,
         main_product = "energized-microcube",
-        maximum_productivity = 5,
+        maximum_productivity = 1,
     },
     {
       type = "recipe",
+      name = "dormant-cube-smashing",
+      subgroup = "cubic",
+      icons = 
+      {
+          {
+            icon = "__cubium__/graphics/icons/matter-cube-dormant.png",
+            scale = 0.9
+          },
+          {
+            icon = "__cubium__/graphics/icons/broken-cube.png",
+            scale = 0.6,
+            shift = util.by_pixel(140, 140),
+          }
+      },
+      category = "cubic",
+
+      enabled = false,
+      auto_recycle = false,
+      energy_required = 2,
+      allow_productivity = true,
+      ingredients = 
+      {
+          {type = "item", name = "dormant-microcube", amount = 1}
+      },
+      results =
+      {
+          {type = "item", name = "energized-shards", amount_min = 10, amount_max = 15},
+      },
+      result_is_always_fresh = true,
+      main_product = "energized-shards",
+      maximum_productivity = 2,
+    },
+
+
+    {
+      type = "recipe",
       name = "inverted-shards",
+      subgroup = "cubic",
       icons = 
       {
           {
@@ -558,7 +658,7 @@ data:extend(
       results =
       {
         {type = "item", name = "energized-shards", amount_min = 100, amount_max = 200},
-        {type = "item", name = "inverted-shards", probability = 0.2, amount_min = 15, amount_max = 23},
+        {type = "item", name = "inverted-shards", probability = 0.3, amount_min = 15, amount_max = 23},
       },
       main_product = "inverted-shards",
       maximum_productivity = 5,
@@ -566,6 +666,7 @@ data:extend(
     {
       type = "recipe",
       name = "inverted-cube",
+      subgroup = "cubic",
       icons = 
       {
           {
@@ -594,6 +695,7 @@ data:extend(
     {
       type = "recipe",
       name = "cubic-latent-recovery",
+      subgroup = "cubic",
       icons = 
       {
           {
@@ -629,6 +731,7 @@ data:extend(
     {
       type = "recipe",
       name = "sulfuric-acid-inversion",
+      subgroup = "cubic",
       icons = 
       {
           {
@@ -673,6 +776,7 @@ data:extend(
     {
       type = "recipe",
       name = "recharge-inverted-cube",
+      subgroup = "cubic",
       icons = 
       {
           {
@@ -719,6 +823,7 @@ data:extend(
     {
       type = "recipe",
       name = "petrol-gas-by-inversion",
+      subgroup = "cubic",
       icons = 
       {
           {
@@ -763,6 +868,7 @@ data:extend(
     {
       type = "recipe",
       name = "engine-unit-by-inversion",
+      subgroup = "cubic",
       icons = 
       {
           {
@@ -799,6 +905,7 @@ data:extend(
     {
       type = "recipe",
       name = "light-oil-by-inversion",
+      subgroup = "cubic",
       icons = 
       {
           {
@@ -844,6 +951,7 @@ data:extend(
     {
       type ="recipe",
       name ="dream-small-power-pole",
+      subgroup = "cubic",
       category ="crafting",
       icon ="__base__/graphics/icons/small-electric-pole.png",
       enabled = false,
@@ -868,20 +976,21 @@ data:extend(
     {
       type ="recipe",
       name ="liquid-dream",
+      subgroup = "cubic",
       category ="chemistry-or-cryogenics",
       icon ="__cubium__/graphics/icons/fluid/liquid-dream.png",
       enabled = false,
       ingredients =
       {
 
-        {type ="item", name ="dream", amount = 10},
-        {type = "fluid", name = "water", amount = 100},
+        {type ="item", name ="dream", amount = 3},
+        {type = "fluid", name = "water", amount = 200},
       },
 
       energy_required = 3,
       results =
       {
-        {type ="fluid", name ="liquid-dream", amount = 100}
+        {type ="fluid", name ="liquid-dream", amount = 200}
       },
       allow_productivity = true,
       allow_quality = false,
@@ -900,6 +1009,7 @@ data:extend(
     {
       type ="recipe",
       name ="dream-concentrate",
+      subgroup = "cubic",
       category ="chemistry-or-cryogenics",
       icon ="__cubium__/graphics/icons/fluid/dream-concentrate.png",
       enabled = false,
@@ -931,6 +1041,7 @@ data:extend(
     {
       type ="recipe",
       name ="emotional-tar",
+      subgroup = "cubic",
       category ="chemistry-or-cryogenics",
       icon ="__cubium__/graphics/icons/fluid/emotional-tar.png",
       enabled = false,
@@ -963,6 +1074,7 @@ data:extend(
     {
       type ="recipe",
       name ="emotional-cracking", --I'll consider forcing the cube here.
+      subgroup = "cubic",
       category ="oil-processing",
       icon ="__cubium__/graphics/icons/fluid/emotional-tar.png",
       enabled = false,
@@ -997,6 +1109,7 @@ data:extend(
     {
       type ="recipe",
       name ="anger-cracking",
+      subgroup = "cubic",
       category ="chemistry-or-cryogenics",
       icon ="__cubium__/graphics/icons/fluid/liquid-hate.png",
       enabled = false,
@@ -1030,6 +1143,7 @@ data:extend(
     {
       type ="recipe",
       name ="anger-reconstitution",
+      subgroup = "cubic",
       category ="chemistry-or-cryogenics",
       icon ="__cubium__/graphics/icons/fluid/liquid-hate.png",
       enabled = false,
@@ -1065,6 +1179,7 @@ data:extend(
     {
       type ="recipe",
       name ="fear-inversion",
+      subgroup = "cubic",
       category ="chemistry-or-cryogenics",
       icon ="__cubium__/graphics/icons/fluid/liquid-courage.png",
       enabled = false,
@@ -1099,6 +1214,7 @@ data:extend(
     {
       type ="recipe",
       name ="courage-fear-steam",
+      subgroup = "cubic",
       category ="chemistry-or-cryogenics",
       icon ="__base__/graphics/icons/fluid/steam.png",
       enabled = false,
@@ -1112,7 +1228,7 @@ data:extend(
       energy_required = 10,
       results =
       {
-        {type ="fluid", name ="steam", amount = 2000, temperature = 500},
+        {type ="fluid", name ="steam", amount = 5000, temperature = 500},
 
       },
       allow_productivity = true,
@@ -1132,6 +1248,7 @@ data:extend(
     {
       type ="recipe",
       name ="inversion-awakening",
+      subgroup = "cubic",
       category ="chemistry-or-cryogenics",
       icons = 
       {
@@ -1180,6 +1297,7 @@ data:extend(
     {
       type = "recipe",
       name = "electric-engine-unit-by-inversion",
+      subgroup = "cubic",
       icons = 
       {
           {
@@ -1216,6 +1334,7 @@ data:extend(
     {
       type = "recipe",
       name = "dream-concrete",
+      subgroup = "cubic",
       icons = 
       {
           {
@@ -1252,6 +1371,7 @@ data:extend(
     {
       type = "recipe",
       name = "refined-dream-concrete",
+      subgroup = "cubic",
       icons = 
       {
           {
@@ -1289,6 +1409,7 @@ data:extend(
     {
       type = "recipe",
       name = "dream-processing-unit",
+      subgroup = "cubic",
       icons = 
       {
           {
@@ -1328,6 +1449,7 @@ data:extend(
     {
       type = "recipe",
       name = "dream-advanced-circuit",
+      subgroup = "cubic",
       icons = 
       {
           {
@@ -1367,6 +1489,7 @@ data:extend(
     {
       type = "recipe",
       name = "inverted-cube-jelly-recycling",
+      subgroup = "cubic",
       icons = 
       {
         {
@@ -1381,7 +1504,6 @@ data:extend(
         }
       },
       category = "recycling-or-hand-crafting",
-      subgroup = "fulgora-processes", --TODO add my own subprocess.
       order = "zz[trash]-b[inverted-jelly-recycling]",
       enabled = false,
       auto_recycle = false,
@@ -1407,6 +1529,7 @@ data:extend(
     {
       type = "recipe",
       name = "jelly-inversion",
+      subgroup = "cubic",
       icons = 
       {
           {
@@ -1438,6 +1561,7 @@ data:extend(
     {
       type = "recipe",
       name = "dream-fuel",
+      subgroup = "cubic",
       category = "chemistry",
       energy_required = 35,
       ingredients =
@@ -1470,6 +1594,7 @@ data:extend(
     {
       type = "recipe",
       name = "ice-dreams",
+      subgroup = "cubic",
       icons = 
       {
         {
@@ -1490,11 +1615,11 @@ data:extend(
       ingredients = 
       {
         {type = "item", name = "energized-microcube", amount = 1},
-        {type = "item", name = "dream", amount = 10},
+        {type = "item", name = "dream", amount = 2},
       },
       results =
       {
-        {type = "item", name = "ice",                amount = 3, percent_spoiled = 0},
+        {type = "item", name = "ice",                amount = 7, percent_spoiled = 0},
         {type = "item", name = "energized-microcube", probability = 0.6,               amount = 1,ignored_by_productivity = 9999},
         {type = "item", name = "dormant-microcube", probability = 0.4,               amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0},
       },
@@ -1505,6 +1630,7 @@ data:extend(
     {
       type = "recipe",
       name = "rocket-fuel-dreams",
+      subgroup = "cubic",
       energy_required = 30,
       enabled = false,
       icons = 
@@ -1529,7 +1655,7 @@ data:extend(
       },
       results = 
       {
-        {type="item", name="rocket-fuel", amount=10},
+        {type="item", name="rocket-fuel", amount=15},
         {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
       },
       crafting_machine_tint =
@@ -1544,6 +1670,7 @@ data:extend(
       type = "recipe",
       name = "biter-egg-refresh",
       category = "chemistry",
+      subgroup = "cubic",
       order = "b[biter-egg]-f[refresh]",
       icons = 
       {
@@ -1577,6 +1704,7 @@ data:extend(
     {
       type = "recipe",
       name = "angry-rockets",
+      subgroup = "cubic",
       icons = 
       {
         {
@@ -1617,6 +1745,7 @@ data:extend(
     {
       type = "recipe",
       name = "biter-egg-breeding",
+      subgroup = "cubic",
       category = "cryogenics",
       order = "b[biter-egg]-g[breeding]",
       energy_required = 22,
@@ -1671,6 +1800,7 @@ data:extend(
     {
       type ="recipe",
       name ="space-cube-recovery",
+      subgroup = "cubic",
       category ="chemistry",
       icons = 
       {
@@ -1713,4 +1843,534 @@ data:extend(
         quaternary = {r = 0.629, g = 0.174, b = 0.000, a = 0.502}, -- #a02c0080
       },
     },
+    {
+      type ="recipe",
+      name ="biter-egg-to-dream",
+      subgroup = "cubic",
+      category ="chemistry",
+      icons = 
+      {
+          {
+            icon = "__space-age__/graphics/icons/biter-egg.png",
+            scale = 0.9
+          },
+          {
+            icon = "__cubium__/graphics/icons/dream.png",
+            scale = 0.6,
+            shift = util.by_pixel(140, 140),
+          }
+      },
+      enabled = false,
+      ingredients =
+      {
+
+        {type = "item", name = "inverted-microcube", amount = 1},
+        {type = "item", name = "biter-egg", amount = 1},
+        {type = "item", name = "dormant-microcube", amount = 1},
+      },
+
+      energy_required = 5,
+      results =
+      {
+        {type = "item", name = "energized-microcube", amount = 1, ignored_by_productivity = 9999},
+        {type = "item", name = "inverted-dormant-microcube", amount = 1, ignored_by_productivity = 9999},
+        {type = "fluid", name = "dream-concentrate", amount = 200}
+      },
+      allow_productivity = true,
+      allow_quality = false,
+      allow_decomposition = false,
+      auto_recycle = false,
+      result_is_always_fresh = true,
+      main_product = "dream-concentrate",
+      crafting_machine_tint =
+      {
+        primary = {r = 0.881, g = 0.100, b = 0.000, a = 0.502}, -- #e0190080
+        secondary = {r = 0.930, g = 0.767, b = 0.605, a = 0.502}, -- #edc39a80
+        tertiary = {r = 0.873, g = 0.649, b = 0.542, a = 0.502}, -- #dea58a80
+        quaternary = {r = 0.629, g = 0.174, b = 0.000, a = 0.502}, -- #a02c0080
+      },
+    },
+
+    --Science recipes
+    {
+      type = "recipe",
+      name = "automation-science-pack-cubic",
+      icons = 
+      {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube.png",
+          scale = 0.9
+        },
+        {
+          icon = "__base__/graphics/icons/automation-science-pack.png",
+          scale = 0.6,
+        }
+      },
+      category = "advanced-crafting",
+      subgroup = "cubic",
+      enabled = false,
+      energy_required = 5,
+      ingredients =
+      {
+        {type = "item", name = "copper-plate", amount = 1},
+        {type = "item", name = "iron-gear-wheel", amount = 1},
+        {type = "item", name = "energized-microcube", amount = 1},
+        {type = "fluid", name = "dream-concentrate", amount = 150}
+      },
+      results = 
+      {
+        {type="item", name="automation-science-pack", amount=1},
+        {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
+      },
+      crafting_machine_tint =
+      {
+        primary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
+        secondary = {r = 1.000, g = 0.0, b = 0.0, a = 1.000},
+      },
+      allow_productivity = true,
+      auto_recycle = false,
+      result_is_always_fresh = true,
+    },
+
+    {
+      type = "recipe",
+      name = "logistic-science-pack-cubic",
+      category = "advanced-crafting",
+      subgroup = "cubic",
+      icons = 
+      {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube.png",
+          scale = 0.9
+        },
+        {
+          icon = "__base__/graphics/icons/logistic-science-pack.png",
+          scale = 0.6,
+        }
+      },
+      enabled = false,
+      energy_required = 6,
+      ingredients =
+      {
+        {type = "item", name = "inserter", amount = 1},
+        {type = "item", name = "transport-belt", amount = 1},
+        {type = "item", name = "energized-microcube", amount = 1},
+        {type = "fluid", name = "dream-concentrate", amount = 150},
+      },
+      results = 
+      {
+        {type= "item", name="logistic-science-pack", amount=2},
+        {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
+      },
+      crafting_machine_tint =
+      {
+        primary = {r = 0.0, g = 1.0, b = 0.0, a = 1.000},
+        secondary = {r = 0.0, g = 1.0, b = 0.0, a = 1.000},
+      },
+      allow_productivity = true,
+      auto_recycle = false,
+      result_is_always_fresh = true,
+    },
+    {
+      type = "recipe",
+      name = "chemical-science-pack-cubic",
+      category = "advanced-crafting",
+      icons = 
+      {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube.png",
+          scale = 0.9
+        },
+        {
+          icon = "__base__/graphics/icons/chemical-science-pack.png",
+          scale = 0.6,
+        }
+      },
+      subgroup = "cubic",
+      enabled = false,
+      energy_required = 24,
+      ingredients =
+      {
+        {type = "item", name = "engine-unit", amount = 2},
+        {type = "item", name = "advanced-circuit", amount = 3},
+        {type = "item", name = "sulfur", amount = 1},
+        {type = "item", name = "energized-microcube", amount = 1},
+        {type = "fluid", name = "dream-concentrate", amount = 150},
+      },
+      results = 
+      {
+        {type="item", name="chemical-science-pack", amount=4},
+        {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
+      },
+      crafting_machine_tint =
+      {
+        primary = {r = 0.0, g = 0.8, b = 1.0, a = 1.000},
+        secondary = {r = 0.0, g = 0.8, b = 1.0, a = 1.000},
+      },
+      allow_productivity = true,
+      auto_recycle = false,
+      result_is_always_fresh = true,
+    },
+    {
+      type = "recipe",
+      name = "military-science-pack-cubic",
+      category = "advanced-crafting",
+      icons = 
+      {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube.png",
+          scale = 0.9
+        },
+        {
+          icon = "__base__/graphics/icons/military-science-pack.png",
+          scale = 0.6,
+        }
+      },
+      subgroup = "cubic",
+      enabled = false,
+      energy_required = 10,
+      ingredients =
+      {
+        {type = "item", name = "piercing-rounds-magazine", amount = 1},
+        {type = "item", name = "grenade", amount = 1},
+        {type = "item", name = "stone-wall", amount = 2},
+        {type = "item", name = "energized-microcube", amount = 1},
+        {type = "fluid", name = "dream-concentrate", amount = 200}
+      },
+      results = 
+      {
+        {type="item", name="military-science-pack", amount=4},
+        {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
+      },
+      crafting_machine_tint =
+      {
+        primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+        secondary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+      },
+      allow_productivity = true,
+      auto_recycle = false,
+      result_is_always_fresh = true,
+    },
+    {
+      type = "recipe",
+      name = "production-science-pack-cubic",
+      category = "advanced-crafting",
+      subgroup = "cubic",
+      icons = 
+      {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube.png",
+          scale = 0.9
+        },
+        {
+          icon = "__base__/graphics/icons/production-science-pack.png",
+          scale = 0.6,
+        }
+      },
+      enabled = false,
+      energy_required = 21,
+      ingredients =
+      {
+        {type = "item", name = "electric-furnace", amount = 1},
+        {type = "item", name = "productivity-module", amount = 1},
+        {type = "item", name = "rail", amount = 30},
+        {type = "item", name = "energized-microcube", amount = 1},
+        {type = "fluid", name = "dream-concentrate", amount = 200},
+      },
+      results = 
+      {
+        {type="item", name="production-science-pack", amount=6},
+        {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
+      },
+      crafting_machine_tint =
+      {
+        primary = {r = 0.8, g = 0.0, b = 1.0, a = 1.000},
+        secondary = {r = 0.8, g = 0.0, b = 1.0, a = 1.000},
+      },
+      allow_productivity = true,
+      auto_recycle = false,
+      result_is_always_fresh = true,
+    },
+    {
+      type = "recipe",
+      name = "utility-science-pack-cubic",
+      category = "advanced-crafting",
+      subgroup = "cubic",
+      icons = 
+      {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube.png",
+          scale = 0.9
+        },
+        {
+          icon = "__base__/graphics/icons/utility-science-pack.png",
+          scale = 0.6,
+        }
+      },
+      enabled = false,
+      energy_required = 21,
+      ingredients =
+      {
+        {type = "item", name = "low-density-structure", amount = 3},
+        {type = "item", name = "processing-unit", amount = 2},
+        {type = "item", name = "flying-robot-frame", amount = 1},
+        {type = "item", name = "energized-microcube", amount = 1},
+        {type = "fluid", name = "dream-concentrate", amount = 200},
+        
+      },
+      results = 
+      {
+        {type="item", name="utility-science-pack", amount=6},
+        {type = "item", name = "dormant-microcube", amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
+      },
+      crafting_machine_tint =
+      {
+        primary = {r = 1.0, g = 0.8, b = 0.0, a = 1.000},
+        secondary = {r = 1.0, g = 0.8, b = 0.0, a = 1.000},
+      },
+      allow_productivity = true,
+      auto_recycle = false,
+      result_is_always_fresh = true,
+    },
+
+    {
+      type = "recipe",
+      name = "metallurgic-science-pack-cubic",
+      category = "metallurgy",
+      surface_conditions =
+      {
+        {
+          property = "pressure",
+          min = 4000,
+          max = 4000
+        }
+      },
+      enabled = false,
+      ingredients =
+      {
+        {type = "item", name = "tungsten-carbide", amount = 3},
+        {type = "item", name = "tungsten-plate", amount = 2},
+        {type = "fluid", name = "molten-copper", amount = 200},
+        {type = "item", name = "inverted-microcube", amount = 1},
+        {type = "fluid", name = "dream-concentrate", amount = 200},
+      },
+      energy_required = 10,
+      results = 
+      {
+        {type="item", name="metallurgic-science-pack", amount=2},
+        {type = "item", name = "inverted-dormant-microcube", amount = 1, ignored_by_productivity = 9999},
+      },
+      allow_productivity = true,
+      subgroup = "cubic",
+      auto_recycle = false,
+      result_is_always_fresh = true,
+      icons = 
+      {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
+          scale = 0.9
+        },
+        {
+          icon = "__space-age__/graphics/icons/metallurgic-science-pack.png",
+          scale = 0.6,
+        }
+      },
+    },
+    {
+      type = "recipe",
+      name = "agricultural-science-pack-cubic",
+      category = "organic",
+      subgroup = "science-pack",
+      surface_conditions =
+      {
+        {
+          property = "pressure",
+          min = 2000,
+          max = 2000
+        }
+      },
+      enabled = false,
+      ingredients =
+      {
+        {type = "item", name = "bioflux", amount = 1},
+        {type = "item", name = "pentapod-egg", amount = 1},
+        {type = "item", name = "energized-microcube", amount = 1},
+        {type = "item", name = "cube-jelly", amount = 10},
+      },
+
+      energy_required = 4,
+      results = 
+      {
+        {type="item", name="agricultural-science-pack", amount=2},
+        {type = "item", name = "dormant-microcube", amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
+      },
+      allow_productivity = true,
+      crafting_machine_tint =
+      {
+        primary = {0.1, 0.2, 0.0, 1},
+        secondary = {0.639, 0.764, 1, 1}
+      },
+      subgroup = "cubic",
+      auto_recycle = false,
+      result_is_always_fresh = true,
+      icons = 
+      {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube.png",
+          scale = 0.9
+        },
+        {
+          icon = "__space-age__/graphics/icons/agricultural-science-pack.png",
+          scale = 0.6,
+        }
+      },
+    },
+    {
+      type = "recipe",
+      name = "electromagnetic-science-pack-cubic",
+      category = "electromagnetics",
+      surface_conditions =
+      {
+        {
+          property = "magnetic-field",
+          min = 99,
+          max = 99
+        }
+      },
+      enabled = false,
+      ingredients =
+      {
+        {type = "item", name = "supercapacitor", amount = 1},
+        {type = "item", name = "accumulator", amount = 1},
+        {type = "fluid", name = "electrolyte", amount = 50},
+        {type = "item", name = "energized-microcube", amount = 1},
+        {type = "fluid", name = "dream-concentrate", amount = 200},
+      },
+      energy_required = 10,
+      results = 
+      {
+        {type="item", name="electromagnetic-science-pack", amount=2},
+        {type = "item", name = "dormant-microcube", amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
+      },
+      allow_productivity = true,
+      subgroup = "cubic",
+      auto_recycle = false,
+      result_is_always_fresh = true,
+      icons = 
+      {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube.png",
+          scale = 0.9
+        },
+        {
+          icon = "__space-age__/graphics/icons/electromagnetic-science-pack.png",
+          scale = 0.6,
+        }
+      },
+    },
+    {
+      type = "recipe",
+      name = "cryogenic-science-pack-cubic",
+      category = "cryogenics",
+      surface_conditions =
+      {
+        {
+          property = "pressure",
+          min = 300,
+          max = 300
+        }
+      },
+      enabled = false,
+      ingredients =
+      {
+        {type = "item", name = "ice", amount = 3},
+        {type = "item", name = "lithium-plate", amount = 1},
+        {type = "fluid", name = "fluoroketone-cold", amount = 6, ignored_by_stats = 3},
+        {type = "item", name = "energized-microcube", amount = 1},
+        {type = "fluid", name = "dream-concentrate", amount = 200},
+      },
+      energy_required = 20,
+      results =
+      {
+        {type = "item", name = "cryogenic-science-pack", amount = 2},
+        {type = "fluid", name = "fluoroketone-hot", amount = 3, ignored_by_stats = 3, ignored_by_productivity = 3},
+        {type ="fluid", name ="liquid-dream", amount = 30, ignored_by_stats = 30, ignored_by_productivity = 30},
+        {type = "item", name = "dormant-microcube", amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
+      },
+      main_product = "cryogenic-science-pack",
+      allow_productivity = true,
+      crafting_machine_tint =
+      {
+        primary = {r = 0.040, g = 0.186, b = 1.000, a = 1.000}, -- #0a2fffff
+        secondary = {r = 0.200, g = 0.400, b = 1.000, a = 1.000}, -- #3366ffff
+        tertiary = {r = 0.600, g = 0.651, b = 1.000, a = 1.000}, -- #99a6ffff
+        quaternary = {r = 0.100, g = 0.300, b = 0.500, a = 1.000}, -- #194c7fff
+      },
+      subgroup = "cubic",
+      auto_recycle = false,
+      result_is_always_fresh = true,
+      icons = 
+      {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube.png",
+          scale = 0.9
+        },
+        {
+          icon = "__space-age__/graphics/icons/cryogenic-science-pack.png",
+          scale = 0.6,
+        }
+      },
+    },
+    {
+      type = "recipe",
+      name = "promethium-science-pack-cubic",
+      energy_required = 5,
+      surface_conditions =
+      {
+        {
+          property = "gravity",
+          min = 0,
+          max = 0
+        }
+      },
+      enabled = false,
+      allow_productivity = true,
+      category = "cryogenics",
+      ingredients =
+      {
+        {type = "item", name = "promethium-asteroid-chunk", amount = 25},
+        {type = "item", name = "quantum-processor", amount = 1},
+        {type = "item", name = "biter-egg", amount = 10},
+        {type = "item", name = "energized-microcube", amount = 1},
+        {type = "fluid", name = "dream-concentrate", amount = 200},
+      },
+      results = 
+      {
+        {type="item", name="promethium-science-pack", amount=20},
+        {type = "item", name = "energized-shards", amount = 100,  ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
+      },
+      crafting_machine_tint =
+      {
+        primary = {r = 0, g = 0, b = 0.1, a = 1},
+        secondary = {r = 0, g = 0, b = 0.4, a = 1},
+        tertiary = {r = 0.1, g = 0.1, b = 0.4, a = 1},
+        quaternary = {r = 0, g = 0, b = 0.1, a = 1},
+      },
+      subgroup = "cubic",
+      auto_recycle = false,
+      result_is_always_fresh = true,
+      icons = 
+      {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube.png",
+          scale = 0.9
+        },
+        {
+          icon = "__space-age__/graphics/icons/promethium-science-pack.png",
+          scale = 0.6,
+        }
+      },
+    },
+
 })
+

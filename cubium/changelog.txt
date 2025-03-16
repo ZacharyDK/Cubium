@@ -1,4 +1,45 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 14. 3. 2025
+  Major Features:
+    - carbonic scaffolding input cost reduced. 20-12 jelly. 30->15 carbon
+    - liquid dream recipe cost reduced. 10 to 3 dream
+    - fear courage steam buffed now 5000 steam
+    - ice dreams - 3 to 7 ice
+    - added a cubic category, moved items and recipes there.
+    - rocket fuel from dreams 10 --> 15
+    - Cost of liquid dream is 4 --> 3 dream. Now 200 water, and 200 dream out. (was 100 and 100)
+    - cube-jelly-to-solid-fuel now gives 2 solid fuel. 
+    - cube jelly to steam now takes 7 jelly, from 4
+    - Added alternative ways to craft the science packs with the cube and dream concentrate and microcubes. This should mesh well with farming biters for dream concentrate.
+    - In general, these alternative recipes take the microcubecube and dream concentrate, and give double the science back from the same other ingredients! Dream big. Dream of more science
+    - I ignored space science because its already easy to get a lot of it.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 14. 3. 2025
+  Major Features:
+    - ice dreams recipe buffed. Cost of 10 dream reduced to 2 dream
+    - cube jelly plastic recipe moved to cube mastery 1 from cube mastery 2.
+    - cube jelly steam - now takes a microcube and gives a dormant cube. Now gives 25 steam.
+    - cube jelly plastic recipe now takes half as much inputs 
+    - metallic aggravation - fixed typo in localization files. No longer takes iron as input
+    - New recipe cube-jelly-awaken. Use cube jelly to awaken a cube and make some water too!
+    - Cube jelly now takes 3 minutes to spoil instead of 2. Destabilized cube matter now spoils in 5 minutes - from 10
+    - Destabilized cube matter recycling - now gives 4 ice and 2 iron ore when rolled.
+    - From cube smashing - chance of inverted shards now 30%, from 20%
+    - New recipe - convert biter eggs to dream concentrate.
+    - Metallic aggravation gets its own trigger technology, to help players guide players toward recharging the cube.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 12. 3. 2025
+  Major Features:
+    - added carbon recipe to the planet discovery instead of modifying alternative unlock
+    - cube jelly and inverted cube jelly are now chemical fuels. Had wanted to do something special with cube fuels but that didn't pan out
+    - Ultradense substrate to cube recipe is no longer recyclable.
+    - Initial cube jelly recipes now give 2.
+    - Attempted to create a scenario for starting on cubium, and I failed.
+    - You can now smash dormant cube for some energized shards back
+---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 15. 2. 2025
   Major Features:
