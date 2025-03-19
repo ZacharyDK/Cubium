@@ -166,7 +166,7 @@ data:extend(
           {
             icon ="__base__/graphics/icons/fluid/steam.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
         },
         category = "chemistry",
@@ -201,7 +201,7 @@ data:extend(
           {
             icon = "__base__/graphics/icons/solid-fuel.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
         },
         category = "chemistry",
@@ -260,8 +260,7 @@ data:extend(
         results =
         {
           {type = "item", name = "cube-jelly",                amount = 2, percent_spoiled = 0},
-          {type = "item", name = "energized-microcube", probability = 0.6,               amount = 1,ignored_by_productivity = 9999},
-          {type = "item", name = "dormant-microcube", probability = 0.4,               amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0},
+          {type = "item", name = "dormant-microcube",            amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0},
         },
         result_is_always_fresh = true,
         main_product = "cube-jelly",
@@ -281,7 +280,7 @@ data:extend(
             {
               icon = "__cubium__/graphics/icons/cube-jelly.png",
               scale = 0.6,
-              shift = util.by_pixel(140, 140),
+              shift = util.by_pixel(0, 0),
             }
         },
         category = "advanced-crafting",
@@ -297,8 +296,7 @@ data:extend(
         results =
         {
           {type = "item", name = "cube-jelly",                amount = 17,  percent_spoiled = 0, ignored_by_productivity = 10, ignored_by_stats = 10},
-          {type = "item", name = "energized-microcube", probability = 0.7,               amount = 1,ignored_by_productivity = 9999},
-          {type = "item", name = "dormant-microcube", probability = 0.3,               amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0},
+          {type = "item", name = "dormant-microcube",              amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0},
         },
         result_is_always_fresh = true,
         main_product = "cube-jelly",
@@ -318,7 +316,7 @@ data:extend(
             {
               icon = "__space-age__/graphics/icons/carbon.png",
               scale = 0.6,
-              shift = util.by_pixel(140, 140),
+              shift = util.by_pixel(0, 0),
             }
         },
         category = "advanced-crafting",
@@ -335,8 +333,7 @@ data:extend(
         results =
         {
           {type = "item", name = "cube-jelly",                amount = 75,  percent_spoiled = 0, ignored_by_productivity = 20, ignored_by_stats = 20},
-          {type = "item", name = "energized-microcube", probability = 0.75,               amount = 1,ignored_by_productivity = 9999},
-          {type = "item", name = "dormant-microcube", probability = 0.25,               amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0},
+          {type = "item", name = "dormant-microcube",             amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0},
         },
         result_is_always_fresh = true,
         main_product = "cube-jelly",
@@ -356,7 +353,7 @@ data:extend(
           {
             icon = "__cubium__/graphics/icons/matter-cube.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       category = "advanced-crafting",
@@ -394,7 +391,7 @@ data:extend(
             {
               icon = "__cubium__/graphics/icons/matter-cube-dormant.png",
               scale = 0.6,
-              shift = util.by_pixel(140, 140),
+              shift = util.by_pixel(0, 0),
             }
           },
         category = "advanced-crafting",
@@ -429,7 +426,7 @@ data:extend(
           {
             icon = "__cubium__/graphics/icons/matter-cube-dormant.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       category = "advanced-crafting",
@@ -467,7 +464,7 @@ data:extend(
           {
             icon = "__base__/graphics/icons/iron-ore.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       category = "advanced-crafting",
@@ -503,7 +500,7 @@ data:extend(
           {
             icon = "__base__/graphics/icons/iron-plate.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       category = "advanced-crafting",
@@ -539,7 +536,7 @@ data:extend(
           {
             icon = "__base__/graphics/icons/copper-plate.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       category = "advanced-crafting",
@@ -577,7 +574,7 @@ data:extend(
             {
               icon = "__cubium__/graphics/icons/broken-cube.png",
               scale = 0.6,
-              shift = util.by_pixel(140, 140),
+              shift = util.by_pixel(0, 0),
             }
         },
         category = "cubic",
@@ -611,7 +608,7 @@ data:extend(
           {
             icon = "__cubium__/graphics/icons/broken-cube.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       category = "cubic",
@@ -705,7 +702,7 @@ data:extend(
           {
             icon = "__cubium__/graphics/icons/matter-cube-dormant.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       category = "cubic",
@@ -741,7 +738,7 @@ data:extend(
           {
             icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       category = "chemistry-or-cryogenics",
@@ -786,7 +783,7 @@ data:extend(
           {
             icon = "__base__/graphics/icons/fluid/sulfuric-acid.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       category = "chemistry-or-cryogenics",
@@ -833,7 +830,7 @@ data:extend(
           {
             icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       category = "chemistry-or-cryogenics",
@@ -878,7 +875,7 @@ data:extend(
           {
             icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       category = "advanced-crafting",
@@ -915,7 +912,7 @@ data:extend(
           {
             icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       category = "chemistry-or-cryogenics",
@@ -1259,7 +1256,7 @@ data:extend(
           {
             icon ="__base__/graphics/icons/fluid/steam.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       enabled = false,
@@ -1307,7 +1304,7 @@ data:extend(
           {
             icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       category = "advanced-crafting",
@@ -1344,7 +1341,7 @@ data:extend(
           {
             icon = "__cubium__/graphics/icons/dream.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       category = "advanced-crafting",
@@ -1381,7 +1378,7 @@ data:extend(
           {
             icon = "__cubium__/graphics/icons/dream.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       category = "advanced-crafting",
@@ -1419,7 +1416,7 @@ data:extend(
           {
             icon = "__cubium__/graphics/icons/dream.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       category = "electronics",
@@ -1459,7 +1456,7 @@ data:extend(
           {
             icon = "__cubium__/graphics/icons/dream.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       category = "electronics",
@@ -1604,7 +1601,7 @@ data:extend(
         {
           icon = "__cubium__/graphics/icons/dream.png",
           scale = 0.6,
-          shift = util.by_pixel(140, 140),
+          shift = util.by_pixel(0, 0),
         }
       },
       category = "chemistry-or-cryogenics",
@@ -1620,8 +1617,7 @@ data:extend(
       results =
       {
         {type = "item", name = "ice",                amount = 7, percent_spoiled = 0},
-        {type = "item", name = "energized-microcube", probability = 0.6,               amount = 1,ignored_by_productivity = 9999},
-        {type = "item", name = "dormant-microcube", probability = 0.4,               amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0},
+        {type = "item", name = "dormant-microcube",            amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0},
       },
       result_is_always_fresh = true,
       main_product = "ice",
@@ -1642,7 +1638,7 @@ data:extend(
         {
           icon = "__cubium__/graphics/icons/dream-fuel.png",
           scale = 0.6,
-          shift = util.by_pixel(140, 140),
+          shift = util.by_pixel(0, 0),
         }
       },
       category = "crafting-with-fluid",
@@ -1728,8 +1724,7 @@ data:extend(
       results =
       {
         {type = "item", name = "explosive-rocket",                amount = 14},
-        {type = "item", name = "energized-microcube", probability = 0.25,               amount = 3,ignored_by_productivity = 9999},
-        {type = "item", name = "dormant-microcube", probability = 0.75,               amount = 3,ignored_by_productivity = 9999,  percent_spoiled = 0},
+        {type = "item", name = "dormant-microcube",             amount = 3,ignored_by_productivity = 9999,  percent_spoiled = 0},
       },
       result_is_always_fresh = true,
       main_product = "explosive-rocket",
@@ -1811,30 +1806,29 @@ data:extend(
           {
             icon = "__cubium__/graphics/icons/matter-cube-dormant.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       enabled = false,
       ingredients =
       {
 
-        {type = "fluid", name = "thruster-fuel", amount = 2300},
-        {type = "fluid", name = "thruster-oxidizer", amount = 2300},
+        {type = "fluid", name = "thruster-fuel", amount = 500},
+        {type = "fluid", name = "thruster-oxidizer", amount = 500},
         {type = "item", name = "dormant-microcube", amount = 1},
       },
 
-      energy_required = 5,
+      energy_required = 1,
       results =
       {
-        {type = "item", name = "energized-microcube", amount = 1, probability = 0.93,ignored_by_productivity = 9999},
-        {type = "item", name = "energized-shards", amount = 100,probability = 0.07,ignored_by_productivity = 9999 },
+        {type = "item", name = "energized-shards", amount = 100, ignored_by_productivity = 9999 },
       },
       allow_productivity = false,
       allow_quality = false,
       allow_decomposition = false,
       auto_recycle = false,
       result_is_always_fresh = true,
-      main_product = "energized-microcube",
+      main_product = "energized-shards",
       crafting_machine_tint =
       {
         primary = {r = 0.881, g = 0.100, b = 0.000, a = 0.502}, -- #e0190080
@@ -1857,7 +1851,7 @@ data:extend(
           {
             icon = "__cubium__/graphics/icons/dream.png",
             scale = 0.6,
-            shift = util.by_pixel(140, 140),
+            shift = util.by_pixel(0, 0),
           }
       },
       enabled = false,
@@ -2372,5 +2366,217 @@ data:extend(
       },
     },
 
+    {
+      type = "recipe",
+      name = "express-transport-belt-dream",
+      icons = 
+      {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube.png",
+          scale = 0.9
+        },
+        {
+          icon = "__base__/graphics/icons/express-transport-belt.png",
+          scale = 0.6,
+        }
+      },
+      category = "chemistry-or-cryogenics",
+      subgroup = "cubic",
+      enabled = false,
+      ingredients =
+      {
+        {type = "item", name = "iron-gear-wheel", amount = 10},
+        {type = "item", name = "fast-transport-belt", amount = 1},
+        {type = "fluid", name = "dream-concentrate", amount = 20},
+        {type = "fluid", name = "liquid-hope", amount = 20},
+        {type = "item", name = "energized-microcube", amount = 1}
+      },
+      results = 
+      {
+        {type="item", name="express-transport-belt", amount=1},
+        {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
+      },
+      result_is_always_fresh = true,
+      auto_recycle = false
+    },
+    {
+      type = "recipe",
+      name = "express-underground-belt-dream",
+      icons = 
+      {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube.png",
+          scale = 0.9
+        },
+        {
+          icon = "__base__/graphics/icons/express-underground-belt.png",
+          scale = 0.6,
+        }
+      },
+      energy_required = 2,
+      category = "chemistry-or-cryogenics",
+      subgroup = "cubic",
+      enabled = false,
+      ingredients =
+      {
+        {type = "item", name = "iron-gear-wheel", amount = 80},
+        {type = "item", name = "fast-underground-belt", amount = 2},
+        {type = "fluid", name = "dream-concentrate", amount = 40},
+        {type = "fluid", name = "liquid-hope", amount = 40},
+        {type = "item", name = "energized-microcube", amount = 1}
+      },
+      results = 
+      {
+        {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
+        {type="item", name="express-underground-belt", amount=2},
+      },
+      result_is_always_fresh = true,
+      auto_recycle = false
+    },
+    {
+      type = "recipe",
+      name = "express-splitter-dream",
+
+      icons = 
+      {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube.png",
+          scale = 0.9
+        },
+        {
+          icon = "__base__/graphics/icons/express-splitter.png",
+          scale = 0.6,
+        }
+      },
+      category = "chemistry-or-cryogenics",
+      subgroup = "cubic",
+      enabled = false,
+      energy_required = 2,
+      ingredients =
+      {
+        {type = "item", name = "fast-splitter", amount = 1},
+        {type = "item", name = "iron-gear-wheel", amount = 10},
+        {type = "item", name = "advanced-circuit", amount = 10},
+        {type = "fluid", name = "dream-concentrate", amount = 80},
+        {type = "fluid", name = "liquid-hope", amount = 80},
+        {type = "item", name = "energized-microcube", amount = 1}
+      },
+      results = 
+      {
+        {type="item", name="express-splitter", amount=1},
+        {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
+      },
+      result_is_always_fresh = true,
+      auto_recycle = false
+    },
+
+    {
+      type = "recipe",
+      name = "turbo-transport-belt-dream",
+      icons = 
+      {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
+          scale = 0.9
+        },
+        {
+          icon = "__space-age__/graphics/icons/turbo-transport-belt.png",
+          scale = 0.6,
+        }
+      },
+      category = "chemistry-or-cryogenics",
+      subgroup = "cubic",
+      enabled = false,
+      ingredients =
+      {
+        {type = "item", name = "iron-gear-wheel", amount = 20},
+        {type = "item", name = "express-transport-belt", amount = 1},
+        {type = "fluid", name = "dream-concentrate", amount = 20},
+        {type = "fluid", name = "liquid-hope", amount = 20},
+        {type = "fluid", name = "liquid-courage", amount = 20},
+        {type = "item", name = "inverted-microcube", amount = 2},
+        {type = "item", name = "low-density-structure", amount = 10},
+      },
+      results = 
+      {
+        {type="item", name="turbo-transport-belt", amount=1},
+        {type = "item", name = "inverted-dormant-microcube",                amount = 2,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
+      },
+      result_is_always_fresh = true,
+      auto_recycle = false
+    },
+    {
+      type = "recipe",
+      name = "turbo-underground-belt-dream",
+      icons = 
+      {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
+          scale = 0.9
+        },
+        {
+          icon = "__space-age__/graphics/icons/turbo-underground-belt.png",
+          scale = 0.6,
+        }
+      },
+      energy_required = 2,
+      category = "chemistry-or-cryogenics",
+      subgroup = "cubic",
+      enabled = false,
+      ingredients =
+      {
+        {type = "item", name = "iron-gear-wheel", amount = 120},
+        {type = "item", name = "express-underground-belt", amount = 2},
+        {type = "fluid", name = "dream-concentrate", amount = 40},
+        {type = "fluid", name = "liquid-hope", amount = 40},
+        {type = "fluid", name = "liquid-courage", amount = 40},
+        {type = "item", name = "inverted-microcube", amount = 3},
+        {type = "item", name = "low-density-structure", amount = 80},
+      },
+      results = 
+      {
+        {type = "item", name = "inverted-dormant-microcube",                amount = 3,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
+        {type="item", name="turbo-underground-belt", amount=2},
+      },
+      result_is_always_fresh = true,
+      auto_recycle = false
+    },
+    {
+      type = "recipe",
+      name = "turbo-splitter-dream",
+      icons = 
+      {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
+          scale = 0.9
+        },
+        {
+          icon = "__space-age__/graphics/icons/turbo-splitter.png",
+          scale = 0.6,
+        }
+      },
+      category = "chemistry-or-cryogenics",
+      subgroup = "cubic",
+      enabled = false,
+      energy_required = 2,
+      ingredients =
+      {
+        {type = "item", name = "express-splitter", amount = 1},
+        {type = "item", name = "iron-gear-wheel", amount = 20},
+        {type = "item", name = "processing-unit", amount = 10},
+        {type = "fluid", name = "dream-concentrate", amount = 80},
+        {type = "fluid", name = "liquid-hope", amount = 80},
+        {type = "fluid", name = "liquid-courage", amount = 80},
+        {type = "item", name = "inverted-microcube", amount = 3},
+        {type = "item", name = "low-density-structure", amount = 30},
+      },
+      results = 
+      {
+        {type="item", name="turbo-splitter", amount=1},
+        {type = "item", name = "inverted-dormant-microcube",                amount = 3,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
+      },
+      result_is_always_fresh = true,
+      auto_recycle = false
+    },
 })
 

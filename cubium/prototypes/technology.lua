@@ -413,9 +413,78 @@ data:extend({
         count = 10
       }
      
-    }
+    },
 
-
+    {
+      type = "technology",
+      name = "express-transport-belt-dream",
+      icon = "__base__/graphics/technology/logistics-3.png",
+      icon_size = 256,
+      effects =
+      {
+        {
+          type = "unlock-recipe",
+          recipe = "express-transport-belt-dream"
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "express-underground-belt-dream"
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "express-splitter-dream"
+        }
+      },
+      prerequisites = {"logistics-3", "cube-mastery-4"},
+      unit =
+      {
+        count =1,
+        ingredients =
+        {
+          {"automation-science-pack", 1},
+          {"logistic-science-pack", 1},
+          {"chemical-science-pack", 1},
+          {"production-science-pack", 1}
+        },
+        time = 15
+      }
+    },
+    {
+      type = "technology",
+      name = "turbo-transport-belt-dream",
+      icon = "__space-age__/graphics/technology/turbo-transport-belt.png",
+      icon_size = 256,
+      effects =
+      {
+        {
+          type = "unlock-recipe",
+          recipe = "turbo-transport-belt-dream"
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "turbo-underground-belt-dream"
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "turbo-splitter-dream"
+        },
+      },
+      prerequisites = {"turbo-transport-belt", "cube-mastery-4"},
+      unit =
+      {
+        count = 1,
+        ingredients =
+        {
+          {"automation-science-pack", 1},
+          {"logistic-science-pack", 1},
+          {"chemical-science-pack", 1},
+          {"production-science-pack", 1},
+          {"space-science-pack", 1},
+          {"metallurgic-science-pack", 1}
+        },
+        time = 15
+      }
+    },
 
     
 

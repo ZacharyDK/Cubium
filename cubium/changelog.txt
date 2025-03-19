@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.6
+Date: 19. 3. 2025
+  Major Features:
+    - Reworked microcube recipes. It turns out the probability on result dooesn't work as how I thought. It attempts to generate an item for each result that has a probability attached to it. In practice, this means one craft can give you back both a dormant cube and an active cube. This also means you can get back nothing. In long term testing - this made some recipes generate cubes while others ate cubes. The point of using porbability in the first place was to make it easier to reuse the same cube, but this makes it more complicated when you consider unauthorized cube breeding and cube eating.
+    - Space cube recovery recipe reworked with probability behavior in mind. It always shatters the cube, but costs much less.
+    - Recipes for express belts with the cube and dream concentrate. Locked behind a cheap technology that requires cube mastery 4 and logistics 3 
+    - Recipes for turbo transport belts with the inverted cube. Locked behind a cheap technology that requires cube mastery 4 and turbo transport belt.
+    -SSub Icon shift now zero, from 140. I think it looks nicer with everything centered and the cube in the background
+---------------------------------------------------------------------------------------------------
 Version: 1.0.5
 Date: 14. 3. 2025
   Major Features:
