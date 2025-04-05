@@ -89,7 +89,7 @@ data:extend(
         --circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
         --circuit_connector = circuit_connector_definitions["chemical-plant"],
         collision_box = {{-2.7, -2.7}, {2.7, 2.7}},
-        selection_box = {{-3.5, -3.5}, {3.2, 3.2}},
+        selection_box = {{-3.0, -3.0}, {3.2, 2.9}},
         damaged_trigger_effect = hit_effects.entity(),
         drawing_box_vertical_extension = 0.0,
         module_slots = 5,
