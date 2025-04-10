@@ -1913,7 +1913,7 @@ data:extend(
       },
       results = 
       {
-        {type="item", name="automation-science-pack", amount=1},
+        {type="item", name="automation-science-pack", amount=2},
         {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
       },
       crafting_machine_tint =

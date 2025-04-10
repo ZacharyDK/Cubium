@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.8
+Date: 10. 4. 2025
+  Major Features:
+    - Automation science cubic now correctly gives you 2 science packs. Thanks to freredoc for bringing this to my attention.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.7
 Date: 4. 4. 2025
   Major Features:
