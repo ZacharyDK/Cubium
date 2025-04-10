@@ -4,8 +4,12 @@ script.on_init(function()
 
     if not remote.interfaces["freeplay"] then return end
     if not cubium_start then return end
-    remote.call("freeplay", "set_created_items", {})
-    remote.call("freeplay", "set_ship_items", {
+    remote.call("freeplay", "set_ship_items", 
+    {
+        ["iron-plate"] = 200,
+        ["copper-plate"] = 200,
+    })
+    remote.call("freeplay", "set_created_items", {
         ["foundry"] = 5,
         ["medium-electric-pole"] = 20,
         ["transport-belt"] = 100,
@@ -17,8 +21,8 @@ script.on_init(function()
         ["assembling-machine-2"] = 1,
     })
     remote.call("freeplay", "set_debris_items", {
-        ["iron-plate"] = 400,
-        ["copper-plate"] = 400,
+        ["iron-plate"] = 50,
+        ["copper-plate"] = 50,
     })
 
     if(cubium_start) then
