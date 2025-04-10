@@ -24,3 +24,6 @@ require("__cubium__.prototypes.fuel-category")
 require("__cubium__.prototypes.item-groups")
 require("__cubium__.prototypes.ambient-sounds")
 --require("__cubium__.prototypes.achievements")
+if (mods["any-planet-start"]) then
+    APS.add_planet{name = "cubium", filename = "__cubium__/cubium.lua", technology = "planet-discovery-cubium"}
+end
