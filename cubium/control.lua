@@ -1,6 +1,10 @@
 script.on_init(function()
-    local cubium_start = settings.startup["check-this-if-cubium-start"].value or settings.startup["aps-planet"].value == "cubium"
-
+    local cubium_start = settings.startup["check-this-if-cubium-start"].value 
+    if(script.active_mods["aps-planet"]) then
+        if(settings.startup["aps-planet"].value == "cubium") then
+            cubium_start = true
+        end
+    end
 
     if not remote.interfaces["freeplay"] then return end
     if not cubium_start then return end
