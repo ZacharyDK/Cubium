@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.10
+Date: 22. 4. 2025
+  Major Features:
+    - Changelog now visible in game 
+    - biter egg refresh results always  0% spoiled.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.9
 Date: 10. 4. 2025
   Major Features:
@@ -24,7 +30,7 @@ Date: 19. 3. 2025
     - Space cube recovery recipe reworked with probability behavior in mind. It always shatters the cube, but costs much less.
     - Recipes for express belts with the cube and dream concentrate. Locked behind a cheap technology that requires cube mastery 4 and logistics 3 
     - Recipes for turbo transport belts with the inverted cube. Locked behind a cheap technology that requires cube mastery 4 and turbo transport belt.
-    -SSub Icon shift now zero, from 140. I think it looks nicer with everything centered and the cube in the background
+    - SSub Icon shift now zero, from 140. I think it looks nicer with everything centered and the cube in the background
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.5
 Date: 14. 3. 2025

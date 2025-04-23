@@ -1684,7 +1684,7 @@ data:extend(
       },
       results = 
       {
-        {type="item", name="biter-egg", amount=1},
+        {type="item", name="biter-egg", amount=1,percent_spoiled = 0},
       },
       allow_productivity = false,
       enabled = false,
@@ -1773,8 +1773,8 @@ data:extend(
       },
       results = 
       {
-        {type="item", name="biter-egg", amount=6},
-        {type="item", name="biter-egg", probability = 0.4, amount=1},
+        {type="item", name="biter-egg", amount=6, percent_spoiled = 0},
+        {type="item", name="biter-egg", probability = 0.4, amount=1, percent_spoiled = 0},
         {type="item", name="inverted-cube-jelly", probability = 0.1, amount=2},
         {type = "item", name = "dormant-microcube",                amount = 2,  percent_spoiled = 0, ignored_by_productivity = 9999},
         {type = "item", name = "inverted-dormant-microcube", amount = 2, percent_spoiled = 0,ignored_by_productivity = 9999},
