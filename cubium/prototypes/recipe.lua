@@ -393,7 +393,7 @@ data:extend(
               scale = 0.6,
               shift = util.by_pixel(0, 0),
             }
-          },
+        },
         category = "advanced-crafting",
 
         enabled = false,

@@ -27,6 +27,11 @@ data:extend(
         weight = 10*kg,
         spoil_ticks = 30 * minute,
         spoil_result = "dormant-microcube",
+        fuel_category = "chemical",
+        fuel_value = "20MJ",
+        burnt_result = "dormant-microcube",
+        fuel_acceleration_multiplier = 1.5,
+        fuel_top_speed_multiplier = 4.5,
     },
     {
         type = "item",

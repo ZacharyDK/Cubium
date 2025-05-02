@@ -1,4 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.11
+Date: 5. 1. 2025
+  Major Features:
+    - Date now in American format
+    - APS planet start Cubium selection now has planet icon. APS now optional dependency. If you want a Cubium start - remember to check Cubium start in the mod settings
+    - rocket-fuel-dreams productivity scales with rocket-fuel-productivity tech
+    - cube-jelly-plastic productivity scales with plastic-bar-productivity tech
+    - dream-processing-unit productivity scales with processing-unit-productivity tech
+    - CASTRA BONUS COMPATIBILITY engine-unit-by-inversion productivity scales with engine-productivity tech
+    - CASTRA electric-engine-unit-by-inversion productivity scales with engine-productivity tech
+    - CASTRA angry-rockets productivity scales with explosive-ammo-productivity tech
+    - Thanks to boomshroom for listing out productivity I should integrate.
+    - It is up to mod makers to add an alternate science recipe to cubium's cube-mastery-4 technology. Their choice for how they want to design it.
+    - Emotional fluid icons updated. Now have cube in center of the droplet. This makes them more distinct 
+    - Cubium start - oil processing not a trigger tech. Had forgot to change that one. 
+    - Now possible to do an Aquilo start with Cubium installed. You get 50 microcubes and several balance changes to Cubium for Aquilo start. Note that you can't craft any more cubes - you get what you start with.
+    - Microcubes can now be used as a chemical fuel - and yield dormant microcubes.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.10
 Date: 22. 4. 2025
   Major Features:
