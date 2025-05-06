@@ -28,6 +28,8 @@ script.on_init(function()
             ["calcite"] = 100,
             ["recycler"] = 2,
             ["assembling-machine-2"] = 1,
+            ["solar-panel"] = 10,
+            ["accumulator"] = 2,
         })
         remote.call("freeplay", "set_debris_items", {
             ["iron-plate"] = 50,
@@ -54,10 +56,14 @@ script.on_init(function()
             ["boiler"] = 4,
             ["steam-turbine"] = 1,
             ["pipe"] = 10,
-            ["solar-panel"] = 1,
-            ["solid-fuel"] = 5,
+            ["solar-panel"] = 10,
+            ["solid-fuel"] = 100,
             ["offshore-pump"] = 1,
             ["red-pumpjack"] = 1,
+            ["chemical-plant"] = 1,
+            ["accumulator"] = 1,
+            ["iron-ore"] = 100,
+            ["copper-ore"] = 100,
         })
         remote.call("freeplay", "set_debris_items", {
             ["iron-plate"] = 50,
@@ -117,4 +123,13 @@ script.on_event(defines.events.on_console_chat,function(event)
 
     end
 
+end)
+
+script.on_event(defines.events.on_player_joined_game, function(event)
+    local aquilo_start = settings.startup["check-this-if-aquilo-start"].value 
+
+    if not aquilo_start then return end -- No soup for you if you don't start on Frozeta
+
+    local player = game.players[event.player_index]
+    player.force.technologies["planet-discovery-cubium"].research_recursive()
 end)

@@ -26,6 +26,9 @@ table.insert(data.raw["technology"]["processing-unit-productivity"].effects,
 }
 )
 
+table.insert(data.raw["reactor"]["heating-tower"]["energy_source"]["fuel_categories"],"cubic")
+
+
 if(mods["castra"]) then
     table.insert(data.raw["technology"]["engine-productivity"].effects,
     {       

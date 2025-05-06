@@ -65,7 +65,8 @@ data.raw.recipe["coal-synthesis"].enabled = true
 data.raw.recipe["basic-oil-processing"].enabled = true
 data.raw.recipe["oil-refinery"].enabled = true
 data.raw.recipe["concrete"].enabled = true
-
+data.raw.recipe["chemical-plant"].enabled = true
+data.raw.recipe["pipe"].enabled = true
 
 
 
@@ -119,7 +120,7 @@ data:extend(
                 type = "burner",
                 fuel_categories = {"chemical"},
                 effectivity = 1,
-                fuel_inventory_size = 1,
+                fuel_inventory_size = 2,
                 emissions_per_minute = { pollution = 12 },
                 light_flicker = {color = {0,0,0}},
                 smoke =
@@ -333,15 +334,35 @@ data.raw.recipe["electromagnetic-plant-recycling"].results =
 --Buff destabilized cube matter recycling. Need a carbon source. Now have chance to get 5 carbon back.
 data.raw.recipe["destabilized-cube-matter-recycling"].results = 
 {
-    {type = "item", name = "carbon",                amount = 5, probability = 0.2, show_details_in_recipe_tooltip = false},
+    {type = "item", name = "carbon",                amount = 10, probability = 0.4, show_details_in_recipe_tooltip = false},
     {type = "item", name = "sulfur",                amount = 1, probability = 0.05, show_details_in_recipe_tooltip = false},
-    {type = "item", name = "ice",                   amount = 5, probability = 0.3, show_details_in_recipe_tooltip = false},
+    {type = "item", name = "ice",                   amount = 5, probability = 0.1, show_details_in_recipe_tooltip = false},
     {type = "item", name = "iron-ore",              amount = 2, probability = 0.25, show_details_in_recipe_tooltip = false},
     {type = "item", name = "copper-ore",            amount = 1, probability = 0.20, show_details_in_recipe_tooltip = false},
 
 
 }
+--[[
+data.raw.recipe["inverted-dormant-microcube-recycling"].results = 
+{
+  {type = "item", name = "inverted-dormant-microcube", amount = 1}
+}
 
+
+data.raw.recipe["inverted-microcube-recycling"].results = 
+{
+  {type = "item", name = "inverted-microcube", amount = 1}
+}
+
+data.raw.recipe["dormant-microcube-recycling"].results = 
+{
+  {type = "item", name = "inverted-microcube", amount = 1}
+}
+
+data.raw.recipe["energized-microcube-recycling"].enabled = false
+data.raw.recipe["inverted-shards-recycling"].enabled = false
+data.raw.recipe["energized-shards-recycling"].enabled = false
+--]]
 
 --Cube smashing. Outputs no longer random. We can't afford to lose the cube!
 
@@ -359,10 +380,11 @@ data.raw.recipe["inverted-shards"].results =
 --Aquilo only - burn a dormant inverted cube to make it back to dormant cube!
 --This ensures players can't softlock themselves by making all their cubes inverted.
 data.raw.item["inverted-dormant-microcube"].fuel_value = "50MJ"
-data.raw.item["inverted-dormant-microcube"].fuel_category = "chemical"
+data.raw.item["inverted-dormant-microcube"].fuel_category = "cubic"
 data.raw.item["inverted-dormant-microcube"].burnt_result = "dormant-microcube"
 data.raw.item["inverted-dormant-microcube"].fuel_acceleration_multiplier  = 1
 data.raw.item["inverted-dormant-microcube"].fuel_top_speed_multiplier = 1
+
 
 
 --data.raw.recipe["pumpjack"].enabled = true
@@ -389,3 +411,5 @@ utils.set_packs("fusion-reactor", cryogenic_science_p_u, 2000, 30)
 utils.set_packs("fusion-reactor-equipment", cryogenic_science_p_u, 1000, 30)
 utils.set_packs("electromagnetic-plant", cryogenic_science_p_u, 500, 30)
 utils.set_prerequisites("electromagnetic-plant",{"cryogenic-plant"})
+
+--Tentitave list of all items to add burnt_inventory to. Car,tank,+1 on heating tower, boiler, red-pumpjack, burner inserter. Furnace, steel furnace. TODO search for chemistry energy source

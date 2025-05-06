@@ -1,4 +1,26 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.14
+Date: 5. 6. 2025
+  Major Features:
+    - Cube jelly ore basic -ores now 4->6
+    - Advanced cube jelly ores 37->41
+    - Aquilo start destabilized cube matter recycling ice now only 10%. Carbon is 40% and now gives 10.  
+    - Cube jelly to solid fuel now only needs 25 cube jelly instead of 50.
+    - Cubes and shards can no longer be recycled
+    - Cubium start: Solar panels and accumulators. I had thought I had added solar panels but I missed it. Thanks to Alexis Chernisky for informing me. 
+---------------------------------------------------------------------------------------------------
+Version: 1.0.13
+Date: 5. 5. 2025
+  Major Features:
+    - Aquilo start - starter chemical plant, solid fuel, starter ores. More solar panel, accumulator
+    - Aquilo start cubium planet discovery research recursive. 
+    - Cube fuel type moved to cubic and cubic fuel type now only allowed in heating tower. Boilers and red pump jack were eating cubes. I'll have to test which entities I need to give the burnt_inventory_fuel_size tag to.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.12
+Date: 5. 5. 2025
+  Major Features:
+    - Aquilo start - chemical plant and pipe recipes enabled.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.11
 Date: 5. 1. 2025
   Major Features:

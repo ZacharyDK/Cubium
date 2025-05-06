@@ -209,7 +209,7 @@ data:extend(
         enabled = false,
         auto_recycle = false,
         energy_required = 4,
-        ingredients = {{type = "item", name = "cube-jelly", amount = 50}},
+        ingredients = {{type = "item", name = "cube-jelly", amount = 25}},
         results =
         {
           {type = "item", name = "solid-fuel",                amount = 2},
@@ -479,8 +479,8 @@ data:extend(
       },
       results =
       {
-        {type = "item", name = "iron-ore", amount = 4, probability = 0.60},
-        {type = "item", name = "copper-ore", amount = 4,probability = 0.40},
+        {type = "item", name = "iron-ore", amount = 6, probability = 0.60},
+        {type = "item", name = "copper-ore", amount = 6,probability = 0.40},
       },
       result_is_always_fresh = true,
       main_product = "iron-ore",
@@ -516,7 +516,7 @@ data:extend(
       },
       results =
       {
-        {type = "item", name = "iron-ore", amount = 37},
+        {type = "item", name = "iron-ore", amount = 41},
         {type = "item", name = "dormant-microcube",amount = 1,ignored_by_productivity = 9999, percent_spoiled = 0},
       },
       result_is_always_fresh = true,
@@ -552,7 +552,7 @@ data:extend(
       },
       results =
       {
-        {type = "item", name = "copper-ore", amount = 37},
+        {type = "item", name = "copper-ore", amount = 41},
         {type = "item", name = "dormant-microcube",amount = 1,ignored_by_productivity = 9999, percent_spoiled = 0},
       },
       result_is_always_fresh = true,
@@ -580,7 +580,7 @@ data:extend(
         category = "cubic",
 
         enabled = false,
-        auto_recycle = true,
+        auto_recycle = false,
         energy_required = 15,
         allow_productivity = false,
         ingredients = 
@@ -674,7 +674,7 @@ data:extend(
       category = "cubic",
 
       enabled = false,
-      auto_recycle = true,
+      auto_recycle = false,
       energy_required = 15,
       allow_productivity = false,
       ingredients = 

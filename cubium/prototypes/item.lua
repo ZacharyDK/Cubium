@@ -27,11 +27,12 @@ data:extend(
         weight = 10*kg,
         spoil_ticks = 30 * minute,
         spoil_result = "dormant-microcube",
-        fuel_category = "chemical",
+        fuel_category = "cubic",
         fuel_value = "20MJ",
         burnt_result = "dormant-microcube",
         fuel_acceleration_multiplier = 1.5,
         fuel_top_speed_multiplier = 4.5,
+        auto_recycle = false,
     },
     {
         type = "item",
@@ -49,6 +50,7 @@ data:extend(
         weight = 10*kg,
         spoil_ticks = 60 * minute,
         spoil_result = "energized-microcube",
+        auto_recycle = false,
     },
     {
         type = "item",
@@ -57,7 +59,7 @@ data:extend(
         order = "c[invertedmicrocube]",
         subgroup = "cubic",
         color_hint = { text = "T" },
-  
+        auto_recycle = false,
         inventory_move_sound = item_sounds.resource_inventory_move,
         pick_sound = item_sounds.resource_inventory_pickup,
         drop_sound = item_sounds.resource_inventory_move,
@@ -72,7 +74,7 @@ data:extend(
         order = "d[invertdormantmicrocube]",
         subgroup = "cubic",
         color_hint = { text = "T" },
-  
+        auto_recycle = false,
         inventory_move_sound = item_sounds.resource_inventory_move,
         pick_sound = item_sounds.resource_inventory_pickup,
         drop_sound = item_sounds.resource_inventory_move,
@@ -109,6 +111,7 @@ data:extend(
         stack_size = 10*10,
         default_import_location = "cubium",
         weight = 10/100*kg,
+        auto_recycle = false,
     },
     {
         type = "item",
@@ -124,6 +127,7 @@ data:extend(
         stack_size = 10*10,
         default_import_location = "cubium",
         weight = 10/100*kg,
+        auto_recycle = false,
     },
     {
         type = "item",
