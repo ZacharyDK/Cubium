@@ -1019,7 +1019,7 @@ data:extend(
       energy_required = 17,
       results =
       {
-        {type ="fluid", name ="dream-concentrate", amount = 35}
+        {type ="fluid", name ="dream-concentrate", amount = 50}
       },
       allow_productivity = true,
       allow_quality = false,
@@ -1909,7 +1909,7 @@ data:extend(
         {type = "item", name = "copper-plate", amount = 1},
         {type = "item", name = "iron-gear-wheel", amount = 1},
         {type = "item", name = "energized-microcube", amount = 1},
-        {type = "fluid", name = "dream-concentrate", amount = 150}
+        {type = "fluid", name = "dream-concentrate", amount = 50}
       },
       results = 
       {
@@ -1949,7 +1949,7 @@ data:extend(
         {type = "item", name = "inserter", amount = 1},
         {type = "item", name = "transport-belt", amount = 1},
         {type = "item", name = "energized-microcube", amount = 1},
-        {type = "fluid", name = "dream-concentrate", amount = 150},
+        {type = "fluid", name = "dream-concentrate", amount = 75},
       },
       results = 
       {
@@ -1989,7 +1989,7 @@ data:extend(
         {type = "item", name = "advanced-circuit", amount = 3},
         {type = "item", name = "sulfur", amount = 1},
         {type = "item", name = "energized-microcube", amount = 1},
-        {type = "fluid", name = "dream-concentrate", amount = 150},
+        {type = "fluid", name = "dream-concentrate", amount = 100},
       },
       results = 
       {
@@ -2029,7 +2029,7 @@ data:extend(
         {type = "item", name = "grenade", amount = 1},
         {type = "item", name = "stone-wall", amount = 2},
         {type = "item", name = "energized-microcube", amount = 1},
-        {type = "fluid", name = "dream-concentrate", amount = 200}
+        {type = "fluid", name = "dream-concentrate", amount = 125}
       },
       results = 
       {
@@ -2069,7 +2069,7 @@ data:extend(
         {type = "item", name = "productivity-module", amount = 1},
         {type = "item", name = "rail", amount = 30},
         {type = "item", name = "energized-microcube", amount = 1},
-        {type = "fluid", name = "dream-concentrate", amount = 200},
+        {type = "fluid", name = "dream-concentrate", amount = 150},
       },
       results = 
       {
@@ -2109,7 +2109,7 @@ data:extend(
         {type = "item", name = "processing-unit", amount = 2},
         {type = "item", name = "flying-robot-frame", amount = 1},
         {type = "item", name = "energized-microcube", amount = 1},
-        {type = "fluid", name = "dream-concentrate", amount = 200},
+        {type = "fluid", name = "dream-concentrate", amount = 150},
         
       },
       results = 
@@ -2578,5 +2578,41 @@ data:extend(
       result_is_always_fresh = true,
       auto_recycle = false
     },
+    {
+      type = "recipe",
+      name = "solid-fuel-massage",
+      subgroup = "cubic",
+      icons = 
+      {
+          {
+            icon = "__cubium__/graphics/icons/matter-cube.png",
+            scale = 0.9
+          },
+          {
+            icon = "__base__/graphics/icons/solid-fuel.png",
+            scale = 0.6,
+            shift = util.by_pixel(0, 0),
+          }
+      },
+      category = "advanced-crafting",
+
+      enabled = false,
+      auto_recycle = false,
+      energy_required = 10,
+      allow_productivity = false,
+      ingredients = 
+      {
+          {type = "item", name = "dormant-microcube", amount = 1},
+          {type = "item", name = "solid-fuel", amount = 20},
+      },
+      results =
+      {
+        {type = "item", name = "energized-microcube",amount = 1,ignored_by_productivity = 9999, percent_spoiled = 0},
+      },
+      result_is_always_fresh = true,
+      main_product = "energized-microcube",
+      maximum_productivity = 1,
+  },
+
 })
 

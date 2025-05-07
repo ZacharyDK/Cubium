@@ -370,13 +370,13 @@ data.raw.recipe["energized-shards-recycling"].enabled = false
 
 data.raw.recipe["dormant-cube-smashing"].results =
 {
-    {type = "item", name = "energized-shards", amount = 100},
+    {type = "item", name = "energized-shards", amount = 100, ignored_by_productivity = 9999},
 }
 
 data.raw.recipe["inverted-shards"].results = 
 {
-  {type = "item", name = "energized-shards", amount = 190},
-  {type = "item", name = "inverted-shards", amount = 10},
+  {type = "item", name = "energized-shards", amount = 190, ignored_by_productivity = 185},
+  {type = "item", name = "inverted-shards", amount = 10, ignored_by_productivity = 9999},
 }
 
 --Aquilo only - burn a dormant inverted cube to make it back to dormant cube!

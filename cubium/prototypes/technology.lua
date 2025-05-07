@@ -322,6 +322,10 @@ data:extend({
       {
         {
           type = "unlock-recipe",
+          recipe = "solid-fuel-massage"
+        },
+        {
+          type = "unlock-recipe",
           recipe = "inverted-cube-jelly-recycling"
         },
         {

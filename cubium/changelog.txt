@@ -1,8 +1,19 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.15
+Version: 1.0.17
+Date: 5. 7. 2025
+  Major Features:
+    -Modified dream concentrate radios for production and science. 
+---------------------------------------------------------------------------------------------------
+Version: 1.0.17
+Date: 5. 7. 2025
+  Major Features:
+    - New recipe - solid fuel massage. Unlocked with cube mastery 4. Use 20 solid fuel to awaken the cube. 
+    - Added tags on inverted-shards recipe such that productivity isn't exploitable to m
+---------------------------------------------------------------------------------------------------
+Version: 1.0.16
 Date: 5. 6. 2025
   Major Features:
-    - Aquilo start cubic smasher now craftable. 
+    - Aquilo start cubic smasher now craftable. My mistake. 
     - Aquilo start: cube-jelly-ore-basic now only takes 5 cube jelly.
     - Cubium start cubic smasher easier to craft
 ---------------------------------------------------------------------------------------------------
