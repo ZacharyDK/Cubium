@@ -169,7 +169,7 @@ data:extend(
             shift = util.by_pixel(0, 0),
           }
         },
-        category = "chemistry",
+        category = "chemistry-or-cryogenics",
         order = "z[cubejelly]",
         enabled = false,
         auto_recycle = false,
@@ -204,7 +204,7 @@ data:extend(
             shift = util.by_pixel(0, 0),
           }
         },
-        category = "chemistry",
+        category = "chemistry-or-cryogenics",
         order = "z[cubejellysolidfuel]",
         enabled = false,
         auto_recycle = false,
@@ -1559,7 +1559,7 @@ data:extend(
       type = "recipe",
       name = "dream-fuel",
       subgroup = "cubic",
-      category = "chemistry",
+      category = "chemistry-or-cryogenics",
       energy_required = 35,
       ingredients =
       {
@@ -1632,11 +1632,11 @@ data:extend(
       icons = 
       {
         {
-          icon = "__base__/graphics/icons/rocket-fuel.png",
+          icon = "__cubium__/graphics/icons/dream-fuel.png",
           scale = 0.9
         },
         {
-          icon = "__cubium__/graphics/icons/dream-fuel.png",
+          icon = "__base__/graphics/icons/rocket-fuel.png",
           scale = 0.6,
           shift = util.by_pixel(0, 0),
         }
@@ -1665,7 +1665,7 @@ data:extend(
     {
       type = "recipe",
       name = "biter-egg-refresh",
-      category = "chemistry",
+      category = "chemistry-or-cryogenics",
       subgroup = "cubic",
       order = "b[biter-egg]-f[refresh]",
       icons = 
@@ -1708,7 +1708,7 @@ data:extend(
           scale = 0.9
         },
       },
-      category = "chemistry",
+      category = "chemistry-or-cryogenics",
 
       enabled = false,
       auto_recycle = false,
@@ -2612,7 +2612,43 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "energized-microcube",
       maximum_productivity = 1,
-  },
+    },
+
+    {
+      type = "recipe",
+      name = "ammonia-intoxication",
+      subgroup = "cubic",
+      icons = 
+      {
+          {
+            icon = "__space-age__/graphics/icons/fluid/ammonia.png",
+            scale = 0.9
+          },
+          {
+            icon = "__cubium__/graphics/icons/matter-cube.png",
+            scale = 0.6,
+            shift = util.by_pixel(0, 0),
+          }
+      },
+      category = "advanced-crafting",
+
+      enabled = false,
+      auto_recycle = false,
+      energy_required = 10,
+      allow_productivity = false,
+      ingredients = 
+      {
+          {type = "item", name = "dormant-microcube", amount = 1},
+          {type = "fluid", name = "ammonia", amount = 3000},
+      },
+      results =
+      {
+        {type = "item", name = "energized-shards",amount = 100,ignored_by_productivity = 9999, percent_spoiled = 0},
+      },
+      result_is_always_fresh = true,
+      main_product = "energized-shards",
+      maximum_productivity = 1,
+    },
 
 })
 

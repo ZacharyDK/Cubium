@@ -225,6 +225,11 @@ data:extend({
             type = "unlock-recipe",
             recipe = "ice-dreams",
           },
+          {
+            type = "unlock-recipe",
+            recipe = "ammonia-intoxication",
+          },
+
 
       },
       prerequisites = {"cube-mastery-1"},

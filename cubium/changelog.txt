@@ -1,8 +1,11 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.17
+Version: 1.0.18
 Date: 5. 7. 2025
   Major Features:
-    -Modified dream concentrate radios for production and science. 
+    - Modified dream concentrate radios for production and science. (100-->50 from 100--> 35 for dream concentrate)
+    - Chemistry recipes now chemistry or cryogenics recipes.
+    - Tile names in localization
+    - New recipe - ammonia-intoxication. Destroy ammonia with the cube.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.17
 Date: 5. 7. 2025
