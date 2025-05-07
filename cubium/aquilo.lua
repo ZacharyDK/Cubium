@@ -70,6 +70,7 @@ data.raw.recipe["pipe"].enabled = true
 
 
 
+
 --Add red pumpjack. (burner pumpjack)
 data:extend(
     {
@@ -118,9 +119,10 @@ data:extend(
             energy_source =
             {
                 type = "burner",
-                fuel_categories = {"chemical"},
+                fuel_categories = {"chemical","cubic"},
                 effectivity = 1,
                 fuel_inventory_size = 2,
+                burnt_inventory_size = 3,
                 emissions_per_minute = { pollution = 12 },
                 light_flicker = {color = {0,0,0}},
                 smoke =
@@ -387,6 +389,17 @@ data.raw.item["inverted-dormant-microcube"].fuel_top_speed_multiplier = 1
 
 
 
+data.raw["boiler"]["boiler"]["energy_source"].burnt_inventory_size = 2
+table.insert(data.raw["boiler"]["boiler"]["energy_source"]["fuel_categories"],"cubic")
+
+data.raw["furnace"]["stone-furnace"]["energy_source"].burnt_inventory_size = 2
+table.insert(data.raw["furnace"]["stone-furnace"]["energy_source"]["fuel_categories"],"cubic")
+
+
+data.raw["furnace"]["steel-furnace"]["energy_source"].burnt_inventory_size = 2
+table.insert(data.raw["furnace"]["steel-furnace"]["energy_source"]["fuel_categories"],"cubic")
+
+
 --data.raw.recipe["pumpjack"].enabled = true
 
 local logistic_science = {"automation-science-pack", "logistic-science-pack"}
@@ -397,6 +410,23 @@ local cryogenic_science_production = {"automation-science-pack","logistic-scienc
 local cryogenic_science_military = {"automation-science-pack","logistic-science-pack","chemical-science-pack","cryogenic-science-pack","military-science-pack"}
 local cryogenic_science_p_u = {"automation-science-pack","logistic-science-pack","chemical-science-pack","cryogenic-science-pack","production-science-pack","utility-science-pack"}
 local cryogenic_science_p_u_m = {"automation-science-pack","logistic-science-pack","chemical-science-pack","cryogenic-science-pack","production-science-pack","utility-science-pack","military-science-pack"}
+
+utils.set_packs("advanced-asteroid-processing", cryogenic_science_basic, 500, 30)
+utils.set_packs("asteroid-reprocessing", cryogenic_science_basic, 500, 30)
+
+
+data.raw.technology["asteroid-productivity"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1}
+},
+
+utils.set_prerequisites("advanced-asteroid-processing",{"cryogenic-plant"})
+utils.set_prerequisites("asteroid-reprocessing",{"cryogenic-plant"})
 
 utils.set_packs("fluid-handling", automation_science, 10, 30)
 utils.set_packs("coal-liquefaction", logistic_science, 100, 30)
@@ -413,3 +443,26 @@ utils.set_packs("electromagnetic-plant", cryogenic_science_p_u, 500, 30)
 utils.set_prerequisites("electromagnetic-plant",{"cryogenic-plant"})
 
 --Tentitave list of all items to add burnt_inventory to. Car,tank,+1 on heating tower, boiler, red-pumpjack, burner inserter. Furnace, steel furnace. TODO search for chemistry energy source
+
+data.raw.recipe["cube-smasher"].ingredients =
+{
+  {type ="item", name ="electric-furnace", amount = 1},
+  {type ="item", name ="advanced-circuit", amount = 5},
+  {type ="item", name ="copper-plate", amount = 20},
+  {type ="item", name ="steel-plate", amount = 10},
+  {type ="item", name ="fast-inserter", amount = 2},
+}
+
+data.raw.recipe["cube-smasher-cubic"].ingredients =
+{
+  {type ="item", name ="electric-furnace", amount = 1},
+  {type ="item", name ="advanced-circuit", amount = 5},
+  {type ="item", name ="copper-plate", amount = 20},
+  {type ="item", name ="steel-plate", amount = 10},
+  {type ="item", name ="fast-inserter", amount = 2},
+}
+
+data.raw.recipe["cube-jelly-ore-basic"].ingredients =
+{
+  {type = "item", name = "cube-jelly", amount = 5},
+}

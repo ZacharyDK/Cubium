@@ -1,4 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.15
+Date: 5. 6. 2025
+  Major Features:
+    - Aquilo start cubic smasher now craftable. 
+    - Aquilo start: cube-jelly-ore-basic now only takes 5 cube jelly.
+    - Cubium start cubic smasher easier to craft
+---------------------------------------------------------------------------------------------------
+Version: 1.0.15
+Date: 5. 6. 2025
+  Major Features:
+    - Aquilo start: Asteroid processing techs moved to Aquilo tech tree and now use Cryoscience.
+    - Aquilo start: 50-->100 Microcubes
+    - Aquilo start: asteroid productivity moved to Aquilo tech tree
+    - Aquilo and Cubium starts: Cube can be used in furnaces and boilers. Added burnt inventory size to boilers and furnaces so you get the cube back
+    - Heating tower burnt inventory size to 3.
+    - Cubium start - Cube jelly basic gives 4 cube jelly over 2. This will make start move faster.
+    - Cubium start - research up to sulfur processing enabled at start. This will make starting on cubium less anemic. 
+---------------------------------------------------------------------------------------------------
 Version: 1.0.14
 Date: 5. 6. 2025
   Major Features:

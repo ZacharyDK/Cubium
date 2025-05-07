@@ -23,9 +23,45 @@ data.raw.recipe["steam-turbine"].enabled = true
 local logistic_science = {"automation-science-pack", "logistic-science-pack"}
 local automation_science = {"automation-science-pack"}
 
+data.raw.recipe["cube-jelly"].results = 
+{
+
+    {type = "item", name = "cube-jelly",                amount = 4, percent_spoiled = 0},
+    {type = "item", name = "dormant-microcube",            amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0},
+
+}
+
 utils.set_packs("fluid-handling", automation_science, 10, 30)
 utils.set_packs("coal-liquefaction", logistic_science, 100, 30)
 utils.set_packs("oil-gathering", automation_science, 100, 30)
 utils.set_packs("oil-processing", automation_science, 100, 30)
 utils.set_packs("advanced-oil-processing", logistic_science, 100, 30)
 utils.set_packs("sulfur-processing", logistic_science, 100, 30)
+
+data.raw["boiler"]["boiler"]["energy_source"].burnt_inventory_size = 2
+table.insert(data.raw["boiler"]["boiler"]["energy_source"]["fuel_categories"],"cubic")
+
+data.raw["furnace"]["stone-furnace"]["energy_source"].burnt_inventory_size = 2
+table.insert(data.raw["furnace"]["stone-furnace"]["energy_source"]["fuel_categories"],"cubic")
+
+
+data.raw["furnace"]["steel-furnace"]["energy_source"].burnt_inventory_size = 2
+table.insert(data.raw["furnace"]["steel-furnace"]["energy_source"]["fuel_categories"],"cubic")
+
+data.raw.recipe["cube-smasher"].ingredients =
+{
+  {type ="item", name ="electric-furnace", amount = 1},
+  {type ="item", name ="advanced-circuit", amount = 5},
+  {type ="item", name ="copper-plate", amount = 20},
+  {type ="item", name ="steel-plate", amount = 10},
+  {type ="item", name ="fast-inserter", amount = 2},
+}
+
+data.raw.recipe["cube-smasher-cubic"].ingredients =
+{
+  {type ="item", name ="electric-furnace", amount = 1},
+  {type ="item", name ="advanced-circuit", amount = 5},
+  {type ="item", name ="copper-plate", amount = 20},
+  {type ="item", name ="steel-plate", amount = 10},
+  {type ="item", name ="fast-inserter", amount = 2},
+}

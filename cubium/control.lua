@@ -48,7 +48,7 @@ script.on_init(function()
             ["transport-belt"] = 400,
             ["heat-pipe"] = 100,
             ["inserter"] = 100,
-            ["energized-microcube"] = 50,
+            ["energized-microcube"] = 100,
             ["recycler"] = 2,
             ["assembling-machine-2"] = 5,
             ["concrete"] = 1000,
@@ -127,9 +127,15 @@ end)
 
 script.on_event(defines.events.on_player_joined_game, function(event)
     local aquilo_start = settings.startup["check-this-if-aquilo-start"].value 
+    local cubium_start = settings.startup["check-this-if-cubium-start"].value 
 
-    if not aquilo_start then return end -- No soup for you if you don't start on Frozeta
+    if aquilo_start then 
+        local player = game.players[event.player_index]
+        player.force.technologies["planet-discovery-cubium"].research_recursive()
+    end
 
-    local player = game.players[event.player_index]
-    player.force.technologies["planet-discovery-cubium"].research_recursive()
+    if cubium_start then 
+        local player = game.players[event.player_index]
+        player.force.technologies["sulfur-processing"].research_recursive()
+    end
 end)

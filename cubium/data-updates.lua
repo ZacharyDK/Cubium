@@ -27,7 +27,7 @@ table.insert(data.raw["technology"]["processing-unit-productivity"].effects,
 )
 
 table.insert(data.raw["reactor"]["heating-tower"]["energy_source"]["fuel_categories"],"cubic")
-
+data.raw["reactor"]["heating-tower"]["energy_source"].burnt_inventory_size = 3
 
 if(mods["castra"]) then
     table.insert(data.raw["technology"]["engine-productivity"].effects,
