@@ -2126,7 +2126,7 @@ data:extend(
       auto_recycle = false,
       result_is_always_fresh = true,
     },
-
+    --advanced science
     {
       type = "recipe",
       name = "metallurgic-science-pack-cubic",
@@ -2365,7 +2365,7 @@ data:extend(
         }
       },
     },
-
+    --express belts
     {
       type = "recipe",
       name = "express-transport-belt-dream",
@@ -2469,7 +2469,7 @@ data:extend(
       result_is_always_fresh = true,
       auto_recycle = false
     },
-
+    --turbo belts
     {
       type = "recipe",
       name = "turbo-transport-belt-dream",
@@ -2613,7 +2613,7 @@ data:extend(
       main_product = "energized-microcube",
       maximum_productivity = 1,
     },
-
+    --misc Aquilo
     {
       type = "recipe",
       name = "ammonia-intoxication",
@@ -2649,6 +2649,206 @@ data:extend(
       main_product = "energized-shards",
       maximum_productivity = 1,
     },
+    {
+      type = "recipe",
+      name = "inverted-amplification",
+      subgroup = "cubic",
+      icons = 
+      {
+          {
+            icon = "__cubium__/graphics/icons/cube-jelly-yellow.png",
+            scale = 0.9
+          },
+          {
+            icon = "__cubium__/graphics/icons/cube-jelly-yellow.png",
+            scale = 0.6,
+            shift = util.by_pixel(0, 0),
+          }
+      },
+      category = "chemistry-or-cryogenics",
 
+      enabled = false,
+      auto_recycle = false,
+      energy_required = 3,
+      ingredients = 
+      {
+          {type = "item", name = "energized-microcube", amount = 1},
+          {type = "item", name = "inverted-cube-jelly", amount = 10},
+          {type = "item", name = "cube-jelly", amount = 10},
+          {type = "item", name = "inverted-microcube", amount = 1},
+      },
+      results =
+      {
+        {type = "item", name = "cube-jelly",                amount = 30,  percent_spoiled = 0, ignored_by_productivity = 10, ignored_by_stats = 10},
+        {type = "item", name = "inverted-cube-jelly",                amount = 15,  percent_spoiled = 0, ignored_by_productivity = 10, ignored_by_stats = 10},
+        {type = "item", name = "dormant-microcube",              amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0},
+        {type = "item", name = "inverted-dormant-microcube",            amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0},
+      },
+      result_is_always_fresh = true,
+      main_product = "cube-jelly",
+      maximum_productivity = 5,
+      allow_productivity = true,
+    },
+    {
+      type = "recipe",
+      name = "carbon-inversion",
+      subgroup = "cubic",
+      icons = 
+      {
+          {
+            icon = "__cubium__/graphics/icons/cube-jelly.png",
+            scale = 0.9
+          },
+          {
+            icon = "__cubium__/graphics/icons/cube-jelly-yellow.png",
+            scale = 0.6,
+            shift = util.by_pixel(0, 0),
+          }
+      },
+      category = "chemistry-or-cryogenics",
+
+      enabled = false,
+      auto_recycle = false,
+      energy_required = 10,
+      ingredients = 
+      {
+          {type = "item", name = "inverted-cube-jelly", amount = 35},
+          {type = "item", name = "carbon", amount = 20},
+          {type = "item", name = "inverted-microcube", amount = 4},
+      },
+      results =
+      {
+        {type = "item", name = "carbon-fiber",                amount = 10},
+        {type = "item", name = "inverted-dormant-microcube",            amount = 4,ignored_by_productivity = 9999,  percent_spoiled = 0},
+      },
+      result_is_always_fresh = true,
+      main_product = "carbon-fiber",
+      maximum_productivity = 5,
+      allow_productivity = true,
+    },
+    {
+      type = "recipe",
+      name = "dream-amplification",
+      subgroup = "cubic",
+      icons = 
+      {
+          {
+            icon ="__cubium__/graphics/icons/fluid/dream-concentrate.png",
+            scale = 0.9
+          },
+          {
+            icon = "__cubium__/graphics/icons/cube-jelly.png",
+            scale = 0.6,
+            shift = util.by_pixel(0, 0),
+          }
+      },
+      category = "chemistry-or-cryogenics",
+
+      enabled = false,
+      auto_recycle = false,
+      energy_required = 15,
+      ingredients = 
+      {
+          {type = "item", name = "energized-microcube", amount = 10},
+          {type = "item", name = "cube-jelly", amount = 30},
+          {type ="fluid", name ="dream-concentrate", amount = 2000}
+      },
+      results =
+      {
+        {type = "item", name = "cube-jelly",                amount = 130,  percent_spoiled = 0, ignored_by_productivity = 30, ignored_by_stats = 10},
+        {type = "item", name = "dormant-microcube",              amount = 10,ignored_by_productivity = 9999,  percent_spoiled = 0},
+      },
+      result_is_always_fresh = true,
+      main_product = "cube-jelly",
+      maximum_productivity = 5,
+      allow_productivity = true,
+    },
+    {
+      type = "recipe",
+      name = "dream-foundry",
+      subgroup = "cubic",
+      icons = 
+      {
+          {
+            icon ="__cubium__/graphics/icons/fluid/dream-concentrate.png",
+            scale = 0.9
+          },
+          {
+            icon = "__space-age__/graphics/icons/foundry.png",
+            scale = 0.6,
+            shift = util.by_pixel(0, 0),
+          }
+      },
+      category = "chemistry-or-cryogenics",
+      surface_conditions = 
+      {
+        {
+          property = "pressure",
+          min = 0,
+          max = 800
+        },
+      },
+      enabled = false,
+      auto_recycle = false,
+      energy_required = 120,
+      ingredients = 
+      {
+          {type = "item", name = "energized-microcube", amount = 10},
+          {type = "item", name = "inverted-microcube", amount = 10},
+          {type = "item", name = "cube-jelly", amount = 10},
+          {type = "item", name = "tungsten-plate", amount = 30},
+          {type = "item", name = "electronic-circuit", amount = 30},
+          {type = "item", name = "steel-plate", amount = 50},
+          {type = "item", name = "concrete", amount = 40},
+          {type ="fluid", name ="dream-concentrate", amount = 3000},
+          {type ="fluid", name ="liquid-hope", amount = 1500},
+          {type ="fluid", name ="liquid-courage", amount = 1500},
+      },
+      results =
+      {
+        {type = "item", name = "foundry", amount = 1},
+        {type = "item", name = "dormant-microcube",              amount = 10,ignored_by_productivity = 9999,  percent_spoiled = 0},
+        {type = "item", name = "inverted-dormant-microcube", amount = 10,ignored_by_productivity = 9999, percent_spoiled = 0},
+      },
+      result_is_always_fresh = true,
+      main_product = "foundry",
+      allow_productivity = false,
+    },
+    {
+      type = "recipe",
+      name = "dream-overflow",
+      subgroup = "cubic",
+      icons = 
+      {
+          {
+            icon = "__cubium__/graphics/icons/cube-jelly.png",
+            scale = 0.9
+          },
+          {
+            icon = "__cubium__/graphics/icons/dream.png",
+            scale = 0.6,
+            shift = util.by_pixel(0, 0),
+          }
+      },
+      category = "chemistry-or-cryogenics",
+
+      enabled = false,
+      auto_recycle = false,
+      energy_required = 3,
+      ingredients = 
+      {
+          {type = "item", name = "dream", amount = 200},
+          {type = "item", name = "inverted-microcube", amount = 2},
+      },
+      results =
+      {
+        {type = "item", name = "cube-jelly",                amount = 10,  percent_spoiled = 0},
+        {type = "item", name = "inverted-dormant-microcube",            amount = 2,ignored_by_productivity = 9999,  percent_spoiled = 0},
+      },
+      result_is_always_fresh = true,
+      main_product = "cube-jelly",
+      maximum_productivity = 5,
+      allow_productivity = true,
+    },
 })
 

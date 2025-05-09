@@ -1,4 +1,21 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.19
+Date: 5. 9. 2025
+  Major Features:
+    - Cube mastery 5 - reach Aquilo. Two new recipes - inverted jely amplication, carbon inversion.
+    - Aquilo start - Railgun turret recipe modified to use cubes and electric engine units. Cubes returned. 
+    - Aquilo start - Inverted cube jelly recycling gives carbon instead of stone
+    - Aquilo start - Carbon fiber now craftable with cube mastery 5.
+    - Ensured cube smasher recycling can't return ultradense substrate on Cubium/Aquilo starts
+    - Aquilo start - Tungsten plates should be obtainable. Note that dream recipes don't alter vanilla recycling recipes.
+    - Cube mastery 5 - dream foundry recipe for Aquilo. 
+    - Cubium start - cube mastery 5 adjusted with dream foundry recipe
+    - Aquilo start - fixed quantum processor exploit.
+    - Cubium-Aquilo start - recyclers craftable
+    - Cubium_Aquilo start - express/turbo belts from dream technology prerequisites moved to cube mastery
+    - Turbo transport belt from dream packs - removed space and metallurgic requirement
+    - Cubium Turbo transport belt dream - recipes adjusted so there are only 2 fluid inputs. 
+---------------------------------------------------------------------------------------------------
 Version: 1.0.18
 Date: 5. 7. 2025
   Major Features:

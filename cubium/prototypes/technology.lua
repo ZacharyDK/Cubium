@@ -423,6 +423,45 @@ data:extend({
       }
      
     },
+    {
+      type = "technology",
+      name = "cube-mastery-5",
+      icon = "__cubium__/graphics/technology/ultradense-technology-yellow.png",
+      icon_size = 256,
+      essential = true,
+      effects = 
+      {
+        {
+          type = "unlock-recipe",
+          recipe = "inverted-amplification",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "carbon-inversion",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "dream-amplification",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "dream-foundry",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "dream-overflow",
+        },
+
+      },
+      prerequisites = {"cube-mastery-4"},
+      research_trigger =
+      {
+        type = "craft-item",
+        item = "cryogenic-science-pack",
+        count = 10
+      }
+     
+    },
 
     {
       type = "technology",
@@ -488,8 +527,6 @@ data:extend({
           {"logistic-science-pack", 1},
           {"chemical-science-pack", 1},
           {"production-science-pack", 1},
-          {"space-science-pack", 1},
-          {"metallurgic-science-pack", 1}
         },
         time = 15
       }

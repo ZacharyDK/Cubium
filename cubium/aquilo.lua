@@ -304,13 +304,24 @@ data.raw.recipe["quantum-processor"].ingredients =
     
 }
 
+data.raw.recipe["quantum-processor-recycling"].results = 
+{
+    
+    {type = "item", name = "stone-brick", amount = 1, probability = 0.25},
+    {type = "item", name = "processing-unit", amount = 1, probability = 0.25},
+    {type = "item", name = "lithium-plate", amount = 4},
+    
+}
+
+
+
 --Electromagnetic plant changes. TODO make unique recolor
 data.raw.recipe["electromagnetic-plant"].surface_conditions = 
 {
     {
         property = "pressure",
         min = 100,
-        max = 600
+        max = 800
     }
 }
 
@@ -332,6 +343,17 @@ data.raw.recipe["electromagnetic-plant-recycling"].results =
     {type = "item", name = "steel-plate", amount = 12},
 
 }
+
+
+data.raw.recipe["recycler"].surface_conditions = 
+{
+    {
+        property = "pressure",
+        min = 100,
+        max = 800
+    }
+}
+
 
 --Buff destabilized cube matter recycling. Need a carbon source. Now have chance to get 5 carbon back.
 data.raw.recipe["destabilized-cube-matter-recycling"].results = 
@@ -377,6 +399,18 @@ data.raw.recipe["inverted-shards"].results =
 {
   {type = "item", name = "energized-shards", amount = 190, ignored_by_productivity = 185},
   {type = "item", name = "inverted-shards", amount = 10, ignored_by_productivity = 9999},
+}
+
+data.raw.recipe["inverted-cube-jelly-recycling"].results = 
+{
+  {type = "item", name = "carbon",                amount = 5, probability = 0.25, show_details_in_recipe_tooltip = false},
+  {type = "item", name = "sulfur",                amount = 1, probability = 0.30, show_details_in_recipe_tooltip = false},
+  {type = "item", name = "jelly",                   amount = 1, probability = 0.05, show_details_in_recipe_tooltip = false},
+  {type = "item", name = "solid-fuel",              amount = 1, probability = 0.05, show_details_in_recipe_tooltip = false},
+  {type = "item", name = "coal",              amount = 2, probability = 0.05, show_details_in_recipe_tooltip = false},
+  {type = "item", name = "calcite",              amount = 1, probability = 0.02, show_details_in_recipe_tooltip = false},
+  {type = "item", name = "dream",              amount = 3, probability = 0.18, show_details_in_recipe_tooltip = false},
+  {type = "item", name = "destabilized-cube-matter",            amount = 3, probability = 0.10, show_details_in_recipe_tooltip = false},
 }
 
 --Aquilo only - burn a dormant inverted cube to make it back to dormant cube!
@@ -441,6 +475,13 @@ utils.set_packs("fusion-reactor", cryogenic_science_p_u, 2000, 30)
 utils.set_packs("fusion-reactor-equipment", cryogenic_science_p_u, 1000, 30)
 utils.set_packs("electromagnetic-plant", cryogenic_science_p_u, 500, 30)
 utils.set_prerequisites("electromagnetic-plant",{"cryogenic-plant"})
+utils.set_packs("foundry", cryogenic_science_basic, 500, 30)
+utils.set_prerequisites("foundry",{"cryogenic-plant"})
+utils.set_packs("recycling", cryogenic_science_basic, 100, 30)
+utils.set_prerequisites("recycling",{"cryogenic-plant"})
+
+
+utils.set_prerequisites("turbo-transport-belt-dream",{"cube-mastery-4","express-transport-belt-dream"})
 
 --Tentitave list of all items to add burnt_inventory to. Car,tank,+1 on heating tower, boiler, red-pumpjack, burner inserter. Furnace, steel furnace. TODO search for chemistry energy source
 
@@ -451,6 +492,15 @@ data.raw.recipe["cube-smasher"].ingredients =
   {type ="item", name ="copper-plate", amount = 20},
   {type ="item", name ="steel-plate", amount = 10},
   {type ="item", name ="fast-inserter", amount = 2},
+}
+
+data.raw.recipe["cube-smasher-recycling"].results =
+{
+  {type ="item", name ="electric-furnace", amount = 1, probability = 0.25},
+  {type ="item", name ="advanced-circuit", amount = 1,probability = 0.25},
+  {type ="item", name ="copper-plate", amount = 5},
+  {type ="item", name ="steel-plate", amount = 2},
+  {type ="item", name ="fast-inserter", amount = 1, probability = 0.5},
 }
 
 data.raw.recipe["cube-smasher-cubic"].ingredients =
@@ -465,4 +515,44 @@ data.raw.recipe["cube-smasher-cubic"].ingredients =
 data.raw.recipe["cube-jelly-ore-basic"].ingredients =
 {
   {type = "item", name = "cube-jelly", amount = 5},
+}
+
+data.raw.recipe["railgun-turret"].icons =
+{
+  {
+    icon = "__cubium__/graphics/icons/matter-cube.png",
+    scale = 0.9
+  },
+  {
+    icon = "__space-age__/graphics/icons/railgun-turret.png",
+    scale = 0.6,
+  }
+}
+
+
+data.raw.recipe["railgun-turret"].ingredients =
+{
+  {type = "item", name = "quantum-processor", amount = 100},
+  {type = "item", name = "tungsten-plate", amount = 30},
+  {type = "item", name = "electric-engine-unit", amount = 100},
+  {type = "item", name = "carbon-fiber", amount = 20},
+  {type = "fluid", name = "fluoroketone-cold", amount = 100},
+  {type = "item", name = "energized-microcube", amount = 10},
+}
+
+
+data.raw.recipe["railgun-turret"].results =
+{
+  {type="item", name="railgun-turret", amount=1},
+  {type = "item", name = "dormant-microcube",              amount = 10,ignored_by_productivity = 9999,  percent_spoiled = 0},
+  
+
+}
+
+data.raw.recipe["railgun-turret-recycling"].results =
+{
+  {type = "item", name = "quantum-processor", amount = 25},
+  {type = "item", name = "tungsten-plate", amount = 5},
+  {type = "item", name = "electric-engine-unit", amount = 20},
+  {type = "item", name = "carbon-fiber", amount = 4},
 }

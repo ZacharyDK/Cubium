@@ -18,6 +18,7 @@ data.raw.recipe["heat-exchanger"].enabled = true
 data.raw.recipe["heat-pipe"].enabled = true
 data.raw.recipe["steam-turbine"].enabled = true
 
+
 --data.raw.recipe["pumpjack"].enabled = true
 
 local logistic_science = {"automation-science-pack", "logistic-science-pack"}
@@ -65,3 +66,106 @@ data.raw.recipe["cube-smasher-cubic"].ingredients =
   {type ="item", name ="steel-plate", amount = 10},
   {type ="item", name ="fast-inserter", amount = 2},
 }
+
+data.raw.recipe["cube-smasher-recycling"].results =
+{
+  {type ="item", name ="electric-furnace", amount = 1, probability = 0.25},
+  {type ="item", name ="advanced-circuit", amount = 1,probability = 0.25},
+  {type ="item", name ="copper-plate", amount = 5},
+  {type ="item", name ="steel-plate", amount = 2},
+  {type ="item", name ="fast-inserter", amount = 1, probability = 0.5},
+}
+
+data.raw.technology["cube-mastery-5"].research_trigger = 
+{
+  type = "craft-item",
+  item = "inverted-microcube",
+  count = 10
+}
+
+data.raw.recipe["dream-foundry"].surface_conditions = 
+{
+    {
+        property = "pressure",
+        min = 0,
+        max = 4000
+    }
+}
+
+data.raw.recipe["dream-foundry"].ingredients = 
+{
+  {type = "item", name = "energized-microcube", amount = 10},
+  {type = "item", name = "inverted-microcube", amount = 10},
+  {type = "item", name = "cube-jelly", amount = 10},
+  {type = "item", name = "tungsten-plate", amount = 30},
+  {type = "item", name = "electronic-circuit", amount = 30},
+  {type = "item", name = "steel-plate", amount = 50},
+  {type = "item", name = "concrete", amount = 40},
+  {type ="fluid", name ="dream-concentrate", amount = 3000},
+  {type ="fluid", name ="liquid-hope", amount = 1500},
+}
+
+utils.set_prerequisites("recycling",{"cube-mastery-4"})
+utils.set_packs("recycling", {"automation-science-pack", "logistic-science-pack", "chemical-science-pack","utility-science-pack"}, 100, 30)
+
+utils.set_prerequisites("turbo-transport-belt-dream",{"cube-mastery-4","express-transport-belt-dream"})
+data.raw.recipe["recycler"].surface_conditions = 
+{
+    {
+        property = "pressure",
+        min = 100,
+        max = 1500,
+    }
+}
+
+data.raw.recipe["dream-foundry"].ingredients = 
+{
+  {type = "item", name = "energized-microcube", amount = 10},
+  {type = "item", name = "inverted-microcube", amount = 10},
+  {type = "item", name = "cube-jelly", amount = 10},
+  {type = "item", name = "tungsten-plate", amount = 30},
+  {type = "item", name = "electronic-circuit", amount = 30},
+  {type = "item", name = "steel-plate", amount = 50},
+  {type = "item", name = "concrete", amount = 40},
+  {type ="fluid", name ="dream-concentrate", amount = 3000},
+  {type ="fluid", name ="liquid-hope", amount = 3000},
+}
+
+data.raw.recipe["dream-foundry"].category = "chemistry-or-cryogenics"
+
+data.raw.recipe["turbo-transport-belt-dream"].ingredients = 
+{
+  {type = "item", name = "iron-gear-wheel", amount = 20},
+  {type = "item", name = "express-transport-belt", amount = 1},
+  {type = "fluid", name = "dream-concentrate", amount = 80},
+  {type = "fluid", name = "liquid-hope", amount = 80},
+  {type = "item", name = "inverted-microcube", amount = 2},
+  {type = "item", name = "low-density-structure", amount = 10},
+}
+
+data.raw.recipe["turbo-splitter-dream"].ingredients = 
+{
+  {type = "item", name = "express-splitter", amount = 1},
+  {type = "item", name = "iron-gear-wheel", amount = 20},
+  {type = "item", name = "processing-unit", amount = 10},
+  {type = "fluid", name = "dream-concentrate", amount = 160},
+  {type = "fluid", name = "liquid-hope", amount = 160},
+  {type = "item", name = "inverted-microcube", amount = 3},
+  {type = "item", name = "low-density-structure", amount = 30},
+}
+
+data.raw.recipe["turbo-underground-belt-dream"].ingredients = 
+{
+  {type = "item", name = "iron-gear-wheel", amount = 120},
+  {type = "item", name = "express-underground-belt", amount = 2},
+  {type = "fluid", name = "dream-concentrate", amount = 80},
+  {type = "fluid", name = "liquid-hope", amount = 80},
+  {type = "item", name = "inverted-microcube", amount = 3},
+  {type = "item", name = "low-density-structure", amount = 80},
+}
+
+
+data.raw.recipe["turbo-transport-belt-dream"].category = "chemistry-or-cryogenics"
+data.raw.recipe["turbo-splitter-dream"].category = "chemistry-or-cryogenics"
+data.raw.recipe["turbo-underground-belt-dream"].category = "chemistry-or-cryogenics"
+
