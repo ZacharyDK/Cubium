@@ -46,7 +46,7 @@ script.on_init(function()
         remote.call("freeplay", "set_created_items", {
             ["medium-electric-pole"] = 50,
             ["transport-belt"] = 400,
-            ["heat-pipe"] = 100,
+            ["heat-pipe"] = 200,
             ["inserter"] = 100,
             ["energized-microcube"] = 100,
             ["recycler"] = 2,

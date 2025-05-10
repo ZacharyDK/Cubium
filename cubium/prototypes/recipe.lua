@@ -1410,11 +1410,11 @@ data:extend(
       icons = 
       {
           {
-            icon = "__base__/graphics/icons/processing-unit.png",
+            icon = "__cubium__/graphics/icons/dream.png",
             scale = 0.9
           },
           {
-            icon = "__cubium__/graphics/icons/dream.png",
+            icon = "__base__/graphics/icons/processing-unit.png",
             scale = 0.6,
             shift = util.by_pixel(0, 0),
           }
@@ -1450,11 +1450,11 @@ data:extend(
       icons = 
       {
           {
-            icon = "__base__/graphics/icons/advanced-circuit.png",
+            icon = "__cubium__/graphics/icons/dream.png",
             scale = 0.9
           },
           {
-            icon = "__cubium__/graphics/icons/dream.png",
+            icon = "__base__/graphics/icons/advanced-circuit.png",
             scale = 0.6,
             shift = util.by_pixel(0, 0),
           }
@@ -1913,7 +1913,7 @@ data:extend(
       },
       results = 
       {
-        {type="item", name="automation-science-pack", amount=2},
+        {type="item", name="automation-science-pack", amount=3},
         {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
       },
       crafting_machine_tint =
@@ -1953,7 +1953,7 @@ data:extend(
       },
       results = 
       {
-        {type= "item", name="logistic-science-pack", amount=2},
+        {type= "item", name="logistic-science-pack", amount=3},
         {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
       },
       crafting_machine_tint =
@@ -1993,7 +1993,7 @@ data:extend(
       },
       results = 
       {
-        {type="item", name="chemical-science-pack", amount=4},
+        {type="item", name="chemical-science-pack", amount=6},
         {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
       },
       crafting_machine_tint =
@@ -2033,7 +2033,7 @@ data:extend(
       },
       results = 
       {
-        {type="item", name="military-science-pack", amount=4},
+        {type="item", name="military-science-pack", amount=6},
         {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
       },
       crafting_machine_tint =
@@ -2073,7 +2073,7 @@ data:extend(
       },
       results = 
       {
-        {type="item", name="production-science-pack", amount=6},
+        {type="item", name="production-science-pack", amount=8},
         {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
       },
       crafting_machine_tint =
@@ -2114,7 +2114,7 @@ data:extend(
       },
       results = 
       {
-        {type="item", name="utility-science-pack", amount=6},
+        {type="item", name="utility-science-pack", amount=8},
         {type = "item", name = "dormant-microcube", amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
       },
       crafting_machine_tint =
@@ -2151,7 +2151,7 @@ data:extend(
       energy_required = 10,
       results = 
       {
-        {type="item", name="metallurgic-science-pack", amount=2},
+        {type="item", name="metallurgic-science-pack", amount=3},
         {type = "item", name = "inverted-dormant-microcube", amount = 1, ignored_by_productivity = 9999},
       },
       allow_productivity = true,
@@ -2195,7 +2195,7 @@ data:extend(
       energy_required = 4,
       results = 
       {
-        {type="item", name="agricultural-science-pack", amount=2},
+        {type="item", name="agricultural-science-pack", amount=4},
         {type = "item", name = "dormant-microcube", amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
       },
       allow_productivity = true,
@@ -2243,7 +2243,7 @@ data:extend(
       energy_required = 10,
       results = 
       {
-        {type="item", name="electromagnetic-science-pack", amount=2},
+        {type="item", name="electromagnetic-science-pack", amount=4},
         {type = "item", name = "dormant-microcube", amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
       },
       allow_productivity = true,
@@ -2286,7 +2286,7 @@ data:extend(
       energy_required = 20,
       results =
       {
-        {type = "item", name = "cryogenic-science-pack", amount = 2},
+        {type = "item", name = "cryogenic-science-pack", amount = 4},
         {type = "fluid", name = "fluoroketone-hot", amount = 3, ignored_by_stats = 3, ignored_by_productivity = 3},
         {type ="fluid", name ="liquid-dream", amount = 30, ignored_by_stats = 30, ignored_by_productivity = 30},
         {type = "item", name = "dormant-microcube", amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
@@ -2340,7 +2340,7 @@ data:extend(
       },
       results = 
       {
-        {type="item", name="promethium-science-pack", amount=20},
+        {type="item", name="promethium-science-pack", amount=25},
         {type = "item", name = "energized-shards", amount = 100,  ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
       },
       crafting_machine_tint =

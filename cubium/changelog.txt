@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.20
+Date: 5. 10. 2025
+  Major Features:
+   - Aquilo start. Lithium recipe altered. No longer uses holmium plates. This was an oversight on my part - forgot you needed holmium. Now you don't have to wander the ammonia seas looking for icebergs to harvest
+   - Aquilo start - new recipe. Heat pipe breeding. Raises more questions than answers, but should make the early game go faster.
+   - Dream advanced circuit and dream processing unit recipe icons - swapped cloud and circuit board between front and back. Recipes remain unchanged.
+   - Aquilo version of inverted-shards recipes - energized-shards get 190 back (same), ignored by productivity now 188. Sure you can eek out more cubes by smashing them. But that isn't really the point of the challenge. 
+   - If you want more cubes - make a friend. Or have him join your LAN, drop his cubes and starting materials, then disappear. All players get 100 cubes. 
+   - Aquilo start - Foundry technology locked behind turbo-transport-belt-dream research. To help players understand they have to get tungsten by recycling turbo belts
+   - Aquilo start - Stack inserter and transport belt cpacity one moved to Aquilo. Transport belt capacity 2 remains a Gleba tech
+   - Reasoning - Pretty fair to move it Aquilo for this gamemode. Unique starting scenario is one of the few times I will cannibalize vanilla features.
+   - Aquilo start - 100 --> 200 heat pipes. Quality of life really. 
+   - Cubium science recipes. Output increased.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.19
 Date: 5. 9. 2025
   Major Features:

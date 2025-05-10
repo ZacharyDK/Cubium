@@ -60,7 +60,7 @@ data.raw.recipe["ammoniacal-solution-separation"].enabled = true
 data.raw.recipe["solid-fuel-from-ammonia"].enabled = true
 data.raw.recipe["ammonia-rocket-fuel"].enabled = true
 data.raw.recipe["ice-platform"].enabled = true
-data.raw.recipe["rocket-turret"].enabled = true
+--data.raw.recipe["rocket-turret"].enabled = true
 data.raw.recipe["coal-synthesis"].enabled = true
 data.raw.recipe["basic-oil-processing"].enabled = true
 data.raw.recipe["oil-refinery"].enabled = true
@@ -397,9 +397,11 @@ data.raw.recipe["dormant-cube-smashing"].results =
 
 data.raw.recipe["inverted-shards"].results = 
 {
-  {type = "item", name = "energized-shards", amount = 190, ignored_by_productivity = 185},
+  {type = "item", name = "energized-shards", amount = 190, ignored_by_productivity = 188},
   {type = "item", name = "inverted-shards", amount = 10, ignored_by_productivity = 9999},
 }
+
+
 
 data.raw.recipe["inverted-cube-jelly-recycling"].results = 
 {
@@ -457,7 +459,7 @@ data.raw.technology["asteroid-productivity"].unit.ingredients =
   {"production-science-pack", 1},
   {"utility-science-pack", 1},
   {"cryogenic-science-pack", 1}
-},
+}
 
 utils.set_prerequisites("advanced-asteroid-processing",{"cryogenic-plant"})
 utils.set_prerequisites("asteroid-reprocessing",{"cryogenic-plant"})
@@ -475,13 +477,22 @@ utils.set_packs("fusion-reactor", cryogenic_science_p_u, 2000, 30)
 utils.set_packs("fusion-reactor-equipment", cryogenic_science_p_u, 1000, 30)
 utils.set_packs("electromagnetic-plant", cryogenic_science_p_u, 500, 30)
 utils.set_prerequisites("electromagnetic-plant",{"cryogenic-plant"})
-utils.set_packs("foundry", cryogenic_science_basic, 500, 30)
-utils.set_prerequisites("foundry",{"cryogenic-plant"})
+
 utils.set_packs("recycling", cryogenic_science_basic, 100, 30)
 utils.set_prerequisites("recycling",{"cryogenic-plant"})
 
 
 utils.set_prerequisites("turbo-transport-belt-dream",{"cube-mastery-4","express-transport-belt-dream"})
+utils.set_packs("foundry", cryogenic_science_basic, 500, 30)
+utils.set_prerequisites("foundry",{"cryogenic-plant","turbo-transport-belt-dream"})
+
+
+utils.set_packs("stack-inserter", cryogenic_science_basic, 1000, 60)
+utils.set_prerequisites("stack-inserter",{"production-science-pack", "utility-science-pack", "bulk-inserter","cube-mastery-4"})
+
+utils.set_packs("transport-belt-capacity-1", cryogenic_science_p_u, 3000, 60)
+
+
 
 --Tentitave list of all items to add burnt_inventory to. Car,tank,+1 on heating tower, boiler, red-pumpjack, burner inserter. Furnace, steel furnace. TODO search for chemistry energy source
 
@@ -556,3 +567,51 @@ data.raw.recipe["railgun-turret-recycling"].results =
   {type = "item", name = "electric-engine-unit", amount = 20},
   {type = "item", name = "carbon-fiber", amount = 4},
 }
+
+data.raw.recipe["lithium"].ingredients = 
+{
+  {type = "item", name = "inverted-cube-jelly", amount = 20},
+  {type = "fluid", name = "lithium-brine", amount = 50},
+  {type = "fluid", name = "ammonia", amount = 50}
+}
+
+data:extend(
+{
+  {
+    type = "recipe",
+    name = "heat-pipe-breeding",
+    subgroup = "cubic",
+    icons = 
+    {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube.png",
+          scale = 0.9
+        },
+        {
+          icon = "__base__/graphics/icons/heat-pipe.png",
+          scale = 0.6,
+          shift = util.by_pixel(0, 0),
+        }
+    },
+    category = "advanced-crafting",
+
+    enabled = true,
+    auto_recycle = false,
+    energy_required = 10,
+    allow_productivity = false,
+    ingredients = 
+    {
+      {type = "item", name = "energized-microcube", amount = 50},
+      {type = "item", name = "heat-pipe", amount = 10},
+    },
+    results =
+    {
+      {type = "item", name = "dormant-microcube", amount = 50,ignored_by_productivity = 9999,  percent_spoiled = 0},
+      {type = "item", name = "heat-pipe", amount = 25},
+    },
+    result_is_always_fresh = true,
+    main_product = "heat-pipe",
+    maximum_productivity = 1,
+  }
+}
+)
