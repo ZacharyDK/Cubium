@@ -315,6 +315,11 @@ data.raw.recipe["quantum-processor-recycling"].results =
 
 
 
+--Now that I created an alternative recipe to the EM plant, I have to adjust this.
+--[[
+utils.set_packs("electromagnetic-plant", cryogenic_science_p_u, 500, 30)
+utils.set_prerequisites("electromagnetic-plant",{"cryogenic-plant"})
+
 --Electromagnetic plant changes. TODO make unique recolor
 data.raw.recipe["electromagnetic-plant"].surface_conditions = 
 {
@@ -343,7 +348,7 @@ data.raw.recipe["electromagnetic-plant-recycling"].results =
     {type = "item", name = "steel-plate", amount = 12},
 
 }
-
+--]]
 
 data.raw.recipe["recycler"].surface_conditions = 
 {
@@ -475,8 +480,8 @@ utils.set_packs("rocket-turret", cryogenic_science_p_u_m, 2000, 30)
 utils.set_packs("quantum-processor", cryogenic_science_basic, 500, 30)
 utils.set_packs("fusion-reactor", cryogenic_science_p_u, 2000, 30)
 utils.set_packs("fusion-reactor-equipment", cryogenic_science_p_u, 1000, 30)
-utils.set_packs("electromagnetic-plant", cryogenic_science_p_u, 500, 30)
-utils.set_prerequisites("electromagnetic-plant",{"cryogenic-plant"})
+
+
 
 utils.set_packs("recycling", cryogenic_science_basic, 100, 30)
 utils.set_prerequisites("recycling",{"cryogenic-plant"})
@@ -492,6 +497,8 @@ utils.set_prerequisites("stack-inserter",{"production-science-pack", "utility-sc
 
 utils.set_packs("transport-belt-capacity-1", cryogenic_science_p_u, 3000, 60)
 
+utils.set_packs("dream-holmium-plate", cryogenic_science_basic, 500, 15)
+utils.set_prerequisites("dream-holmium-plate",{"cube-mastery-3"})
 
 
 --Tentitave list of all items to add burnt_inventory to. Car,tank,+1 on heating tower, boiler, red-pumpjack, burner inserter. Furnace, steel furnace. TODO search for chemistry energy source
@@ -528,6 +535,9 @@ data.raw.recipe["cube-jelly-ore-basic"].ingredients =
   {type = "item", name = "cube-jelly", amount = 5},
 }
 
+
+
+
 data.raw.recipe["railgun-turret"].icons =
 {
   {
@@ -539,7 +549,9 @@ data.raw.recipe["railgun-turret"].icons =
     scale = 0.6,
   }
 }
+data.raw.recipe["railgun-turret"].subgroup = "cubic"
 
+data.raw.recipe["railgun-turret"].localised_name = {"","Railgun turret"}
 
 data.raw.recipe["railgun-turret"].ingredients =
 {

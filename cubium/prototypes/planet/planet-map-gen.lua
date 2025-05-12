@@ -30,7 +30,9 @@ planet_map_gen.cubium = function()
     {
       ["sulfuric_acid_geyser"] = {},
       ["cubium_stone"] = {},
+      ["cubium_coal"] = {},
       ["cubium_volcanism"] = {},
+
 
     },
     autoplace_settings = 

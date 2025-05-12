@@ -1,4 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.21
+Date: 5. 11. 2025
+  Major Features:
+   - Fixed carbon inversion icon.
+   - Anger cracking - Gives more fear, less anger. 
+   - anger-reconstitution - Gives less anger back. This ensures disgust won't clog up as much.
+   - New recipe - hope spoilage. Combine hope and disgust to make spoilage. This process is so peverse it can take a sleppy cube and wake it up.
+   - Swapped icons for many cubic recipes (engine unit, sulfuric acid inversion, petrol gas by inversion, light oil by inversion)
+   - New technology dream holmium plate. Unlocked with 20000 science packs, including promethium science. 
+   - Aquilo start - dream holmium can be unlocked for 500 science packs, after cube mastery 3.
+   - Aquilo start - EM plants reverted back to their original recipe. 
+   - Autoplace control for coal fixed
+   - New recipes - angry ammunition, solid-fuel from hope and dream. 
+   - fixed railgun turret localization and changed category to cubic
+   - New recipe EM plant ex dream
+   - Anger reconstitution icon changed so it is now distinct form anger cracking
+   - Angry rockets recipe icon changed.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.20
 Date: 5. 10. 2025
   Major Features:

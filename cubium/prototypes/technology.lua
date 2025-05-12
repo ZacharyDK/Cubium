@@ -306,6 +306,10 @@ data:extend({
           type = "unlock-recipe",
           recipe = "dream-advanced-circuit"
         },
+        {
+          type = "unlock-recipe",
+          recipe = "hope-spoilage"
+        },
 
       },
       prerequisites = {"cube-mastery-2"},
@@ -410,6 +414,14 @@ data:extend({
           type = "unlock-recipe",
           recipe = "promethium-science-pack-cubic",
         },
+        {
+          type = "unlock-recipe",
+          recipe = "solid-fuel-from-hope-and-dream",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "angry-ammunition",
+        },
         
 
 
@@ -446,6 +458,10 @@ data:extend({
         {
           type = "unlock-recipe",
           recipe = "dream-foundry",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "dream-electromagnetic-plant",
         },
         {
           type = "unlock-recipe",
@@ -529,6 +545,39 @@ data:extend({
           {"production-science-pack", 1},
         },
         time = 15
+      }
+    },
+    {
+      type = "technology",
+      name = "dream-holmium-plate",
+      icon = "__space-age__/graphics/technology/holmium-processing.png",
+      icon_size = 256,
+      effects =
+      {
+        {
+          type = "unlock-recipe",
+          recipe = "dream-holmium-plate"
+        },
+      },
+      prerequisites = {"cube-mastery-5","promethium-science-pack"},
+      unit =
+      {
+        count = 20000,
+        ingredients =
+        {
+          {"automation-science-pack", 1},
+          {"logistic-science-pack", 1},
+          {"chemical-science-pack", 1},
+          {"production-science-pack", 1},
+          {"utility-science-pack", 1},
+          {"space-science-pack", 1},
+          {"metallurgic-science-pack", 1},
+          {"agricultural-science-pack", 1},
+          {"electromagnetic-science-pack", 1},
+          {"cryogenic-science-pack", 1},
+          {"promethium-science-pack", 1}
+        },
+        time = 60
       }
     },
 

@@ -768,7 +768,7 @@ data:extend{
   {
     type = "noise-expression",
     name = "cubium_coal_size",
-    expression = "slider_rescale(control:cubium_coal:size, 2)"
+    expression = "slider_rescale(control:coal:size, 2)"
   },
   {
     type = "noise-expression",
@@ -778,20 +778,20 @@ data:extend{
                       min(1 - cubium_starting_circle,\z
                           cubium_place_non_metal_spots(782349, 12, 1,\z
                                                          cubium_coal_size * min(1.2, cubium_ore_dist) * 25,\z
-                                                         control:cubium_coal:frequency,\z
+                                                         control:coal:frequency,\z
                                                          cubium_ashlands_resource_favorability)))"
   },
   {
     type = "noise-expression",
     name = "cubium_coal_probability",
-    expression = "(control:cubium_coal:size > 0) * (1000 * ((1 + cubium_coal_region) * random_penalty_between(0.9, 1, 1) - 1))"
+    expression = "(control:coal:size > 0) * (1000 * ((1 + cubium_coal_region) * random_penalty_between(0.9, 1, 1) - 1))"
   },
   {
     type = "noise-expression",
     name = "cubium_coal_richness",
     expression = "cubium_coal_region * random_penalty_between(0.9, 1, 1)\z
                   * 18000 * cubium_starting_area_multiplier\z
-                  * control:cubium_coal:richness / cubium_coal_size"
+                  * control:coal:richness / cubium_coal_size"
   },
 
   {

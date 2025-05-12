@@ -732,11 +732,11 @@ data:extend(
       icons = 
       {
           {
-            icon = "__space-age__/graphics/icons/calcite.png",
+            icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
             scale = 0.9
           },
           {
-            icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
+            icon = "__space-age__/graphics/icons/calcite.png",
             scale = 0.6,
             shift = util.by_pixel(0, 0),
           }
@@ -824,11 +824,12 @@ data:extend(
       icons = 
       {
           {
-            icon = "__base__/graphics/icons/fluid/petroleum-gas.png",
+
+            icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
             scale = 0.9
           },
           {
-            icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
+            icon = "__base__/graphics/icons/fluid/petroleum-gas.png",
             scale = 0.6,
             shift = util.by_pixel(0, 0),
           }
@@ -869,11 +870,11 @@ data:extend(
       icons = 
       {
           {
-            icon = "__base__/graphics/icons/engine-unit.png",
+            icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
             scale = 0.9
           },
           {
-            icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
+            icon = "__base__/graphics/icons/engine-unit.png",
             scale = 0.6,
             shift = util.by_pixel(0, 0),
           }
@@ -906,11 +907,12 @@ data:extend(
       icons = 
       {
           {
-            icon = "__base__/graphics/icons/fluid/light-oil.png",
+
+            icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
             scale = 0.9
           },
           {
-            icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
+            icon = "__base__/graphics/icons/fluid/light-oil.png",
             scale = 0.6,
             shift = util.by_pixel(0, 0),
           }
@@ -1120,8 +1122,8 @@ data:extend(
       energy_required = 5,
       results =
       {
-        {type ="fluid", name ="liquid-hate", amount = 73},
-        {type ="fluid", name ="liquid-fear", amount = 73},
+        {type ="fluid", name ="liquid-hate", amount = 30},
+        {type ="fluid", name ="liquid-fear", amount = 100},
       },
       allow_productivity = true,
       allow_quality = false,
@@ -1142,7 +1144,19 @@ data:extend(
       name ="anger-reconstitution",
       subgroup = "cubic",
       category ="chemistry-or-cryogenics",
-      icon ="__cubium__/graphics/icons/fluid/liquid-hate.png",
+      icons = 
+      {
+          {
+
+            icon = "__cubium__/graphics/icons/matter-cube.png",
+            scale = 0.9
+          },
+          {
+            icon ="__cubium__/graphics/icons/fluid/liquid-anger.png",
+            scale = 0.6,
+            shift = util.by_pixel(0, 0),
+          }
+      },
       enabled = false,
       ingredients =
       {
@@ -1155,7 +1169,7 @@ data:extend(
       energy_required = 35,
       results =
       {
-        {type ="fluid", name ="liquid-anger", amount = 1700},
+        {type ="fluid", name ="liquid-anger", amount = 1300},
         {type = "item", name = "dormant-microcube", amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0}
       },
       allow_productivity = true,
@@ -1171,6 +1185,52 @@ data:extend(
         secondary = {r = 210, g = 89, b = 89, a = 1.000}, --rgb(210, 89, 89)
         tertiary = {r = 228, g = 72, b =72, a = 1.000}, --rgb(228, 72, 72)
         quaternary = {r = 210, g = 18, b = 18, a = 1.000}, --rgb(210, 18, 18)
+      },
+    },
+    {
+      type ="recipe",
+      name ="hope-spoilage",
+      subgroup = "cubic",
+      category ="chemistry-or-cryogenics",
+      icons = 
+      {
+        {
+          icon = "__cubium__/graphics/icons/matter-cube.png",
+          scale = 0.9
+        },
+        {
+          icon = "__space-age__/graphics/icons/spoilage.png",
+          scale = 0.6,
+        }
+      },
+      enabled = false,
+      ingredients =
+      {
+
+        {type = "fluid", name = "liquid-disgust", amount = 600},
+        {type = "fluid", name = "liquid-hope", amount = 600},
+        {type = "item", name = "dormant-microcube", amount = 1},
+      },
+
+      energy_required = 35,
+      results =
+      {
+        {type ="item", name ="spoilage", amount = 15},
+        {type = "item", name = "energized-microcube", amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0}
+      },
+      allow_productivity = true,
+      allow_quality = false,
+      allow_decomposition = false,
+      auto_recycle = false,
+      result_is_always_fresh = true,
+      main_product = "spoilage",
+      maximum_productivity = 5,
+      crafting_machine_tint =
+      {
+        primary = {r = 215, g = 226, b = 121, a = 1.000}, --rgb(215, 226, 121)
+        secondary = {r = 169, g = 179, b = 123, a = 1.000}, --rgb(169, 179, 123)
+        tertiary = {r = 195, g = 213, b =33, a = 1.000}, --rgb(195, 213, 33)
+        quaternary = {r = 222, g = 222, b = 33, a = 1.000}, --rgb(222, 222, 33)
       },
     },
     {
@@ -1298,11 +1358,12 @@ data:extend(
       icons = 
       {
           {
-            icon = "__base__/graphics/icons/electric-engine-unit.png",
+
+            icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
             scale = 0.9
           },
           {
-            icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
+            icon = "__base__/graphics/icons/electric-engine-unit.png",
             scale = 0.6,
             shift = util.by_pixel(0, 0),
           }
@@ -1335,11 +1396,11 @@ data:extend(
       icons = 
       {
           {
-            icon = "__base__/graphics/icons/concrete.png",
+            icon = "__cubium__/graphics/icons/dream.png",
             scale = 0.9
           },
           {
-            icon = "__cubium__/graphics/icons/dream.png",
+            icon = "__base__/graphics/icons/concrete.png",
             scale = 0.6,
             shift = util.by_pixel(0, 0),
           }
@@ -1372,11 +1433,12 @@ data:extend(
       icons = 
       {
           {
-            icon = "__base__/graphics/icons/refined-concrete.png",
+
+            icon = "__cubium__/graphics/icons/dream.png",
             scale = 0.9
           },
           {
-            icon = "__cubium__/graphics/icons/dream.png",
+            icon = "__base__/graphics/icons/refined-concrete.png",
             scale = 0.6,
             shift = util.by_pixel(0, 0),
           }
@@ -1704,8 +1766,13 @@ data:extend(
       icons = 
       {
         {
-          icon = "__base__/graphics/icons/explosive-rocket.png",
+          icon = "__cubium__/graphics/icons/matter-cube.png",
           scale = 0.9
+        },
+        {
+          icon = "__base__/graphics/icons/explosive-rocket.png",
+          scale = 0.6,
+          shift = util.by_pixel(0, 0),
         },
       },
       category = "chemistry-or-cryogenics",
@@ -2696,11 +2763,11 @@ data:extend(
       icons = 
       {
           {
-            icon = "__cubium__/graphics/icons/cube-jelly.png",
+            icon = "__cubium__/graphics/icons/cube-jelly-yellow.png",
             scale = 0.9
           },
           {
-            icon = "__cubium__/graphics/icons/cube-jelly-yellow.png",
+            icon = "__space-age__/graphics/icons/carbon.png",
             scale = 0.6,
             shift = util.by_pixel(0, 0),
           }
@@ -2816,6 +2883,57 @@ data:extend(
     },
     {
       type = "recipe",
+      name = "dream-electromagnetic-plant",
+      subgroup = "cubic",
+      icons = 
+      {
+          {
+            icon = "__cubium__/graphics/icons/matter-cube-yellow.png",
+            scale = 0.9
+          },
+          {
+            icon = "__space-age__/graphics/icons/electromagnetic-plant.png",
+            scale = 0.6,
+            shift = util.by_pixel(0, 0),
+          }
+      },
+      category = "chemistry-or-cryogenics",
+      surface_conditions = 
+      {
+        {
+          property = "pressure",
+          min = 0,
+          max = 800
+        },
+      },
+      enabled = false,
+      auto_recycle = false,
+      energy_required = 120,
+      ingredients = 
+      {
+          {type = "item", name = "energized-microcube", amount = 10},
+          {type = "item", name = "inverted-microcube", amount = 10},
+          {type = "item", name = "cube-jelly", amount = 10},
+          {type = "item", name = "holmium-plate", amount = 150},
+          {type = "item", name = "processing-unit", amount = 50},
+          {type = "item", name = "steel-plate", amount = 50},
+          {type = "item", name = "concrete", amount = 50},
+          {type ="fluid", name ="dream-concentrate", amount = 3000},
+          {type ="fluid", name ="liquid-hope", amount = 1500},
+          {type ="fluid", name ="liquid-courage", amount = 1500},
+      },
+      results =
+      {
+        {type = "item", name = "electromagnetic-plant", amount = 1},
+        {type = "item", name = "dormant-microcube",              amount = 10,ignored_by_productivity = 9999,  percent_spoiled = 0},
+        {type = "item", name = "inverted-dormant-microcube", amount = 10,ignored_by_productivity = 9999, percent_spoiled = 0},
+      },
+      result_is_always_fresh = true,
+      main_product = "electromagnetic-plant",
+      allow_productivity = false,
+    },
+    {
+      type = "recipe",
       name = "dream-overflow",
       subgroup = "cubic",
       icons = 
@@ -2850,5 +2968,127 @@ data:extend(
       maximum_productivity = 5,
       allow_productivity = true,
     },
+
+    {
+      type = "recipe",
+      name = "dream-holmium-plate",
+      subgroup = "cubic",
+      icons = 
+      {
+          {
+            icon ="__cubium__/graphics/icons/fluid/dream-concentrate.png",
+            scale = 0.9
+          },
+          {
+            icon = "__space-age__/graphics/icons/holmium-plate.png",
+            scale = 0.6,
+            shift = util.by_pixel(0, 0),
+          }
+      },
+      category = "chemistry-or-cryogenics",
+      surface_conditions = 
+      {
+        {
+          property = "pressure",
+          min = 0,
+          max = 800
+        },
+      },
+      enabled = false,
+      auto_recycle = false,
+      energy_required = 120,
+      ingredients = 
+      {
+          {type = "item", name = "energized-microcube", amount = 10},
+          {type = "item", name = "inverted-microcube", amount = 10},
+          {type = "item", name = "cube-jelly", amount = 50},
+          {type = "item", name = "steel-plate", amount = 50},
+          {type ="fluid", name ="dream-concentrate", amount = 350},
+          {type ="fluid", name ="liquid-hope", amount = 550},
+      },
+      results =
+      {
+        {type = "item", name = "holmium-plate", amount = 20},
+        {type = "item", name = "dormant-microcube",              amount = 10,ignored_by_productivity = 9999,  percent_spoiled = 0},
+        {type = "item", name = "inverted-dormant-microcube", amount = 10,ignored_by_productivity = 9999, percent_spoiled = 0},
+
+      },
+      result_is_always_fresh = true,
+      main_product = "holmium-plate",
+      allow_productivity = true,
+    },
+    {
+      type = "recipe",
+      name = "solid-fuel-from-hope-and-dream",
+      category = "chemistry",
+      energy_required = 10,
+      ingredients =
+      {
+        {type = "fluid", name = "liquid-hope", amount = 150},
+        {type = "fluid", name = "liquid-dream", amount = 150},
+        {type = "item", name = "energized-microcube", amount = 1},
+      },
+      results =
+      {
+        {type = "item", name = "solid-fuel", amount = 5},
+        {type = "item", name = "dormant-microcube", amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
+      },
+      allow_productivity = true,
+      icon = "__cubium__/graphics/icons/solid-fuel-from-hope.png",
+      subgroup = "fluid-recipes",
+      enabled = false,
+      order = "b[fluid-chemistry]-g[solid-fuel-from-hope-oil]",
+      enabled = false,
+      auto_recycle = false,
+      allow_quality = false,
+      maximum_productivity = 2,
+      result_is_always_fresh = true,
+      crafting_machine_tint =
+      {
+        primary = {r = 242, g = 230, b = 230, a = 1.000}, --rgb(242, 230, 230)
+        secondary = {r = 91, g = 89, b = 210, a = 1.000}, --rgb(91, 89, 210)
+        tertiary = {r = 95, g = 72, b =228, a = 1.000}, --rgb(95, 72, 228)
+        quaternary = {r = 44, g = 18, b = 210, a = 1.000}, --rgb(44, 18, 210)
+      },
+    },
+    {
+      type = "recipe",
+      name = "angry-ammunition",
+      subgroup = "cubic",
+      icons = 
+      {
+        {
+
+          icon = "__cubium__/graphics/icons/dream.png",
+          scale = 0.9
+        },
+        {
+          icon = "__base__/graphics/icons/piercing-rounds-magazine.png",
+          scale = 0.6,
+          shift = util.by_pixel(0, 0),
+        }
+      },
+      category = "chemistry-or-cryogenics",
+
+      enabled = false,
+      auto_recycle = false,
+      energy_required = 1,
+      ingredients = 
+      {
+        {type = "item", name = "energized-microcube", amount = 1},
+        {type = "item", name = "firearm-magazine", amount = 10},
+        {type ="fluid", name ="liquid-anger", amount = 500},
+        {type ="fluid", name ="liquid-hate", amount = 500},
+      },
+      results =
+      {
+        {type = "item", name = "piercing-rounds-magazine",                amount = 10, percent_spoiled = 0},
+        {type = "item", name = "dormant-microcube",            amount = 1,ignored_by_productivity = 9999,  percent_spoiled = 0},
+      },
+      result_is_always_fresh = true,
+      main_product = "piercing-rounds-magazine",
+      maximum_productivity = 3,
+    },
+
 })
 
