@@ -28,6 +28,7 @@ data:extend(
         auto_recycle = false,
         main_product ="ultradense-substrate",
         maximum_productivity = 5,
+        order = "b",
     },
     {
       type ="recipe",
@@ -57,6 +58,7 @@ data:extend(
       auto_recycle = true,
       main_product ="cube-smasher",
       maximum_productivity = 5,
+      order = "h",
     },
     {
       type ="recipe",
@@ -86,6 +88,7 @@ data:extend(
       auto_recycle = true,
       main_product ="cube-smasher",
       maximum_productivity = 5,
+      order = "h",
     },
 
 
@@ -114,11 +117,12 @@ data:extend(
         result_is_always_fresh = true,
         maximum_productivity = 5,
         auto_recycle = false,
+        order = "b",
     },
     {
         type = "recipe",
         name = "destabilized-cube-matter-recycling",
-        subgroup = "cubic",
+        --subgroup = "cubic",
         icons = 
         {
           {
@@ -170,7 +174,6 @@ data:extend(
           }
         },
         category = "chemistry-or-cryogenics",
-        order = "z[cubejelly]",
         enabled = false,
         auto_recycle = false,
         energy_required = 1,
@@ -187,6 +190,7 @@ data:extend(
         result_is_always_fresh = true,
         main_product = "steam",
         maximum_productivity = 5,
+        order = "d",
     },
     {
         type = "recipe",
@@ -205,7 +209,6 @@ data:extend(
           }
         },
         category = "chemistry-or-cryogenics",
-        order = "z[cubejellysolidfuel]",
         enabled = false,
         auto_recycle = false,
         energy_required = 4,
@@ -225,6 +228,7 @@ data:extend(
         main_product = "solid-fuel",
         maximum_productivity = 5,
         allow_productivity = true,
+        order = "d",
     },
     {
         type = "recipe",
@@ -245,6 +249,7 @@ data:extend(
         result_is_always_fresh = true,
         main_product = "cube-jelly",
         maximum_productivity = 5,
+        order = "d",
     },
     {
         type = "recipe",
@@ -266,6 +271,7 @@ data:extend(
         main_product = "cube-jelly",
         maximum_productivity = 5,
         allow_productivity = true,
+        order = "d",
     },
     {
         type = "recipe",
@@ -302,6 +308,7 @@ data:extend(
         main_product = "cube-jelly",
         maximum_productivity = 5,
         allow_productivity = true,
+        order = "d",
     },
     {
         type = "recipe",
@@ -339,6 +346,7 @@ data:extend(
         main_product = "cube-jelly",
         maximum_productivity = 5,
         allow_productivity = true,
+        order = "d",
     },
     {
       type = "recipe",
@@ -374,9 +382,8 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "energized-microcube",
       maximum_productivity = 1,
+      order = "c",
     },
-
-
 
     {
         type = "recipe",
@@ -412,6 +419,43 @@ data:extend(
         result_is_always_fresh = true,
         main_product = "energized-microcube",
         maximum_productivity = 5,
+        order = "c",
+    },
+    {
+      type = "recipe",
+      name = "steam-bath",
+      subgroup = "cubic",
+      icons = 
+      {
+          {
+            icon ="__base__/graphics/icons/fluid/steam.png",
+            scale = 0.9
+          },
+          {
+            icon = "__cubium__/graphics/icons/matter-cube.png",
+            scale = 0.6,
+            shift = util.by_pixel(0, 0),
+          }
+      },
+      category ="chemistry-or-cryogenics",
+
+      enabled = false,
+      auto_recycle = false,
+      energy_required = 50,
+      allow_productivity = false,
+      ingredients = 
+      {
+          {type = "item", name = "dormant-microcube", amount = 1},
+          {type ="fluid", name ="steam", amount = 500, temperature = 500},
+      },
+      results =
+      {
+        {type = "item", name = "energized-microcube",amount = 1,ignored_by_productivity = 9999, percent_spoiled = 0},
+      },
+      result_is_always_fresh = true,
+      main_product = "energized-microcube",
+      maximum_productivity = 1,
+      order = "c",
     },
     {
       type = "recipe",
@@ -449,6 +493,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "plastic-bar",
       maximum_productivity = 5,
+      order = "d",
     },
 
     {
@@ -485,6 +530,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "iron-ore",
       maximum_productivity = 5,
+      order = "d",
     },
 
     {
@@ -522,6 +568,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "iron-ore",
       maximum_productivity = 5,
+      order = "da",
     },
     {
       type = "recipe",
@@ -558,9 +605,10 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "copper-ore",
       maximum_productivity = 5,
+      order = "db",
     },
 
-    --Cubic recipes. TODO, add building that can do cubic recipes. for now they will be under advanced processing
+    --Cubic recipes. 
     {
         type = "recipe",
         name = "cubic-recovery",
@@ -594,6 +642,7 @@ data:extend(
         result_is_always_fresh = true,
         main_product = "energized-microcube",
         maximum_productivity = 1,
+        order = "b",
     },
     {
       type = "recipe",
@@ -628,6 +677,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "energized-shards",
       maximum_productivity = 2,
+      order = "b",
     },
 
 
@@ -659,6 +709,7 @@ data:extend(
       },
       main_product = "inverted-shards",
       maximum_productivity = 5,
+      order = "e",
     },
     {
       type = "recipe",
@@ -688,6 +739,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "inverted-microcube",
       maximum_productivity = 5,
+      order = "e",
     },
     {
       type = "recipe",
@@ -723,6 +775,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "energized-microcube",
       maximum_productivity = 5,
+      order = "c",
     },
     --Cube inversion recipes start here.
     {
@@ -769,6 +822,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "calcite",
       maximum_productivity = 5,
+      order = "f",
     },
     {
       type = "recipe",
@@ -815,6 +869,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "inverted-microcube",
       maximum_productivity = 5,
+      order = "eb",
     },
 
     {
@@ -862,6 +917,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "petroleum-gas",
       maximum_productivity = 5,
+      order = "fb",
     },
     {
       type = "recipe",
@@ -899,6 +955,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "engine-unit",
       maximum_productivity = 5,
+      order = "fb",
     },
     {
       type = "recipe",
@@ -944,6 +1001,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "light-oil",
       maximum_productivity = 5,
+      order = "fb",
     },
 
     --Emotional refining, dream recipes
@@ -971,6 +1029,7 @@ data:extend(
       auto_recycle = false,
       main_product ="small-electric-pole",
       maximum_productivity = 5,
+      order = "i",
     },
     {
       type ="recipe",
@@ -1004,6 +1063,7 @@ data:extend(
         tertiary = {r = 210, g = 109, b =195, a = 1.000}, --rgb(210, 109, 195)
         quaternary = {r = 116, g = 71, b = 105, a = 1.000}, --rgb(116, 71, 105)
       },
+      order = "g",
     },
     {
       type ="recipe",
@@ -1036,6 +1096,7 @@ data:extend(
         tertiary = {r = 141, g = 42, b =126, a = 1.000}, --rgb(141, 42, 126)
         quaternary = {r = 116, g = 71, b = 105, a = 1.000}, --rgb(116, 71, 105)
       },
+      order = "g",
     },
     {
       type ="recipe",
@@ -1069,6 +1130,7 @@ data:extend(
         tertiary = {r = 109/256, g = 117/256, b =210/256, a = 1.000}, --rgb(210, 176, 109)
         quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}, --rgb(205, 177, 66)
       },
+      order = "g",
     },
     {
       type ="recipe",
@@ -1104,6 +1166,7 @@ data:extend(
         tertiary = {r = 228, g = 72, b =72, a = 1.000}, --rgb(228, 72, 72)
         quaternary = {r = 210, g = 18, b = 18, a = 1.000}, --rgb(210, 18, 18)
       },
+      order = "g",
     },
     {
       type ="recipe",
@@ -1138,6 +1201,7 @@ data:extend(
         tertiary = {r = 195, g = 213, b =33, a = 1.000}, --rgb(195, 213, 33)
         quaternary = {r = 222, g = 222, b = 33, a = 1.000}, --rgb(222, 222, 33)
       },
+      order = "g",
     },
     {
       type ="recipe",
@@ -1186,6 +1250,7 @@ data:extend(
         tertiary = {r = 228, g = 72, b =72, a = 1.000}, --rgb(228, 72, 72)
         quaternary = {r = 210, g = 18, b = 18, a = 1.000}, --rgb(210, 18, 18)
       },
+      order = "g",
     },
     {
       type ="recipe",
@@ -1232,6 +1297,7 @@ data:extend(
         tertiary = {r = 195, g = 213, b =33, a = 1.000}, --rgb(195, 213, 33)
         quaternary = {r = 222, g = 222, b = 33, a = 1.000}, --rgb(222, 222, 33)
       },
+      order = "g",
     },
     {
       type ="recipe",
@@ -1267,6 +1333,7 @@ data:extend(
         tertiary = {r = 95, g = 72, b =228, a = 1.000}, --rgb(95, 72, 228)
         quaternary = {r = 44, g = 18, b = 210, a = 1.000}, --rgb(44, 18, 210)
       },
+      order = "g",
     },
     {
       type ="recipe",
@@ -1301,6 +1368,7 @@ data:extend(
         tertiary = {r = 0.681, g = 0.635, b = 0.486, a = 1.000}, -- #ada17bff
         quaternary = {r = 1.000, g = 0.804, b = 0.000, a = 1.000}, -- #ffcd00ff
       },
+      order = "g",
     },
     {
       type ="recipe",
@@ -1349,6 +1417,7 @@ data:extend(
         tertiary = {r = 0.681, g = 0.635, b = 0.486, a = 1.000}, -- #ada17bff
         quaternary = {r = 1.000, g = 0.804, b = 0.000, a = 1.000}, -- #ffcd00ff
       },
+      order = "e",
     },
     --Rocket silo recipes. LDS, Concrete, blue circuits, electric-engine-unit.
     {
@@ -1388,6 +1457,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "electric-engine-unit",
       maximum_productivity = 5,
+      order = "fc",
     },
     {
       type = "recipe",
@@ -1425,6 +1495,7 @@ data:extend(
       },
       main_product = "concrete",
       maximum_productivity = 5,
+      order = "fc",
     },
     {
       type = "recipe",
@@ -1464,6 +1535,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "refined-concrete",
       maximum_productivity = 5,
+      order = "fc",
     },
     {
       type = "recipe",
@@ -1504,6 +1576,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "processing-unit",
       maximum_productivity = 5,
+      order = "fc",
     },
     {
       type = "recipe",
@@ -1543,6 +1616,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "advanced-circuit",
       maximum_productivity = 5,
+      order = "fc",
     },
     --inverted Cube jelly
     {
@@ -1615,6 +1689,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "inverted-cube-jelly",
       maximum_productivity = 5,
+      order = "fa",
     },
     --transendental recipes
     {
@@ -1648,7 +1723,8 @@ data:extend(
         secondary = {r = 0.659, g = 0.592, b = 0.678, a = 1.000}, -- #a896acff
         tertiary = {r = 0.774, g = 0.631, b = 0.766, a = 1.000}, -- #c5a0c3ff
         quaternary = {r = 0.564, g = 0.364, b = 0.564, a = 1.000}, -- #8f5c8fff
-      }
+      },
+      order = "h",
     },
     {
       type = "recipe",
@@ -1684,6 +1760,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "ice",
       maximum_productivity = 5,
+      order = "h",
     },
     {
       type = "recipe",
@@ -1723,6 +1800,7 @@ data:extend(
       },
       allow_productivity = true,
       auto_recycle = false,
+      order = "fd",
     },
     {
       type = "recipe",
@@ -1758,6 +1836,7 @@ data:extend(
         tertiary = {r = 228, g = 72, b =72, a = 1.000}, --rgb(228, 72, 72)
         quaternary = {r = 210, g = 18, b = 18, a = 1.000}, --rgb(210, 18, 18)
       },
+      order = "i",
     },
     {
       type = "recipe",
@@ -1803,6 +1882,7 @@ data:extend(
         tertiary = {r = 228, g = 72, b =72, a = 1.000}, --rgb(228, 72, 72)
         quaternary = {r = 210, g = 18, b = 18, a = 1.000}, --rgb(210, 18, 18)
       },
+      order = "i",
     },
     {
       type = "recipe",
@@ -1858,6 +1938,7 @@ data:extend(
         tertiary = {r = 228, g = 72, b =72, a = 1.000}, --rgb(228, 72, 72)
         quaternary = {r = 210, g = 18, b = 18, a = 1.000}, --rgb(210, 18, 18)
       },
+      order = "h",
     },
     {
       type ="recipe",
@@ -1903,6 +1984,7 @@ data:extend(
         tertiary = {r = 0.873, g = 0.649, b = 0.542, a = 0.502}, -- #dea58a80
         quaternary = {r = 0.629, g = 0.174, b = 0.000, a = 0.502}, -- #a02c0080
       },
+      order = "cz",
     },
     {
       type ="recipe",
@@ -1950,6 +2032,7 @@ data:extend(
         tertiary = {r = 0.873, g = 0.649, b = 0.542, a = 0.502}, -- #dea58a80
         quaternary = {r = 0.629, g = 0.174, b = 0.000, a = 0.502}, -- #a02c0080
       },
+      order = "i",
     },
 
     --Science recipes
@@ -1991,6 +2074,7 @@ data:extend(
       allow_productivity = true,
       auto_recycle = false,
       result_is_always_fresh = true,
+      order = "aa",
     },
 
     {
@@ -2031,6 +2115,7 @@ data:extend(
       allow_productivity = true,
       auto_recycle = false,
       result_is_always_fresh = true,
+      order = "aa",
     },
     {
       type = "recipe",
@@ -2071,6 +2156,7 @@ data:extend(
       allow_productivity = true,
       auto_recycle = false,
       result_is_always_fresh = true,
+      order = "aa",
     },
     {
       type = "recipe",
@@ -2111,6 +2197,7 @@ data:extend(
       allow_productivity = true,
       auto_recycle = false,
       result_is_always_fresh = true,
+      order = "aa",
     },
     {
       type = "recipe",
@@ -2151,6 +2238,7 @@ data:extend(
       allow_productivity = true,
       auto_recycle = false,
       result_is_always_fresh = true,
+      order = "aa",
     },
     {
       type = "recipe",
@@ -2192,6 +2280,7 @@ data:extend(
       allow_productivity = true,
       auto_recycle = false,
       result_is_always_fresh = true,
+      order = "aa",
     },
     --advanced science
     {
@@ -2236,6 +2325,7 @@ data:extend(
           scale = 0.6,
         }
       },
+      order = "ab",
     },
     {
       type = "recipe",
@@ -2285,6 +2375,7 @@ data:extend(
           scale = 0.6,
         }
       },
+      order = "ab",
     },
     {
       type = "recipe",
@@ -2328,6 +2419,7 @@ data:extend(
           scale = 0.6,
         }
       },
+      order = "ab",
     },
     {
       type = "recipe",
@@ -2381,6 +2473,7 @@ data:extend(
           scale = 0.6,
         }
       },
+      order = "ab",
     },
     {
       type = "recipe",
@@ -2431,6 +2524,7 @@ data:extend(
           scale = 0.6,
         }
       },
+      order = "az",
     },
     --express belts
     {
@@ -2464,7 +2558,8 @@ data:extend(
         {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
       },
       result_is_always_fresh = true,
-      auto_recycle = false
+      auto_recycle = false,
+      order = "ja",
     },
     {
       type = "recipe",
@@ -2498,7 +2593,8 @@ data:extend(
         {type="item", name="express-underground-belt", amount=2},
       },
       result_is_always_fresh = true,
-      auto_recycle = false
+      auto_recycle = false,
+      order = "jb",
     },
     {
       type = "recipe",
@@ -2534,7 +2630,8 @@ data:extend(
         {type = "item", name = "dormant-microcube",                amount = 1,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
       },
       result_is_always_fresh = true,
-      auto_recycle = false
+      auto_recycle = false,
+      order = "jc",
     },
     --turbo belts
     {
@@ -2570,7 +2667,8 @@ data:extend(
         {type = "item", name = "inverted-dormant-microcube",                amount = 2,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
       },
       result_is_always_fresh = true,
-      auto_recycle = false
+      auto_recycle = false,
+      order = "jd",
     },
     {
       type = "recipe",
@@ -2606,7 +2704,8 @@ data:extend(
         {type="item", name="turbo-underground-belt", amount=2},
       },
       result_is_always_fresh = true,
-      auto_recycle = false
+      auto_recycle = false,
+      order = "je",
     },
     {
       type = "recipe",
@@ -2643,7 +2742,8 @@ data:extend(
         {type = "item", name = "inverted-dormant-microcube",                amount = 3,  percent_spoiled = 0, ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false},
       },
       result_is_always_fresh = true,
-      auto_recycle = false
+      auto_recycle = false,
+      order = "jf",
     },
     {
       type = "recipe",
@@ -2679,6 +2779,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "energized-microcube",
       maximum_productivity = 1,
+      order = "c",
     },
     --misc Aquilo
     {
@@ -2715,6 +2816,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "energized-shards",
       maximum_productivity = 1,
+      order = "czz",
     },
     {
       type = "recipe",
@@ -2755,6 +2857,7 @@ data:extend(
       main_product = "cube-jelly",
       maximum_productivity = 5,
       allow_productivity = true,
+      order = "fa",
     },
     {
       type = "recipe",
@@ -2792,6 +2895,7 @@ data:extend(
       main_product = "carbon-fiber",
       maximum_productivity = 5,
       allow_productivity = true,
+      order = "ff",
     },
     {
       type = "recipe",
@@ -2829,6 +2933,7 @@ data:extend(
       main_product = "cube-jelly",
       maximum_productivity = 5,
       allow_productivity = true,
+      order = "d",
     },
     {
       type = "recipe",
@@ -2880,6 +2985,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "foundry",
       allow_productivity = false,
+      order = "ka",
     },
     {
       type = "recipe",
@@ -2931,6 +3037,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "electromagnetic-plant",
       allow_productivity = false,
+      order = "kb",
     },
     {
       type = "recipe",
@@ -2967,6 +3074,7 @@ data:extend(
       main_product = "cube-jelly",
       maximum_productivity = 5,
       allow_productivity = true,
+      order = "dz",
     },
 
     {
@@ -3016,6 +3124,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "holmium-plate",
       allow_productivity = true,
+      order = "hz",
     },
     {
       type = "recipe",
@@ -3050,6 +3159,7 @@ data:extend(
         tertiary = {r = 95, g = 72, b =228, a = 1.000}, --rgb(95, 72, 228)
         quaternary = {r = 44, g = 18, b = 210, a = 1.000}, --rgb(44, 18, 210)
       },
+      order = "h",
     },
     {
       type = "recipe",
@@ -3088,6 +3198,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "piercing-rounds-magazine",
       maximum_productivity = 3,
+      order = "h",
     },
 
 })

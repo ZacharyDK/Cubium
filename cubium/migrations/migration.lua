@@ -11,5 +11,6 @@ for index, force in pairs(game.forces) do
     recipes["dream-electromagnetic-plant"].enabled = technologies["cube-mastery-5"].researched
     recipes["solid-fuel-from-hope-and-dream"].enabled = technologies["cube-mastery-4"].researched
     recipes["angry-ammunition"].enabled = technologies["cube-mastery-4"].researched
+    recipes["steam-bath"].enabled = technologies["cube-jelly"].researched
 
   end

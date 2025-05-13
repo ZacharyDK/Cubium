@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.22
+Date: 5. 12. 2025
+  Major Features:
+   - New recipe to recharge the cube: steam bath
+   - All recipes now have the order entry. Recipes that are cubic have the following organizational schema. Science,regualr cube synthesis, regular cube recharge, cube jelly, inverted cube, inverted jelly, inverted recipes, emotional refining, misc, buildings
+---------------------------------------------------------------------------------------------------
 Version: 1.0.21
 Date: 5. 11. 2025
   Major Features:

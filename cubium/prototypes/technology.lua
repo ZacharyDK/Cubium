@@ -96,6 +96,10 @@ data:extend({
             type = "unlock-recipe",
             recipe = "cube-jelly-awaken"
           },
+          {
+            type = "unlock-recipe",
+            recipe = "steam-bath"
+          },
 
       },
       prerequisites = {"planet-discovery-cubium"},
