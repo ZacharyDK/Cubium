@@ -768,7 +768,7 @@ data:extend{
   {
     type = "noise-expression",
     name = "cubium_coal_size",
-    expression = "slider_rescale(control:coal:size, 2)"
+    expression = "slider_rescale(control:cubium_coal:size, 2)"
   },
   {
     type = "noise-expression",
@@ -778,26 +778,26 @@ data:extend{
                       min(1 - cubium_starting_circle,\z
                           cubium_place_non_metal_spots(782349, 12, 1,\z
                                                          cubium_coal_size * min(1.2, cubium_ore_dist) * 25,\z
-                                                         control:coal:frequency,\z
+                                                         control:cubium_coal:frequency,\z
                                                          cubium_ashlands_resource_favorability)))"
   },
   {
     type = "noise-expression",
     name = "cubium_coal_probability",
-    expression = "(control:coal:size > 0) * (1000 * ((1 + cubium_coal_region) * random_penalty_between(0.9, 1, 1) - 1))"
+    expression = "(control:cubium_coal:size > 0) * (1000 * ((1 + cubium_coal_region) * random_penalty_between(0.9, 1, 1) - 1))"
   },
   {
     type = "noise-expression",
     name = "cubium_coal_richness",
     expression = "cubium_coal_region * random_penalty_between(0.9, 1, 1)\z
                   * 18000 * cubium_starting_area_multiplier\z
-                  * control:coal:richness / cubium_coal_size"
+                  * control:cubium_coal:richness / cubium_coal_size"
   },
 
   {
     type = "noise-expression",
     name = "cubium_stone_size",
-    expression = "slider_rescale(control:stone:size, 2)"
+    expression = "slider_rescale(control:cubium_stone:size, 2)"
   },
   {
     type = "noise-expression",
@@ -807,20 +807,20 @@ data:extend{
                       min(1 - cubium_starting_circle,\z
                           cubium_place_non_metal_spots(749, 12, 1,\z
                                                          cubium_stone_size * min(1.2, cubium_ore_dist) * 25,\z
-                                                         control:stone:frequency,\z
+                                                         control:cubium_stone:frequency,\z
                                                          cubium_mountains_resource_favorability)))"
   },
   {
     type = "noise-expression",
     name = "cubium_stone_probability",
-    expression = "(control:stone:size > 0) * (1010 * ((1 + cubium_stone_region) * random_penalty_between(0.9, 1, 1) - 1))"
+    expression = "(control:cubium_stone:size > 0) * (1010 * ((1 + cubium_stone_region) * random_penalty_between(0.9, 1, 1) - 1))"
   },
   {
     type = "noise-expression",
     name = "cubium_stone_richness",
     expression = "cubium_stone_region * random_penalty_between(0.9, 1, 1)\z
                   * 18000 * cubium_starting_area_multiplier\z
-                  * control:stone:richness / cubium_stone_size"
+                  * control:cubium_stone:richness / cubium_stone_size"
   },
 
   {

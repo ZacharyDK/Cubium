@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.23
+Date: 5. 24. 2025
+  Major Features:
+   - Fixed autoplace controls for coal and stone not actually working. 
+   - Thanks to SebRenegan for catching this
+---------------------------------------------------------------------------------------------------
 Version: 1.0.22
 Date: 5. 12. 2025
   Major Features:
