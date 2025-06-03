@@ -1,47 +1,52 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.24
+Date: 6. 3. 2025
+  Major Features:
+    - Added ignored by productivity tag to energized shards for the inverted shard recipe. Inverted shards can still benefit from productivity
+---------------------------------------------------------------------------------------------------
 Version: 1.0.23
 Date: 5. 24. 2025
   Major Features:
-   - Fixed autoplace controls for coal and stone not actually working. 
-   - Thanks to SebRenegan for catching this
+    - Fixed autoplace controls for coal and stone not actually working. 
+    - Thanks to SebRenegan for catching this
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.22
 Date: 5. 12. 2025
   Major Features:
-   - New recipe to recharge the cube: steam bath
-   - All recipes now have the order entry. Recipes that are cubic have the following organizational schema. Science,regualr cube synthesis, regular cube recharge, cube jelly, inverted cube, inverted jelly, inverted recipes, emotional refining, misc, buildings
+    - New recipe to recharge the cube: steam bath
+    - All recipes now have the order entry. Recipes that are cubic have the following organizational schema. Science,regualr cube synthesis, regular cube recharge, cube jelly, inverted cube, inverted jelly, inverted recipes, emotional refining, misc, buildings
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.21
 Date: 5. 11. 2025
   Major Features:
-   - Fixed carbon inversion icon.
-   - Anger cracking - Gives more fear, less anger. 
-   - anger-reconstitution - Gives less anger back. This ensures disgust won't clog up as much.
-   - New recipe - hope spoilage. Combine hope and disgust to make spoilage. This process is so peverse it can take a sleppy cube and wake it up.
-   - Swapped icons for many cubic recipes (engine unit, sulfuric acid inversion, petrol gas by inversion, light oil by inversion)
-   - New technology dream holmium plate. Unlocked with 20000 science packs, including promethium science. 
-   - Aquilo start - dream holmium can be unlocked for 500 science packs, after cube mastery 3.
-   - Aquilo start - EM plants reverted back to their original recipe. 
-   - Autoplace control for coal fixed
-   - New recipes - angry ammunition, solid-fuel from hope and dream. 
-   - fixed railgun turret localization and changed category to cubic
-   - New recipe EM plant ex dream
-   - Anger reconstitution icon changed so it is now distinct form anger cracking
-   - Angry rockets recipe icon changed.
+    - Fixed carbon inversion icon.
+    - Anger cracking - Gives more fear, less anger. 
+    - anger-reconstitution - Gives less anger back. This ensures disgust won't clog up as much.
+    - New recipe - hope spoilage. Combine hope and disgust to make spoilage. This process is so peverse it can take a sleppy cube and wake it up.
+    - Swapped icons for many cubic recipes (engine unit, sulfuric acid inversion, petrol gas by inversion, light oil by inversion)
+    - New technology dream holmium plate. Unlocked with 20000 science packs, including promethium science. 
+    - Aquilo start - dream holmium can be unlocked for 500 science packs, after cube mastery 3.
+    - Aquilo start - EM plants reverted back to their original recipe. 
+    - Autoplace control for coal fixed
+    - New recipes - angry ammunition, solid-fuel from hope and dream. 
+    - fixed railgun turret localization and changed category to cubic
+    - New recipe EM plant ex dream
+    - Anger reconstitution icon changed so it is now distinct form anger cracking
+    - Angry rockets recipe icon changed.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.20
 Date: 5. 10. 2025
   Major Features:
-   - Aquilo start. Lithium recipe altered. No longer uses holmium plates. This was an oversight on my part - forgot you needed holmium. Now you don't have to wander the ammonia seas looking for icebergs to harvest
-   - Aquilo start - new recipe. Heat pipe breeding. Raises more questions than answers, but should make the early game go faster.
-   - Dream advanced circuit and dream processing unit recipe icons - swapped cloud and circuit board between front and back. Recipes remain unchanged.
-   - Aquilo version of inverted-shards recipes - energized-shards get 190 back (same), ignored by productivity now 188. Sure you can eek out more cubes by smashing them. But that isn't really the point of the challenge. 
-   - If you want more cubes - make a friend. Or have him join your LAN, drop his cubes and starting materials, then disappear. All players get 100 cubes. 
-   - Aquilo start - Foundry technology locked behind turbo-transport-belt-dream research. To help players understand they have to get tungsten by recycling turbo belts
-   - Aquilo start - Stack inserter and transport belt cpacity one moved to Aquilo. Transport belt capacity 2 remains a Gleba tech
-   - Reasoning - Pretty fair to move it Aquilo for this gamemode. Unique starting scenario is one of the few times I will cannibalize vanilla features.
-   - Aquilo start - 100 --> 200 heat pipes. Quality of life really. 
-   - Cubium science recipes. Output increased.
+    - Aquilo start. Lithium recipe altered. No longer uses holmium plates. This was an oversight on my part - forgot you needed holmium. Now you don't have to wander the ammonia seas looking for icebergs to harvest
+    - Aquilo start - new recipe. Heat pipe breeding. Raises more questions than answers, but should make the early game go faster.
+    - Dream advanced circuit and dream processing unit recipe icons - swapped cloud and circuit board between front and back. Recipes remain unchanged.
+    - Aquilo version of inverted-shards recipes - energized-shards get 190 back (same), ignored by productivity now 188. Sure you can eek out more cubes by smashing them. But that isn't really the point of the challenge. 
+    - If you want more cubes - make a friend. Or have him join your LAN, drop his cubes and starting materials, then disappear. All players get 100 cubes. 
+    - Aquilo start - Foundry technology locked behind turbo-transport-belt-dream research. To help players understand they have to get tungsten by recycling turbo belts
+    - Aquilo start - Stack inserter and transport belt cpacity one moved to Aquilo. Transport belt capacity 2 remains a Gleba tech
+    - Reasoning - Pretty fair to move it Aquilo for this gamemode. Unique starting scenario is one of the few times I will cannibalize vanilla features.
+    - Aquilo start - 100 --> 200 heat pipes. Quality of life really. 
+    - Cubium science recipes. Output increased.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.19
 Date: 5. 9. 2025

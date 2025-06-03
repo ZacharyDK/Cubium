@@ -704,8 +704,8 @@ data:extend(
       },
       results =
       {
-        {type = "item", name = "energized-shards", amount_min = 100, amount_max = 200},
-        {type = "item", name = "inverted-shards", probability = 0.3, amount_min = 15, amount_max = 23},
+        {type = "item", name = "energized-shards", amount_min = 100, amount_max = 200, ignored_by_productivity = 9999},
+        {type = "item", name = "inverted-shards", probability = 0.3, amount_min = 15, amount_max = 23, ignored_by_productivity = 5},
       },
       main_product = "inverted-shards",
       maximum_productivity = 5,
