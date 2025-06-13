@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.25
+Date: 6. 13. 2025
+  Major Features:
+    - Added allow_decomposition=false to most recipes
+    - iron stick recipe now unlocked by default for Aquilo and Cubium starts
+    - small power pole dream recipe unlocked on planet discovery, and by default for Aquilo/Cubium starts
+---------------------------------------------------------------------------------------------------
 Version: 1.0.24
 Date: 6. 3. 2025
   Major Features:

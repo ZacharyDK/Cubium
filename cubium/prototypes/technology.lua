@@ -36,7 +36,10 @@ data:extend({
               type = "unlock-recipe",
               recipe = "carbon",
             },
-          
+            {
+              type = "unlock-recipe",
+              recipe = "dream-small-power-pole"
+            },
         },
         prerequisites = {"space-platform-thruster"},
         unit =
@@ -253,10 +256,7 @@ data:extend({
       essential = true,
       effects = 
       {
-        {
-          type = "unlock-recipe",
-          recipe = "dream-small-power-pole"
-        },
+
         {
           type = "unlock-recipe",
           recipe = "dream-concentrate"

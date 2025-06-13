@@ -45,6 +45,10 @@ data.raw.recipe["cube-jelly"].enabled = true
 data.raw.recipe["carbon"].enabled = true
 data.raw.recipe["ice-melting"].enabled = true
 data.raw.recipe["steel-plate"].enabled = true
+data.raw.recipe["dream-small-power-pole"].enabled = true
+data.raw.recipe["iron-stick"].enabled = true
+
+
 data.raw.recipe["destabilized-cube-matter-recycling"].enabled = true
 --data.raw.recipe["molten-iron"].enabled = true
 --data.raw.recipe["molten-copper"].enabled = true

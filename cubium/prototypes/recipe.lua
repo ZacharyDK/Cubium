@@ -29,6 +29,7 @@ data:extend(
         main_product ="ultradense-substrate",
         maximum_productivity = 5,
         order = "b",
+        allow_decomposition = false,
     },
     {
       type ="recipe",
@@ -118,6 +119,7 @@ data:extend(
         maximum_productivity = 5,
         auto_recycle = false,
         order = "b",
+        allow_decomposition = false,
     },
     {
         type = "recipe",
@@ -156,6 +158,7 @@ data:extend(
         result_is_always_fresh = true,
         main_product = "ice",
         maximum_productivity = 5,
+        allow_decomposition = false,
     },
     {
         type = "recipe",
@@ -191,6 +194,7 @@ data:extend(
         main_product = "steam",
         maximum_productivity = 5,
         order = "d",
+        allow_decomposition = false,
     },
     {
         type = "recipe",
@@ -229,6 +233,7 @@ data:extend(
         maximum_productivity = 5,
         allow_productivity = true,
         order = "d",
+        allow_decomposition = false,
     },
     {
         type = "recipe",
@@ -272,6 +277,7 @@ data:extend(
         maximum_productivity = 5,
         allow_productivity = true,
         order = "d",
+        allow_decomposition = false,
     },
     {
         type = "recipe",
@@ -309,6 +315,7 @@ data:extend(
         maximum_productivity = 5,
         allow_productivity = true,
         order = "d",
+        allow_decomposition = false,
     },
     {
         type = "recipe",
@@ -347,6 +354,7 @@ data:extend(
         maximum_productivity = 5,
         allow_productivity = true,
         order = "d",
+        allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -383,6 +391,7 @@ data:extend(
       main_product = "energized-microcube",
       maximum_productivity = 1,
       order = "c",
+      allow_decomposition = false,
     },
 
     {
@@ -420,6 +429,7 @@ data:extend(
         main_product = "energized-microcube",
         maximum_productivity = 5,
         order = "c",
+        allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -456,6 +466,7 @@ data:extend(
       main_product = "energized-microcube",
       maximum_productivity = 1,
       order = "c",
+      allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -494,6 +505,7 @@ data:extend(
       main_product = "plastic-bar",
       maximum_productivity = 5,
       order = "d",
+      allow_decomposition = false,
     },
 
     {
@@ -531,6 +543,7 @@ data:extend(
       main_product = "iron-ore",
       maximum_productivity = 5,
       order = "d",
+      allow_decomposition = false,
     },
 
     {
@@ -569,6 +582,7 @@ data:extend(
       main_product = "iron-ore",
       maximum_productivity = 5,
       order = "da",
+      allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -606,6 +620,7 @@ data:extend(
       main_product = "copper-ore",
       maximum_productivity = 5,
       order = "db",
+      allow_decomposition = false,
     },
 
     --Cubic recipes. 
@@ -643,6 +658,7 @@ data:extend(
         main_product = "energized-microcube",
         maximum_productivity = 1,
         order = "b",
+        allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -678,6 +694,7 @@ data:extend(
       main_product = "energized-shards",
       maximum_productivity = 2,
       order = "b",
+      allow_decomposition = false,
     },
 
 
@@ -740,6 +757,7 @@ data:extend(
       main_product = "inverted-microcube",
       maximum_productivity = 5,
       order = "e",
+      allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -776,6 +794,7 @@ data:extend(
       main_product = "energized-microcube",
       maximum_productivity = 5,
       order = "c",
+      allow_decomposition = false,
     },
     --Cube inversion recipes start here.
     {
@@ -823,6 +842,7 @@ data:extend(
       main_product = "calcite",
       maximum_productivity = 5,
       order = "f",
+      allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -870,6 +890,7 @@ data:extend(
       main_product = "inverted-microcube",
       maximum_productivity = 5,
       order = "eb",
+      allow_decomposition = false,
     },
 
     {
@@ -918,6 +939,7 @@ data:extend(
       main_product = "petroleum-gas",
       maximum_productivity = 5,
       order = "fb",
+      allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -956,6 +978,7 @@ data:extend(
       main_product = "engine-unit",
       maximum_productivity = 5,
       order = "fb",
+      allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -1002,6 +1025,7 @@ data:extend(
       main_product = "light-oil",
       maximum_productivity = 5,
       order = "fb",
+      allow_decomposition = false,
     },
 
     --Emotional refining, dream recipes
@@ -1458,6 +1482,7 @@ data:extend(
       main_product = "electric-engine-unit",
       maximum_productivity = 5,
       order = "fc",
+      allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -1496,6 +1521,7 @@ data:extend(
       main_product = "concrete",
       maximum_productivity = 5,
       order = "fc",
+      allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -1536,6 +1562,7 @@ data:extend(
       main_product = "refined-concrete",
       maximum_productivity = 5,
       order = "fc",
+      allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -1577,6 +1604,7 @@ data:extend(
       main_product = "processing-unit",
       maximum_productivity = 5,
       order = "fc",
+      allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -1617,6 +1645,7 @@ data:extend(
       main_product = "advanced-circuit",
       maximum_productivity = 5,
       order = "fc",
+      allow_decomposition = false,
     },
     --inverted Cube jelly
     {
@@ -1658,6 +1687,7 @@ data:extend(
       result_is_always_fresh = true,
       main_product = "sulfur",
       maximum_productivity = 5,
+      allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -1690,6 +1720,7 @@ data:extend(
       main_product = "inverted-cube-jelly",
       maximum_productivity = 5,
       order = "fa",
+      allow_decomposition = false,
     },
     --transendental recipes
     {
@@ -1725,6 +1756,7 @@ data:extend(
         quaternary = {r = 0.564, g = 0.364, b = 0.564, a = 1.000}, -- #8f5c8fff
       },
       order = "h",
+      allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -1761,6 +1793,7 @@ data:extend(
       main_product = "ice",
       maximum_productivity = 5,
       order = "h",
+      allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -1801,6 +1834,7 @@ data:extend(
       allow_productivity = true,
       auto_recycle = false,
       order = "fd",
+      allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -1837,6 +1871,7 @@ data:extend(
         quaternary = {r = 210, g = 18, b = 18, a = 1.000}, --rgb(210, 18, 18)
       },
       order = "i",
+      allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -1883,6 +1918,7 @@ data:extend(
         quaternary = {r = 210, g = 18, b = 18, a = 1.000}, --rgb(210, 18, 18)
       },
       order = "i",
+      allow_decomposition = false,
     },
     {
       type = "recipe",
@@ -1939,6 +1975,7 @@ data:extend(
         quaternary = {r = 210, g = 18, b = 18, a = 1.000}, --rgb(210, 18, 18)
       },
       order = "h",
+      allow_decomposition = false,
     },
     {
       type ="recipe",
@@ -1985,6 +2022,7 @@ data:extend(
         quaternary = {r = 0.629, g = 0.174, b = 0.000, a = 0.502}, -- #a02c0080
       },
       order = "cz",
+      allow_decomposition = false,
     },
     {
       type ="recipe",
@@ -2033,6 +2071,7 @@ data:extend(
         quaternary = {r = 0.629, g = 0.174, b = 0.000, a = 0.502}, -- #a02c0080
       },
       order = "i",
+      
     },
 
     --Science recipes
