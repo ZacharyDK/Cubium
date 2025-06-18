@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.26
+Date: 6. 13. 2025
+  Major Features:
+    - Cubium start - ice dreams recipe unlocked at the start
+    - Recipe cube-jelly-awaken. Time 40 --> 27. Water output 100 --> 200
+    - Cubium start - electric furnace and prerequisite research unlocked. This should make Cubium start less anemic.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.25
 Date: 6. 13. 2025
   Major Features:

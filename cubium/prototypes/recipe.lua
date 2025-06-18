@@ -376,7 +376,7 @@ data:extend(
 
       enabled = false,
       auto_recycle = false,
-      energy_required = 40,
+      energy_required = 27,
       ingredients = 
       {
           {type = "item", name = "dormant-microcube", amount = 1},
@@ -385,7 +385,7 @@ data:extend(
       results =
       {
         {type = "item", name = "energized-microcube", amount = 1,ignored_by_productivity = 9999},
-        {type = "fluid", name = "water", amount = 100},
+        {type = "fluid", name = "water", amount = 200},
       },
       result_is_always_fresh = true,
       main_product = "energized-microcube",

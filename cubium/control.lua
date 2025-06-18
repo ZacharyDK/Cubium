@@ -137,5 +137,6 @@ script.on_event(defines.events.on_player_joined_game, function(event)
     if cubium_start then 
         local player = game.players[event.player_index]
         player.force.technologies["sulfur-processing"].research_recursive()
+        player.force.technologies["advanced-material-processing-2"].research_recursive()
     end
 end)

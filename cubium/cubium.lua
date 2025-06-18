@@ -15,6 +15,7 @@ data.raw.recipe["casting-copper"].enabled = true
 data.raw.recipe["casting-steel"].enabled = true
 data.raw.recipe["heating-tower"].enabled = true
 data.raw.recipe["heat-exchanger"].enabled = true
+data.raw.recipe["ice-dreams"].enabled = true
 data.raw.recipe["heat-pipe"].enabled = true
 data.raw.recipe["steam-turbine"].enabled = true
 data.raw.recipe["dream-small-power-pole"].enabled = true
