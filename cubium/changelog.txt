@@ -1,10 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.27
+Date: 7. 11. 2025
+  Major Features:
+    - Cubium research productivity
+---------------------------------------------------------------------------------------------------
 Version: 1.0.26
 Date: 6. 13. 2025
   Major Features:
     - Cubium start - ice dreams recipe unlocked at the start
     - Recipe cube-jelly-awaken. Time 40 --> 27. Water output 100 --> 200
     - Cubium start - electric furnace and prerequisite research unlocked. This should make Cubium start less anemic.
+    - Cube mastery - unlocked after crafting a cubic smasher instead of making an inverted cube
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.25
 Date: 6. 13. 2025

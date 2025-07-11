@@ -61,3 +61,4 @@ end
 --Unlocking it here means we don't have to lock this planet behind Vulcanus
 --local carbon_alt_unlocks = {"cube-jelly"}
 --data.raw.recipe.carbon.alternative_unlock_methods =carbon_alt_unlocks 
+

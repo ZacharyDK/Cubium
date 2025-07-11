@@ -967,12 +967,12 @@ data:extend(
       {
           {type = "item", name = "inverted-microcube", amount = 1},
           {type = "item", name = "steam-engine", amount = 20},
-          {type = "item", name = "steel-plate", amount = 20},
+          {type = "item", name = "steel-plate", amount = 15},
       },
       results =
       {
         {type = "item", name = "inverted-dormant-microcube", amount = 1,ignored_by_productivity = 9999},
-        {type = "item", name = "engine-unit", amount = 60},
+        {type = "item", name = "engine-unit", amount = 70},
       },
       result_is_always_fresh = true,
       main_product = "engine-unit",
@@ -2996,7 +2996,7 @@ data:extend(
         {
           property = "pressure",
           min = 0,
-          max = 800
+          max = 2000
         },
       },
       enabled = false,
@@ -3048,7 +3048,7 @@ data:extend(
         {
           property = "pressure",
           min = 0,
-          max = 800
+          max = 2000
         },
       },
       enabled = false,

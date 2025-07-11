@@ -243,7 +243,7 @@ data:extend({
       research_trigger =
       {
         type = "craft-item",
-        item = "inverted-microcube",
+        item = "cube-smasher",
         count = 1
       }
      
@@ -585,7 +585,40 @@ data:extend({
       }
     },
 
-    
+    {
+        type = "technology",
+        name = "cubic-science-pack-productivity-infinite",
+        icons = util.technology_icon_constant_recipe_productivity("__cubium__/graphics/technology/ultradense-technology-purple.png"),
+        icon_size = 256,
+
+        effects =
+        {
+          {
+            type = "nothing", --This ensures dark science works fine. Its such a corner case, I probably won't fix dark science. All technologies with science-pack in the name should have a well defined effects array.
+          },
+        },
+        prerequisites = {"cube-mastery-4"},
+        unit =
+        {
+          count_formula = "1.5^L*1200",
+          ingredients =
+          {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"military-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"production-science-pack", 1},
+            {"utility-science-pack", 1},
+            {"space-science-pack", 1},
+            {"metallurgic-science-pack", 1},
+            {"electromagnetic-science-pack", 1},
+            {"cryogenic-science-pack", 1},
+          },
+          time = 120
+        },
+        max_level = "infinite",
+        upgrade = true
+    },
 
 
 }
