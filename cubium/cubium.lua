@@ -34,6 +34,17 @@ data.raw.recipe["cube-jelly"].results =
 
 }
 
+
+data.raw.recipe["cube-jelly-ore-basic"].energy_required = 4
+
+data.raw.recipe["cube-jelly-ore-basic"].ingredients = 
+{
+    {type = "item", name = "cube-jelly", amount = 5},
+}
+
+
+
+
 utils.set_packs("fluid-handling", automation_science, 10, 30)
 utils.set_packs("coal-liquefaction", logistic_science, 100, 30)
 utils.set_packs("oil-gathering", automation_science, 100, 30)

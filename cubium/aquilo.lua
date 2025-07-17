@@ -539,6 +539,9 @@ data.raw.recipe["cube-jelly-ore-basic"].ingredients =
   {type = "item", name = "cube-jelly", amount = 5},
 }
 
+data.raw.recipe["cube-jelly-ore-basic"].energy_required = 4
+
+
 
 
 

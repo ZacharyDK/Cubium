@@ -30,6 +30,7 @@ script.on_init(function()
             ["assembling-machine-2"] = 1,
             ["solar-panel"] = 10,
             ["accumulator"] = 2,
+            ["heating-tower"] = 1,
         })
         remote.call("freeplay", "set_debris_items", {
             ["iron-plate"] = 50,

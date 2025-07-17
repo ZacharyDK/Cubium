@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.28
+Date: 7. 18. 2025
+  Major Features:
+    - Added heating tower to Cubium start.
+    - Cube Jelly ore basic unified for Aquilo and Cubium starts. Aquilo start only required 5 cube jelly instead of 10
+    - Now both recipes only require 5 cube jelly
+    - Energy required for Cube jelly ore basic now 4 instead of 5 for Aquilo and Cubium starts
+---------------------------------------------------------------------------------------------------
 Version: 1.0.27
 Date: 7. 11. 2025
   Major Features:
