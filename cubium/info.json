@@ -7,7 +7,8 @@
     "dependencies": ["base >= 2.0",
         "space-age >= 2.0",
         "quality >= 2.0",
-        "? any-planet-start >= 1.1.13"
+        "? any-planet-start >= 1.1.13",
+        "? canal-excavator >= 1.12"
     ],
     "space_travel_required": true,
     "description": "N/A"

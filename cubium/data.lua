@@ -28,3 +28,4 @@ if (mods["any-planet-start"]) then
     APS.add_planet{name = "cubium", filename = "__cubium__/cubium.lua", technology = "planet-discovery-cubium"}
     APS.add_planet{name = "aquilo", filename = "__cubium__/aquilo.lua", technology = "planet-discovery-aquilo"}
 end
+require("__cubium__.compatibility.canal-excavator")
