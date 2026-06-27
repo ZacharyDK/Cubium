@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.29
+Date: 6. 27. 2026
+  Major Features:
+    - Updated mod for 2.1
+    - Added platform_backdrop.lua
+    - Changed all recipe.category to recipe.categories {}
+    - recipe.result_is_always_fresh migrated to ProductPrototype, per 2.1 API
+    - Product prototype probability changed to independent_probability per 2.1 API
+    - All -or- recipe categories (ex "chemistry-or-cryogenics") no longer exist. Replaced -or- with ","
+    - eletronics recipe category no longer exists, replaced with electromagnetics in 2.1
+    - "__quality__/graphics/icons/recycling.png" mod changed to __recycler__ in 2.1
+---------------------------------------------------------------------------------------------------
 Version: 1.0.28
 Date: 7. 18. 2025
   Major Features:

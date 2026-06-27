@@ -612,7 +612,7 @@ data:extend(
           shift = util.by_pixel(0, 0),
         }
     },
-    category = "advanced-crafting",
+    categories = {"advanced-crafting"},
 
     enabled = true,
     auto_recycle = false,

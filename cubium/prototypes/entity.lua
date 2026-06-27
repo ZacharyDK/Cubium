@@ -1,7 +1,7 @@
 require ("util")
 require ("__base__.prototypes.entity.pipecovers")
 require ("circuit-connector-sprites")
-require ("__base__.prototypes.entity.assemblerpipes")
+--require ("__base__.prototypes.entity.assemblerpipes") --Doesn't exist in 2.1 for some reason
 
 local simulations = require("__base__.prototypes.factoriopedia-simulations")
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
