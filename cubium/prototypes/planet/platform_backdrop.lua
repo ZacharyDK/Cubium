@@ -11,7 +11,7 @@ data.raw.planet["cubium"].platform_surface_render_parameters.platform_backdrop =
   surface_vertical_offset = 0.12,
   cloud_vertical_offset = 0.05,
   specular_intensity = 0,
-  atmosphere_color = {0.072, 0.073, 0.067, 0.1},
+  atmosphere_color = {0.080, 0.119, 0.143, 0.1},
   cloud_flow_intensity = 0.8,
   cloud_panning_rate = -0.025,
   planet_axis = {3.0, 13.0},
@@ -36,7 +36,7 @@ data.raw.planet["cubium"].platform_surface_render_parameters.platform_backdrop =
   },
   global_cloud =
   {
-    filename = "__space-age__/graphics/space/vulcanus-cloud.png",
+    filename = "__cubium__/graphics/space/cubium-cloud.png",
     width = 2048,
     height = 1024
   },

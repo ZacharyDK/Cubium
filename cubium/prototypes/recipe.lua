@@ -10,6 +10,7 @@ data:extend(
         categories ={"crafting-with-fluid","metallurgy"},
         icon ="__cubium__/graphics/icons/ultradense-substrate.png",
         enabled = false,
+hide_from_signal_gui = false,
         subgroup = "cubic",
         ingredients =
         {
@@ -39,6 +40,7 @@ data:extend(
       icon = "__cubium__/graphics/entity/quantum-stabilizer/quantum-stabilizer-icon.png",
       icon_size = 64,
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
         {type ="item", name ="ultradense-substrate", amount = 2},
@@ -69,6 +71,7 @@ data:extend(
       icon = "__cubium__/graphics/entity/quantum-stabilizer/quantum-stabilizer-icon.png",
       icon_size = 64,
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
         {type ="item", name ="ultradense-substrate", amount = 2},
@@ -100,6 +103,7 @@ data:extend(
         categories ={"crafting"},
         icon ="__cubium__/graphics/icons/matter-cube.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
   
@@ -142,6 +146,7 @@ data:extend(
         subgroup = "fulgora-processes", 
         order = "zz[trash]-b[destabilized-recycling]",
         enabled = false,
+hide_from_signal_gui = false,
         auto_recycle = false,
         energy_required = 1,
         ingredients = {{type = "item", name = "destabilized-cube-matter", amount = 2}},
@@ -178,6 +183,7 @@ data:extend(
         },
         categories ={"chemistry","cryogenics"},
         enabled = false,
+hide_from_signal_gui = false,
         auto_recycle = false,
         energy_required = 1,
         ingredients = 
@@ -214,6 +220,7 @@ data:extend(
         },
         categories ={"chemistry","cryogenics"},
         enabled = false,
+hide_from_signal_gui = false,
         auto_recycle = false,
         energy_required = 4,
         ingredients = {{type = "item", name = "cube-jelly", amount = 25}},
@@ -243,6 +250,7 @@ data:extend(
         categories = {"crafting"},
 
         enabled = false,
+hide_from_signal_gui = false,
         auto_recycle = false,
         energy_required = 1,
         ingredients = {{type = "item", name = "energized-microcube", amount = 1}},
@@ -264,6 +272,7 @@ data:extend(
         categories ={"advanced-crafting"},
 
         enabled = false,
+hide_from_signal_gui = false,
         auto_recycle = false,
         energy_required = 1,
         ingredients = {{type = "item", name = "energized-microcube", amount = 1}},
@@ -298,6 +307,7 @@ data:extend(
         categories ={"advanced-crafting"},
 
         enabled = false,
+hide_from_signal_gui = false,
         auto_recycle = false,
         energy_required = 3,
         ingredients = 
@@ -336,6 +346,7 @@ data:extend(
         categories ={"advanced-crafting"},
 
         enabled = false,
+hide_from_signal_gui = false,
         auto_recycle = false,
         energy_required = 10,
         ingredients = 
@@ -375,6 +386,7 @@ data:extend(
       categories ={"advanced-crafting"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 27,
       ingredients = 
@@ -413,6 +425,7 @@ data:extend(
         categories ={"advanced-crafting"},
 
         enabled = false,
+hide_from_signal_gui = false,
         auto_recycle = false,
         energy_required = 10,
         allow_productivity = false,
@@ -450,6 +463,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 50,
       allow_productivity = false,
@@ -487,6 +501,7 @@ data:extend(
       categories ={"advanced-crafting"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 50,
       allow_productivity = true,
@@ -527,6 +542,7 @@ data:extend(
       categories ={"advanced-crafting"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 5,
       allow_productivity = true,
@@ -565,6 +581,7 @@ data:extend(
       categories ={"advanced-crafting"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 10,
       allow_productivity = true,
@@ -603,6 +620,7 @@ data:extend(
       categories ={"advanced-crafting"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 9,
       allow_productivity = true,
@@ -643,6 +661,7 @@ data:extend(
         categories ={"cubic"},
 
         enabled = false,
+hide_from_signal_gui = false,
         auto_recycle = false,
         energy_required = 15,
         allow_productivity = false,
@@ -679,6 +698,7 @@ data:extend(
       categories ={"cubic"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 2,
       allow_productivity = true,
@@ -712,6 +732,7 @@ data:extend(
       categories ={"cubic"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 45,
       allow_productivity = true,
@@ -742,6 +763,7 @@ data:extend(
       categories ={"cubic"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 15,
       allow_productivity = false,
@@ -778,6 +800,7 @@ data:extend(
       categories ={"cubic"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 80,
       allow_productivity = false,
@@ -816,6 +839,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 15,
       allow_productivity = true,
@@ -863,6 +887,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 15,
       allow_productivity = false,
@@ -913,6 +938,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 17,
       allow_productivity = true,
@@ -960,6 +986,7 @@ data:extend(
       categories ={"advanced-crafting"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 30,
       allow_productivity = true,
@@ -1000,6 +1027,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 45,
       allow_productivity = true,
@@ -1036,6 +1064,7 @@ data:extend(
       categories ={"crafting"},
       icon ="__base__/graphics/icons/small-electric-pole.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1062,6 +1091,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
       icon ="__cubium__/graphics/icons/fluid/liquid-dream.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1096,6 +1126,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
       icon ="__cubium__/graphics/icons/fluid/dream-concentrate.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1129,6 +1160,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
       icon ="__cubium__/graphics/icons/fluid/emotional-tar.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1163,6 +1195,7 @@ data:extend(
       categories ={"oil-processing"},
       icon ="__cubium__/graphics/icons/fluid/emotional-tar.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1199,6 +1232,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
       icon ="__cubium__/graphics/icons/fluid/liquid-hate.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1246,6 +1280,7 @@ data:extend(
           }
       },
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1293,6 +1328,7 @@ data:extend(
         }
       },
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1330,6 +1366,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
       icon ="__cubium__/graphics/icons/fluid/liquid-courage.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1366,6 +1403,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
       icon ="__base__/graphics/icons/fluid/steam.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1412,6 +1450,7 @@ data:extend(
           }
       },
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1464,6 +1503,7 @@ data:extend(
       categories ={"advanced-crafting"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 40,
       allow_productivity = true,
@@ -1503,6 +1543,7 @@ data:extend(
       categories ={"advanced-crafting"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 30,
       allow_productivity = true,
@@ -1543,6 +1584,7 @@ data:extend(
       categories ={"advanced-crafting"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 40,
       allow_productivity = true,
@@ -1583,6 +1625,7 @@ data:extend(
       categories = {"electromagnetics"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 60,
       allow_productivity = true,
@@ -1625,6 +1668,7 @@ data:extend(
       categories ={"electromagnetics"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 50,
       allow_productivity = true,
@@ -1668,6 +1712,7 @@ data:extend(
       categories ={"recycling","hand-crafting"},
       order = "zz[trash]-b[inverted-jelly-recycling]",
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 0.75,
       ingredients = {{type = "item", name = "inverted-cube-jelly", amount = 1}},
@@ -1703,6 +1748,7 @@ data:extend(
       categories ={"advanced-crafting"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 4,
       ingredients = 
@@ -1744,6 +1790,7 @@ data:extend(
       icon = "__cubium__/graphics/icons/dream-fuel.png",
       subgroup = "fluid-recipes",
       enabled = false,
+hide_from_signal_gui = false,
       order = "b[fluid-chemistry]-c[dream-fuel]",
       --result_is_always_fresh = true,
       main_product = "dream-fuel",
@@ -1777,6 +1824,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 1,
       ingredients = 
@@ -1801,6 +1849,7 @@ data:extend(
       subgroup = "cubic",
       energy_required = 30,
       enabled = false,
+hide_from_signal_gui = false,
       icons = 
       {
         {
@@ -1862,6 +1911,7 @@ data:extend(
       },
       allow_productivity = false,
       enabled = false,
+hide_from_signal_gui = false,
       --result_is_always_fresh = true,
       crafting_machine_tint =
       {
@@ -1892,6 +1942,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 50,
       ingredients = 
@@ -1965,6 +2016,7 @@ data:extend(
       allow_productivity = true,
       allow_quality = false,
       enabled = false,
+hide_from_signal_gui = false,
       --result_is_always_fresh = true,
       maximum_productivity = 2,
       crafting_machine_tint =
@@ -1995,6 +2047,7 @@ data:extend(
           }
       },
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -2042,6 +2095,7 @@ data:extend(
           }
       },
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -2092,6 +2146,7 @@ data:extend(
       categories ={"advanced-crafting"},
       subgroup = "cubic",
       enabled = false,
+hide_from_signal_gui = false,
       energy_required = 5,
       ingredients =
       {
@@ -2133,6 +2188,7 @@ data:extend(
         }
       },
       enabled = false,
+hide_from_signal_gui = false,
       energy_required = 6,
       ingredients =
       {
@@ -2173,6 +2229,7 @@ data:extend(
       },
       subgroup = "cubic",
       enabled = false,
+hide_from_signal_gui = false,
       energy_required = 24,
       ingredients =
       {
@@ -2214,6 +2271,7 @@ data:extend(
       },
       subgroup = "cubic",
       enabled = false,
+hide_from_signal_gui = false,
       energy_required = 10,
       ingredients =
       {
@@ -2255,6 +2313,7 @@ data:extend(
         }
       },
       enabled = false,
+hide_from_signal_gui = false,
       energy_required = 21,
       ingredients =
       {
@@ -2296,6 +2355,7 @@ data:extend(
         }
       },
       enabled = false,
+hide_from_signal_gui = false,
       energy_required = 21,
       ingredients =
       {
@@ -2335,6 +2395,7 @@ data:extend(
         }
       },
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
         {type = "item", name = "tungsten-carbide", amount = 3},
@@ -2380,6 +2441,7 @@ data:extend(
         }
       },
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
         {type = "item", name = "bioflux", amount = 1},
@@ -2429,6 +2491,7 @@ data:extend(
         }
       },
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
         {type = "item", name = "supercapacitor", amount = 1},
@@ -2473,6 +2536,7 @@ data:extend(
         }
       },
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
         {type = "item", name = "ice", amount = 3},
@@ -2527,6 +2591,7 @@ data:extend(
         }
       },
       enabled = false,
+hide_from_signal_gui = false,
       allow_productivity = true,
       categories = {"cryogenics"},
       ingredients =
@@ -2583,6 +2648,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
       subgroup = "cubic",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
         {type = "item", name = "iron-gear-wheel", amount = 10},
@@ -2618,6 +2684,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
       subgroup = "cubic",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
         {type = "item", name = "iron-gear-wheel", amount = 80},
@@ -2653,6 +2720,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
       subgroup = "cubic",
       enabled = false,
+hide_from_signal_gui = false,
       energy_required = 2,
       ingredients =
       {
@@ -2690,6 +2758,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
       subgroup = "cubic",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
         {type = "item", name = "iron-gear-wheel", amount = 20},
@@ -2727,6 +2796,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
       subgroup = "cubic",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
         {type = "item", name = "iron-gear-wheel", amount = 120},
@@ -2763,6 +2833,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
       subgroup = "cubic",
       enabled = false,
+hide_from_signal_gui = false,
       energy_required = 2,
       ingredients =
       {
@@ -2803,6 +2874,7 @@ data:extend(
       categories ={"advanced-crafting"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 10,
       allow_productivity = false,
@@ -2840,6 +2912,7 @@ data:extend(
       categories ={"advanced-crafting"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 10,
       allow_productivity = false,
@@ -2876,6 +2949,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 3,
       ingredients = 
@@ -2917,6 +2991,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 10,
       ingredients = 
@@ -2955,6 +3030,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 15,
       ingredients = 
@@ -3000,6 +3076,7 @@ data:extend(
         },
       },
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 120,
       ingredients = 
@@ -3052,6 +3129,7 @@ data:extend(
         },
       },
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 120,
       ingredients = 
@@ -3097,6 +3175,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 3,
       ingredients = 
@@ -3142,6 +3221,7 @@ data:extend(
         },
       },
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 120,
       ingredients = 
@@ -3185,8 +3265,10 @@ data:extend(
       icon = "__cubium__/graphics/icons/solid-fuel-from-hope.png",
       subgroup = "fluid-recipes",
       enabled = false,
+hide_from_signal_gui = false,
       order = "b[fluid-chemistry]-g[solid-fuel-from-hope-oil]",
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       allow_quality = false,
       maximum_productivity = 2,
@@ -3220,6 +3302,7 @@ data:extend(
       categories ={"chemistry","cryogenics"},
 
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 1,
       ingredients = 

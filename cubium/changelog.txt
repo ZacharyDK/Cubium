@@ -10,6 +10,7 @@ Date: 6. 27. 2026
     - All -or- recipe categories (ex "chemistry-or-cryogenics") no longer exist. Replaced -or- with ","
     - eletronics recipe category no longer exists, replaced with electromagnetics in 2.1
     - "__quality__/graphics/icons/recycling.png" mod changed to __recycler__ in 2.1
+    - set hide_from_signal_gui = false in all recipes to ensure they show up for circuit conditions
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.28
 Date: 7. 18. 2025
