@@ -357,7 +357,7 @@ hide_from_signal_gui = false,
         },
         results =
         {
-          {type = "item", name = "cube-jelly",                amount = 75,  percent_spoiled = 0, ignored_by_productivity = 20, ignored_by_stats = 20},
+          {type = "item", name = "cube-jelly",                amount = 75,  percent_spoiled = 0, ignored_by_productivity = 20, ignored_by_stats = 20, always_fresh = true},
           {type = "item", name = "dormant-microcube",             amount = 1,ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false, always_fresh = true},
         },
         --result_is_always_fresh = true,
@@ -392,7 +392,7 @@ hide_from_signal_gui = false,
       ingredients = 
       {
           {type = "item", name = "dormant-microcube", amount = 1},
-          {type = "item", name = "cube-jelly", amount = 15},
+          {type = "item", name = "cube-jelly", amount = 15, always_fresh = true},
       },
       results =
       {
@@ -1725,7 +1725,7 @@ hide_from_signal_gui = false,
         {type = "item", name = "coal",              amount = 1, independent_probability = 0.05, show_details_in_recipe_tooltip = false},
         {type = "item", name = "calcite",              amount = 1, independent_probability = 0.02, show_details_in_recipe_tooltip = false},
         {type = "item", name = "dream",              amount = 3, independent_probability = 0.18, show_details_in_recipe_tooltip = false},
-        {type = "item", name = "destabilized-cube-matter",            amount = 3, independent_probability = 0.10, show_details_in_recipe_tooltip = false},
+        {type = "item", name = "destabilized-cube-matter",            amount = 3, independent_probability = 0.10, show_details_in_recipe_tooltip = false, always_fresh = true},
 
 
       },
@@ -1754,11 +1754,11 @@ hide_from_signal_gui = false,
       ingredients = 
       {
           {type = "item", name = "inverted-microcube", amount = 1},
-          {type = "item", name = "cube-jelly", amount = 10},
+          {type = "item", name = "cube-jelly", amount = 10, always_fresh = true},
       },
       results =
       {
-        {type = "item", name = "inverted-cube-jelly",                amount = 10,  percent_spoiled = 0},
+        {type = "item", name = "inverted-cube-jelly",                amount = 10,  percent_spoiled = 0, always_fresh = true},
 
         {type = "item", name = "inverted-dormant-microcube",            amount = 1,ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false, always_fresh = true},
       },
@@ -2009,7 +2009,7 @@ hide_from_signal_gui = false,
       {
         {type="item", name="biter-egg", amount=6, percent_spoiled = 0},
         {type="item", name="biter-egg", independent_probability = 0.4, amount=1, percent_spoiled = 0},
-        {type="item", name="inverted-cube-jelly", independent_probability = 0.1, amount=2},
+        {type="item", name="inverted-cube-jelly", independent_probability = 0.1, amount=2, always_fresh = true},
         {type = "item", name = "dormant-microcube",                amount = 2,  percent_spoiled = 0, ignored_by_productivity = 9999},
         {type = "item", name = "inverted-dormant-microcube", amount = 2, percent_spoiled = 0,ignored_by_productivity = 9999},
       },
@@ -2961,8 +2961,8 @@ hide_from_signal_gui = false,
       },
       results =
       {
-        {type = "item", name = "cube-jelly",                amount = 30,  percent_spoiled = 0, ignored_by_productivity = 10, ignored_by_stats = 10},
-        {type = "item", name = "inverted-cube-jelly",                amount = 15,  percent_spoiled = 0, ignored_by_productivity = 10, ignored_by_stats = 10},
+        {type = "item", name = "cube-jelly",                amount = 30,  percent_spoiled = 0, ignored_by_productivity = 10, ignored_by_stats = 10, always_fresh = true},
+        {type = "item", name = "inverted-cube-jelly",                amount = 15,  percent_spoiled = 0, ignored_by_productivity = 10, ignored_by_stats = 10, always_fresh = true},
         {type = "item", name = "dormant-microcube",              amount = 1,ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false, always_fresh = true},
         {type = "item", name = "inverted-dormant-microcube",            amount = 1,ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false, always_fresh = true},
       },
@@ -3041,7 +3041,7 @@ hide_from_signal_gui = false,
       },
       results =
       {
-        {type = "item", name = "cube-jelly",                amount = 200,  percent_spoiled = 0, ignored_by_productivity = 30, ignored_by_stats = 10},
+        {type = "item", name = "cube-jelly",                amount = 200,  percent_spoiled = 0, ignored_by_productivity = 30, ignored_by_stats = 10, always_fresh = true},
         {type = "item", name = "dormant-microcube",              amount = 12,ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false, always_fresh = true},
       },
       --result_is_always_fresh = true,
@@ -3185,7 +3185,7 @@ hide_from_signal_gui = false,
       },
       results =
       {
-        {type = "item", name = "cube-jelly",                amount = 10,  percent_spoiled = 0},
+        {type = "item", name = "cube-jelly",                amount = 10,  percent_spoiled = 0, always_fresh = true},
         {type = "item", name = "inverted-dormant-microcube",            amount = 2,ignored_by_productivity = 9999, show_details_in_recipe_tooltip = false, always_fresh = true},
       },
       --result_is_always_fresh = true,

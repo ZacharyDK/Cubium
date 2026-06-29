@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.30
+Date: 6. 27. 2026
+  Major Features:
+    - Added always_fresh to cube jelly results. I missed this on my initial pass
+    - Thanks to SebRenegan for bringing this to my attentin.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.29
 Date: 6. 27. 2026
   Major Features:
