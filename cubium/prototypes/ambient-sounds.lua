@@ -7,14 +7,14 @@ data:extend(
     type = "ambient-sound",
     name = "cubium-3-hero",
     track_type = "hero-track",
-    planet = "cubium",
+    planets = {"cubium"},
     sound = "__space-age__/sound/ambient/vulcanus/vulcanus-3-hero.ogg",
   },
   {
     type = "ambient-sound",
     name = "cubium-1",
     track_type = "main-track",
-    planet = "cubium",
+    planets = {"cubium"},
     sound = "__space-age__/sound/ambient/vulcanus/vulcanus-1.ogg",
     weight = 8
   },
@@ -22,7 +22,7 @@ data:extend(
     type = "ambient-sound",
     name = "cubium-2",
     track_type = "main-track",
-    planet = "cubium",
+    planets = {"cubium"},
     sound = "__space-age__/sound/ambient/vulcanus/vulcanus-2.ogg",
     weight = 7
   },
@@ -30,7 +30,7 @@ data:extend(
     type = "ambient-sound",
     name = "cubium-3",
     track_type = "main-track",
-    planet = "cubium",
+    planets = {"cubium"},
     sound = "__space-age__/sound/ambient/vulcanus/vulcanus-3.ogg",
     weight = 8
   },
@@ -38,7 +38,7 @@ data:extend(
     type = "ambient-sound",
     name = "cubium-4",
     track_type = "main-track",
-    planet = "cubium",
+    planets = {"cubium"},
     sound = "__space-age__/sound/ambient/vulcanus/vulcanus-4.ogg",
     weight = 10
   },
@@ -46,7 +46,7 @@ data:extend(
     type = "ambient-sound",
     name = "cubium-5",
     track_type = "main-track",
-    planet = "cubium",
+    planets = {"cubium"},
     sound = "__space-age__/sound/ambient/vulcanus/vulcanus-5.ogg",
     weight = 8
   },
@@ -54,7 +54,7 @@ data:extend(
     type = "ambient-sound",
     name = "cubium-6",
     track_type = "main-track",
-    planet = "cubium",
+    planets = {"cubium"},
     sound = "__space-age__/sound/ambient/vulcanus/vulcanus-6.ogg",
     weight = 10
   },
@@ -62,7 +62,7 @@ data:extend(
     type = "ambient-sound",
     name = "cubium-7",
     track_type = "main-track",
-    planet = "cubium",
+    planets = {"cubium"},
     sound = "__space-age__/sound/ambient/vulcanus/vulcanus-7.ogg",
     weight = 8
   },
@@ -70,7 +70,7 @@ data:extend(
     type = "ambient-sound",
     name = "cubium-8",
     track_type = "main-track",
-    planet = "cubium",
+    planets = {"cubium"},
     sound = "__space-age__/sound/ambient/vulcanus/vulcanus-8.ogg",
     weight = 10
   },
@@ -83,7 +83,7 @@ data:extend(
     type = "ambient-sound",
     name = "cubium-1-g",
     track_type = "main-track",
-    planet = "cubium",
+    planets = {"cubium"},
     sound = "__space-age__/sound/ambient/gleba/gleba-1.ogg",
     weight = 10
   },
@@ -91,7 +91,7 @@ data:extend(
     type = "ambient-sound",
     name = "cubium-2-g",
     track_type = "main-track",
-    planet = "cubium",
+    planets = {"cubium"},
     sound = "__space-age__/sound/ambient/gleba/gleba-2.ogg",
     weight = 10
   },
@@ -99,7 +99,7 @@ data:extend(
     type = "ambient-sound",
     name = "cubium-3-g",
     track_type = "main-track",
-    planet = "cubium",
+    planets = {"cubium"},
     sound = "__space-age__/sound/ambient/gleba/gleba-3.ogg",
     weight = 10
   },
@@ -107,7 +107,7 @@ data:extend(
     type = "ambient-sound",
     name = "cubium-4-g",
     track_type = "main-track",
-    planet = "cubium",
+    planets = {"cubium"},
     sound = "__space-age__/sound/ambient/gleba/gleba-4.ogg",
     weight = 8
   },
@@ -115,7 +115,7 @@ data:extend(
     type = "ambient-sound",
     name = "cubium-5-g",
     track_type = "main-track",
-    planet = "cubium",
+    planets = {"cubium"},
     sound = "__space-age__/sound/ambient/gleba/gleba-5.ogg",
     weight = 10
   },
@@ -123,7 +123,7 @@ data:extend(
     type = "ambient-sound",
     name = "cubium-6-g",
     track_type = "main-track",
-    planet = "cubium",
+    planets = {"cubium"},
     sound = "__space-age__/sound/ambient/gleba/gleba-6.ogg",
     weight = 8
   },
@@ -131,7 +131,7 @@ data:extend(
     type = "ambient-sound",
     name = "cubium-8-g",
     track_type = "main-track",
-    planet = "cubium",
+    planets = {"cubium"},
     sound = "__space-age__/sound/ambient/gleba/gleba-8.ogg",
     weight = 10
   },
@@ -139,7 +139,7 @@ data:extend(
     type = "ambient-sound",
     name = "cubium-9-g",
     track_type = "main-track",
-    planet = "cubium",
+    planets = {"cubium"},
     sound = "__space-age__/sound/ambient/gleba/gleba-9.ogg",
     weight = 8
   },
