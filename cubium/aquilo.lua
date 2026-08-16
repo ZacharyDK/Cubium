@@ -311,8 +311,8 @@ data.raw.recipe["quantum-processor"].ingredients =
 data.raw.recipe["quantum-processor-recycling"].results = 
 {
     
-    {type = "item", name = "stone-brick", amount = 1, probability = 0.25},
-    {type = "item", name = "processing-unit", amount = 1, probability = 0.25},
+    {type = "item", name = "stone-brick", amount = 1, independent_probability = 0.25},
+    {type = "item", name = "processing-unit", amount = 1, independent_probability = 0.25},
     {type = "item", name = "lithium-plate", amount = 4},
     
 }
@@ -367,11 +367,11 @@ data.raw.recipe["recycler"].surface_conditions =
 --Buff destabilized cube matter recycling. Need a carbon source. Now have chance to get 5 carbon back.
 data.raw.recipe["destabilized-cube-matter-recycling"].results = 
 {
-    {type = "item", name = "carbon",                amount = 10, probability = 0.4, show_details_in_recipe_tooltip = false},
-    {type = "item", name = "sulfur",                amount = 1, probability = 0.05, show_details_in_recipe_tooltip = false},
-    {type = "item", name = "ice",                   amount = 5, probability = 0.1, show_details_in_recipe_tooltip = false},
-    {type = "item", name = "iron-ore",              amount = 2, probability = 0.25, show_details_in_recipe_tooltip = false},
-    {type = "item", name = "copper-ore",            amount = 1, probability = 0.20, show_details_in_recipe_tooltip = false},
+    {type = "item", name = "carbon",                amount = 10, independent_probability = 0.4, show_details_in_recipe_tooltip = false},
+    {type = "item", name = "sulfur",                amount = 1, independent_probability = 0.05, show_details_in_recipe_tooltip = false},
+    {type = "item", name = "ice",                   amount = 5, independent_probability = 0.1, show_details_in_recipe_tooltip = false},
+    {type = "item", name = "iron-ore",              amount = 2, independent_probability = 0.25, show_details_in_recipe_tooltip = false},
+    {type = "item", name = "copper-ore",            amount = 1, independent_probability = 0.20, show_details_in_recipe_tooltip = false},
 
 
 }
@@ -414,14 +414,14 @@ data.raw.recipe["inverted-shards"].results =
 
 data.raw.recipe["inverted-cube-jelly-recycling"].results = 
 {
-  {type = "item", name = "carbon",                amount = 5, probability = 0.25, show_details_in_recipe_tooltip = false},
-  {type = "item", name = "sulfur",                amount = 1, probability = 0.30, show_details_in_recipe_tooltip = false},
-  {type = "item", name = "jelly",                   amount = 1, probability = 0.05, show_details_in_recipe_tooltip = false},
-  {type = "item", name = "solid-fuel",              amount = 1, probability = 0.05, show_details_in_recipe_tooltip = false},
-  {type = "item", name = "coal",              amount = 2, probability = 0.05, show_details_in_recipe_tooltip = false},
-  {type = "item", name = "calcite",              amount = 1, probability = 0.02, show_details_in_recipe_tooltip = false},
-  {type = "item", name = "dream",              amount = 3, probability = 0.18, show_details_in_recipe_tooltip = false},
-  {type = "item", name = "destabilized-cube-matter",            amount = 3, probability = 0.10, show_details_in_recipe_tooltip = false},
+  {type = "item", name = "carbon",                amount = 5, independent_probability = 0.25, show_details_in_recipe_tooltip = false},
+  {type = "item", name = "sulfur",                amount = 1, independent_probability = 0.30, show_details_in_recipe_tooltip = false},
+  {type = "item", name = "jelly",                   amount = 1, independent_probability = 0.05, show_details_in_recipe_tooltip = false},
+  {type = "item", name = "solid-fuel",              amount = 1, independent_probability = 0.05, show_details_in_recipe_tooltip = false},
+  {type = "item", name = "coal",              amount = 2, independent_probability = 0.05, show_details_in_recipe_tooltip = false},
+  {type = "item", name = "calcite",              amount = 1, independent_probability = 0.02, show_details_in_recipe_tooltip = false},
+  {type = "item", name = "dream",              amount = 3, independent_probability = 0.18, show_details_in_recipe_tooltip = false},
+  {type = "item", name = "destabilized-cube-matter",            amount = 3, independent_probability = 0.10, show_details_in_recipe_tooltip = false},
 }
 
 --Aquilo only - burn a dormant inverted cube to make it back to dormant cube!
@@ -518,11 +518,11 @@ data.raw.recipe["cube-smasher"].ingredients =
 
 data.raw.recipe["cube-smasher-recycling"].results =
 {
-  {type ="item", name ="electric-furnace", amount = 1, probability = 0.25},
-  {type ="item", name ="advanced-circuit", amount = 1,probability = 0.25},
+  {type ="item", name ="electric-furnace", amount = 1, independent_probability = 0.25},
+  {type ="item", name ="advanced-circuit", amount = 1,independent_probability = 0.25},
   {type ="item", name ="copper-plate", amount = 5},
   {type ="item", name ="steel-plate", amount = 2},
-  {type ="item", name ="fast-inserter", amount = 1, probability = 0.5},
+  {type ="item", name ="fast-inserter", amount = 1, independent_probability = 0.5},
 }
 
 data.raw.recipe["cube-smasher-cubic"].ingredients =

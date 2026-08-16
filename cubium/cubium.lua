@@ -82,11 +82,11 @@ data.raw.recipe["cube-smasher-cubic"].ingredients =
 
 data.raw.recipe["cube-smasher-recycling"].results =
 {
-  {type ="item", name ="electric-furnace", amount = 1, probability = 0.25},
-  {type ="item", name ="advanced-circuit", amount = 1,probability = 0.25},
+  {type ="item", name ="electric-furnace", amount = 1, independent_probability = 0.25},
+  {type ="item", name ="advanced-circuit", amount = 1,independent_probability = 0.25},
   {type ="item", name ="copper-plate", amount = 5},
   {type ="item", name ="steel-plate", amount = 2},
-  {type ="item", name ="fast-inserter", amount = 1, probability = 0.5},
+  {type ="item", name ="fast-inserter", amount = 1, independent_probability = 0.5},
 }
 
 data.raw.technology["cube-mastery-5"].research_trigger = 
