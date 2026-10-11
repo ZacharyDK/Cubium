@@ -3,6 +3,7 @@ Version: 1.0.32
 Date: 10. 11. 2026
   Major Features:
     - Updated item Prototypes fuel_category --> fuel_categories
+    - Thanks to Schlumpf8 for German localization
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.31
 Date: 8. 13. 2026
