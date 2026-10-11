@@ -427,7 +427,7 @@ data.raw.recipe["inverted-cube-jelly-recycling"].results =
 --Aquilo only - burn a dormant inverted cube to make it back to dormant cube!
 --This ensures players can't softlock themselves by making all their cubes inverted.
 data.raw.item["inverted-dormant-microcube"].fuel_value = "50MJ"
-data.raw.item["inverted-dormant-microcube"].fuel_category = "cubic"
+data.raw.item["inverted-dormant-microcube"].fuel_categories = {"cubic"}
 data.raw.item["inverted-dormant-microcube"].burnt_result = "dormant-microcube"
 data.raw.item["inverted-dormant-microcube"].fuel_acceleration_multiplier  = 1
 data.raw.item["inverted-dormant-microcube"].fuel_top_speed_multiplier = 1
