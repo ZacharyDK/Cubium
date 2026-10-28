@@ -5,7 +5,7 @@ data:extend({
     {
         type = "technology",
         name = "planet-discovery-cubium",
-        icons = util.technology_icon_constant_planet("__cubium__/graphics/technology/ultradense-technology.png"),
+        icons = PlanetsLib.technology_icon_planet("__cubium__/graphics/technology/ultradense-technology.png", 256, 1.0),
         icon_size = 256,
         essential = true,
         effects = 
