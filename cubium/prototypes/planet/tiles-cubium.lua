@@ -1134,6 +1134,7 @@ data:extend(
     water =
     {
       shader_variation = "lava",
+      --[[ --pre 2.1
       textures =
       {
         {
@@ -1147,10 +1148,34 @@ data:extend(
           height = 512 * 2
         }
       },
+      --]]
+      --2.1
+      noise_textures =
+      {
+        {
+          filename = "__space-age__/graphics/terrain/vulcanus/lava-textures/lava-noise-1.png",
+          size = 512,
+          color_channels = 2
+        },
+        {
+          filename = "__space-age__/graphics/terrain/vulcanus/lava-textures/lava-noise-2.png",
+          size = 512,
+          color_channels = 1
+        }
+      },
+      image_textures =
+      {
+        {
+          filename = "__cubium__/graphics/terrain/cubium/lava-textures/lava.png",
+        }
+      },
+
+
       texture_variations_columns = 1,
       texture_variations_rows = 1,
-      secondary_texture_variations_columns = 4,
-      secondary_texture_variations_rows = 2,
+      -- pre 2.1
+      --secondary_texture_variations_columns = 4, 
+      --secondary_texture_variations_rows = 2,
 
       animation_speed = 1.5,
       animation_scale = { 0.7, 0.7 },
@@ -1172,9 +1197,11 @@ data:extend(
     type = "tile-effect",
     name = "cubium-lava-2",
     shader = "water",
+
     water =
     {
       shader_variation = "lava",
+      --[[
       textures =
       {
         {
@@ -1188,10 +1215,32 @@ data:extend(
           height = 512 * 2
         }
       },
+      --]]
+      noise_textures =
+      {
+        {
+          filename = "__space-age__/graphics/terrain/vulcanus/lava-textures/lava-noise-1.png",
+          size = 512,
+          color_channels = 2
+        },
+        {
+          filename = "__space-age__/graphics/terrain/vulcanus/lava-textures/lava-noise-2.png",
+          size = 512,
+          color_channels = 1
+        }
+      },
+      image_textures =
+      {
+        {
+            filename = "__cubium__/graphics/terrain/cubium/lava-textures/coastal-lava.png",
+        }
+      },
+
       texture_variations_columns = 1,
       texture_variations_rows = 1,
-      secondary_texture_variations_columns = 4,
-      secondary_texture_variations_rows = 2,
+      -- pre 2.1
+      --secondary_texture_variations_columns = 4,
+      --secondary_texture_variations_rows = 2,
 
       animation_speed = 1.5,
       animation_scale = { 0.75, 0.75 },
